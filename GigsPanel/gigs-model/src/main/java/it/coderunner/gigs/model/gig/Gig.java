@@ -7,6 +7,7 @@ import lombok.Setter;
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+
 import java.util.Date;
 
 /**
@@ -48,4 +49,10 @@ public class Gig extends BaseEntity<Long> {
     @Getter
     @Setter
     private Date updated;
+
+	@Override
+	public Long getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

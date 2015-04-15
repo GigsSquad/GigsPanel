@@ -41,4 +41,10 @@ public class Stat extends BaseEntity<Long> {
     @Getter
     @Setter
     private String spotscol; //ja nie wiem co to jest
+
+	@Override
+	public Long getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

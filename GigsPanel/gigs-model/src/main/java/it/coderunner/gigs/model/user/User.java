@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
+@Entity
+@Table(name="users")
 public class User extends BaseEntity<Long>{
 	
 	private static final long serialVersionUID = -758076802868616147L;
