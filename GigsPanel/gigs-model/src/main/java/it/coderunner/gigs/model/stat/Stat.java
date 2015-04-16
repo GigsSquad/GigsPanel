@@ -12,7 +12,9 @@ import javax.persistence.Id;
  */
 public class Stat extends BaseEntity<Long> {
 
-    //todo nie ma tam w ogóle kolumny z AI ID, więc trzeba dorobić
+	private static final long serialVersionUID = -3445931220991095483L;
+
+	//todo nie ma tam w ogóle kolumny z AI ID, więc trzeba dorobić
     @Id
     @GeneratedValue
     @Getter
@@ -41,10 +43,4 @@ public class Stat extends BaseEntity<Long> {
     @Getter
     @Setter
     private String spotscol; //ja nie wiem co to jest
-
-	@Override
-	public Long getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }

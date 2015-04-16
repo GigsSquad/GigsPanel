@@ -1,12 +1,14 @@
 package it.coderunner.gigs.model.gig;
 
 import it.coderunner.gigs.model.BaseEntity;
+import it.coderunner.gigs.model.artist.Artist;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import java.util.Date;
 
@@ -21,12 +23,6 @@ public class Gig extends BaseEntity<Long> {
     @GeneratedValue
     @Getter
     private Long id;
-
-    //todo relacja
-    @Getter
-    @Setter
-    @Column(name = "id_artist") //kto wymyślał te nazwy, raz jest id_artist, raz artist_id
-    private Long artistId;
 
     //todo relacja
     @Getter
@@ -49,10 +45,9 @@ public class Gig extends BaseEntity<Long> {
     @Getter
     @Setter
     private Date updated;
+    
+    @ManyToOne
+    @Getter @Setter
+    private Artist artist;
 
-	@Override
-	public Long getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }

@@ -20,4 +20,5 @@ public class Comment extends BaseEntity<Long> {
     @GeneratedValue
     private Long id;
 
+
 }

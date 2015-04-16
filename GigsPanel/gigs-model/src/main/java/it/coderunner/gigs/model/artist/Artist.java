@@ -1,13 +1,19 @@
 package it.coderunner.gigs.model.artist;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import it.coderunner.gigs.model.BaseEntity;
+import it.coderunner.gigs.model.gig.Gig;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -15,7 +21,7 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table(name="users")
+@Table(name="artists")
 public class Artist extends BaseEntity<Long> {
 
     private static final long serialVersionUID = 562030051334550950L;
@@ -29,6 +35,10 @@ public class Artist extends BaseEntity<Long> {
     @Getter
     @Setter
     private String artist;
+    
+    @OneToMany(mappedBy = "artist", targetEntity = Gig.class, cascade = CascadeType.ALL)
+    @Getter @Setter
+    private Set<Gig> gig = new HashSet<Gig>();
 
     //todo tutaj będą relacje
     @Getter
@@ -56,9 +66,4 @@ public class Artist extends BaseEntity<Long> {
     @Column(name = "tag_id_5")
     private Long tagID5;
 
-	@Override
-	public Long getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }

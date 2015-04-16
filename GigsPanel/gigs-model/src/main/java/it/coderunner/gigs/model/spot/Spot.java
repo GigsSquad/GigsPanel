@@ -40,10 +40,4 @@ public class Spot extends BaseEntity<Long> {
     @Getter
     @Setter
     private String country;
-
-	@Override
-	public Long getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }
