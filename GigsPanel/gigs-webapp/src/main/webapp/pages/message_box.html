@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<div th:fragment="alert">
+		<div th:unless="${#sets.isEmpty(success_flash_messages)}" class="alert alert-dismissable alert-success">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<span th:each="msg : ${success_flash_messages}" th:utext="${msg.value}"></span>
+		</div>
+		<div th:unless="${#sets.isEmpty(info_flash_messages)}" class="alert alert-dismissable alert-info">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<span  th:each="msg : ${info_flash_messages}" th:utext="${msg.value}"></span>
+		</div>
+		<div th:unless="${#sets.isEmpty(warning_flash_messages)}" class="alert alert-dismissable alert-warning">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<span th:each="msg : ${warning_flash_messages}" th:utext="${msg.value}"></span>
+		</div>
+		<div th:unless="${#sets.isEmpty(error_flash_messages)}" class="alert alert-dismissable alert-danger">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<span th:each="msg : ${error_flash_messages}" th:utext="${msg.value}"></span>
+		</div>
+	</div>
+	<li th:fragment="clear_sort" ><a onclick="sort('','', '')"><i style="color:red" class="fa fa-times"/> <em th:text="#{filter.nosort}" >brak sortowania</em></a></li>
+</body>
+</html>
