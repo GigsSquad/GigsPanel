@@ -6,15 +6,25 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 import java.util.Date;
 
 /**
- * Created by Jakub on 2015-04-14.
+ * Tabela gigs:
+ * polaczenia z tabela :
+ * 	artists (ManyToOne)
+ * 	spots(ManyToOne)
+ * 	
  */
+@Entity
+@Table(name="gigs")
 public class Gig extends BaseEntity<Long> {
 
     private static final long serialVersionUID = -933739711197268160L;
@@ -27,7 +37,9 @@ public class Gig extends BaseEntity<Long> {
     //todo relacja
     @Getter
     @Setter
-    @Column(name = "id_spot")
+    @Column(name = "id_spot") // to jest chyba, zeby dobrze mapowal do bazy
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="id_spot") //to jest do joina?
     private Long spotId;
 
     @Getter
@@ -46,7 +58,9 @@ public class Gig extends BaseEntity<Long> {
     @Setter
     private Date updated;
     
-    @ManyToOne
+    @Column(name = "id_artist")
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="id_artist")
     @Getter @Setter
     private Artist artist;
 
