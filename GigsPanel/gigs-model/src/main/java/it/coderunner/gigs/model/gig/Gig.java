@@ -2,9 +2,11 @@ package it.coderunner.gigs.model.gig;
 
 import it.coderunner.gigs.model.BaseEntity;
 import it.coderunner.gigs.model.artist.Artist;
+import it.coderunner.gigs.model.comment.Comment;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -12,9 +14,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import net.sf.ehcache.transaction.xa.commands.Command;
+
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Tabela gigs:
@@ -34,7 +41,10 @@ public class Gig extends BaseEntity<Long> {
     @Getter
     private Long id;
 
-    //todo relacja
+    @Getter @Setter
+    @OneToMany(mappedBy = "gigs", targetEntity = Comment.class, cascade = CascadeType.ALL)
+    private Set<Comment> comments= new HashSet<>();
+    
     @Getter
     @Setter
     @Column(name = "id_spot") // to jest chyba, zeby dobrze mapowal do bazy

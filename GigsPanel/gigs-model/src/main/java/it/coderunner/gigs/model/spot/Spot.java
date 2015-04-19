@@ -1,5 +1,8 @@
 package it.coderunner.gigs.model.spot;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import it.coderunner.gigs.model.BaseEntity;
 import it.coderunner.gigs.model.gig.Gig;
 import lombok.Getter;
@@ -25,10 +28,16 @@ public class Spot extends BaseEntity<Long> {
     @Id
     @GeneratedValue
     @Getter
-    @OneToMany(mappedBy = "spots", targetEntity = Gig.class, cascade = CascadeType.ALL)
     @Column(name = "id_spot")
     private Long id;
-
+    
+    
+    @Getter @Setter
+    @OneToMany(mappedBy = "spots", targetEntity = Gig.class, cascade = CascadeType.ALL)
+    private Set<Gig> gigs = new HashSet<Gig>();
+    
+    
+   
     @Getter
     @Setter
     private String city;

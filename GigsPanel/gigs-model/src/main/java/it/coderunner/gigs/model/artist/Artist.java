@@ -40,7 +40,7 @@ public class Artist extends BaseEntity<Long> {
     @Getter @Setter
     private Set<Gig> gig = new HashSet<Gig>();
 
-    //todo tutaj będą relacje // jakie?
+    //todo tutaj będą relacje
     @Getter
     @Setter
     @Column(name = "tag_id_1")
