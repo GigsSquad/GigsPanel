@@ -42,5 +42,5 @@ public class Stat extends BaseEntity<Long> {
 
     @Getter
     @Setter
-    private String spotscol; //ja nie wiem co to jest
+    private String spotscol; //ja nie wiem co to jest// ja tez nie wiem 
 }
