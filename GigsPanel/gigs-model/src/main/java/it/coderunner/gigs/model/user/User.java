@@ -39,7 +39,7 @@ public class User extends BaseEntity<Long> {
 
 	@Getter
 	@Setter
-	@OneToMany(mappedBy = "users", targetEntity = Comment.class, cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "user", targetEntity = Comment.class, cascade = CascadeType.ALL)
 	private Set<Comment> comments = new HashSet<>();
 
 	@Getter
@@ -69,7 +69,8 @@ public class User extends BaseEntity<Long> {
 
 	@Getter
 	@Setter
-	private Date registered;
+	@Column(name = "date_registered")
+	private Date dateRegistered;
 
 	@Enumerated(EnumType.STRING)
 	@Getter
