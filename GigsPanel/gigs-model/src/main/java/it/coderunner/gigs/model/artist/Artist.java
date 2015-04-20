@@ -36,7 +36,7 @@ public class Artist extends BaseEntity<Long> {
     @Setter
     private String artist;
     
-    @OneToMany(mappedBy = "artist", targetEntity = Gig.class, cascade = CascadeType.ALL) // po co jest mappedBy i target, typ generyczny jest w Set
+    @OneToMany(mappedBy = "artist", targetEntity = Gig.class, cascade = CascadeType.ALL)
     @Getter @Setter
     private Set<Gig> gig = new HashSet<Gig>();
 

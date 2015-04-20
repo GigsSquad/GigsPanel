@@ -1,12 +1,11 @@
 package it.coderunner.gigs.model.spot;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import it.coderunner.gigs.model.BaseEntity;
 import it.coderunner.gigs.model.gig.Gig;
-import lombok.Getter;
-import lombok.Setter;
+import it.coderunner.gigs.model.user.Country;
+
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -15,6 +14,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * Created by Jakub on 2015-04-14.
@@ -33,11 +35,9 @@ public class Spot extends BaseEntity<Long> {
     
     
     @Getter @Setter
-    @OneToMany(mappedBy = "spots", targetEntity = Gig.class, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "spot", targetEntity = Gig.class, cascade = CascadeType.ALL)
     private Set<Gig> gigs = new HashSet<Gig>();
     
-    
-   
     @Getter
     @Setter
     private String city;
@@ -56,5 +56,5 @@ public class Spot extends BaseEntity<Long> {
 
     @Getter
     @Setter
-    private String country;
+    private Country country;
 }

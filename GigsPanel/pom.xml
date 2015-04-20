@@ -28,9 +28,9 @@
 			</activation>
 			<properties>
 				<jdbc.driverclassname>com.mysql.jdbc.Driver</jdbc.driverclassname>
-				<jdbc.url>jdbc:mysql://192.168.1.22:3306/coop</jdbc.url>
-				<jdbc.username>andrzej</jdbc.username>
-				<jdbc.password>anDDD444$$$</jdbc.password>
+				<jdbc.url>jdbc:mysql://sql.musicart.nazwa.pl:3307/musicart_1?characterEncoding=UTF-8</jdbc.url>
+				<jdbc.username>musicart_1</jdbc.username>
+				<jdbc.password>GIG$$$finder112!</jdbc.password>
 				<jdbc.hibernate.dialect>org.hibernate.dialect.MySQLDialect</jdbc.hibernate.dialect>
 				<jdbc.hibernate.hbm2ddl.auto>update</jdbc.hibernate.hbm2ddl.auto>
 
@@ -50,9 +50,9 @@
 			<id>test</id>
 			<properties>
 				<jdbc.driverclassname>com.mysql.jdbc.Driver</jdbc.driverclassname>
-				<jdbc.url>jdbc:mysql://192.168.1.22:3306/cooptest</jdbc.url>
-				<jdbc.username>andrzej</jdbc.username>
-				<jdbc.password>anDDD444$$$</jdbc.password>
+				<jdbc.url>jdbc:mysql://sql.musicart.nazwa.pl:3307/musicart_2?characterEncoding=UTF-8</jdbc.url>
+				<jdbc.username>musicart_2</jdbc.username>
+				<jdbc.password>GIG$$$finder112!</jdbc.password>
 				<jdbc.hibernate.dialect>org.hibernate.dialect.MySQLDialect</jdbc.hibernate.dialect>
 				<jdbc.hibernate.hbm2ddl.auto>update</jdbc.hibernate.hbm2ddl.auto>
 
@@ -72,9 +72,9 @@
 			<id>production</id>
 			<properties>
 				<jdbc.driverclassname>com.mysql.jdbc.Driver</jdbc.driverclassname>
-				<jdbc.url>jdbc:mysql://hd5.human-device.com:3306/coop?characterEncoding=UTF-8</jdbc.url>
-				<jdbc.username>coop</jdbc.username>
-				<jdbc.password>drugaZMIANAblusa666#</jdbc.password>
+				<jdbc.url>jdbc:mysql://sql.musicart.nazwa.pl:3307/musicart_3?characterEncoding=UTF-8</jdbc.url>
+				<jdbc.username>musicart_3</jdbc.username>
+				<jdbc.password>GIG$$$finder112!</jdbc.password>
 				<jdbc.hibernate.dialect>org.hibernate.dialect.MySQLDialect</jdbc.hibernate.dialect>
 				<jdbc.hibernate.hbm2ddl.auto>update</jdbc.hibernate.hbm2ddl.auto>
 				<log4j.filepath>logi.log</log4j.filepath>

@@ -3,11 +3,13 @@ package it.coderunner.gigs.model.gig;
 import it.coderunner.gigs.model.BaseEntity;
 import it.coderunner.gigs.model.artist.Artist;
 import it.coderunner.gigs.model.comment.Comment;
-import lombok.Getter;
-import lombok.Setter;
+import it.coderunner.gigs.model.spot.Spot;
+
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -17,11 +19,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import net.sf.ehcache.transaction.xa.commands.Command;
-
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * Tabela gigs:
@@ -42,15 +41,14 @@ public class Gig extends BaseEntity<Long> {
     private Long id;
 
     @Getter @Setter
-    @OneToMany(mappedBy = "gigs", targetEntity = Comment.class, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "gig", targetEntity = Comment.class, cascade = CascadeType.ALL)
     private Set<Comment> comments= new HashSet<>();
     
     @Getter
     @Setter
-    @Column(name = "id_spot") // to jest chyba, zeby dobrze mapowal do bazy
     @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name="id_spot") //to jest do joina?
-    private Long spotId;
+    @JoinColumn(name="id_spot")
+    private Spot spot;
 
     @Getter
     @Setter
@@ -68,7 +66,6 @@ public class Gig extends BaseEntity<Long> {
     @Setter
     private Date updated;
     
-    @Column(name = "id_artist")
     @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="id_artist")
     @Getter @Setter

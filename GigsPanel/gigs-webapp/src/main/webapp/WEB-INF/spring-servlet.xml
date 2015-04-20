@@ -25,18 +25,18 @@ http://www.springframework.org/schema/lang http://www.springframework.org/schema
 			<bean
 				class="org.springframework.web.bind.support.ConfigurableWebBindingInitializer" />
 		</property>
-		<property name="sessionAttributeStore">
-			<ref bean="conversationalSessionAttributeStore" />
-		</property>
+		<!-- <property name="sessionAttributeStore"> <ref bean="conversationalSessionAttributeStore" 
+			/> </property> -->
 	</bean>
-	
+
 	<!-- Lista interceptorów: -->
 	<mvc:interceptors>
 		<ref bean="localeChangeInterceptor" />
 	</mvc:interceptors>
-	
-	<!-- Interceptor dorzucający języki  -->
-	<bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+
+	<!-- Interceptor dorzucający języki -->
+	<bean id="localeChangeInterceptor"
+		class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
 		<property name="paramName" value="lang" />
 	</bean>
 
@@ -71,14 +71,14 @@ http://www.springframework.org/schema/lang http://www.springframework.org/schema
 		<property name="basename" value="classpath:messages" />
 		<property name="defaultEncoding" value="UTF-8" />
 	</bean>
-	
-		<!-- Domyslna wersja jezykowa: -->
-	<bean id="localeResolver"	class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+
+	<!-- Domyslna wersja jezykowa: -->
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
 		<property name="defaultLocale" value="en" />
 	</bean>
-	
-	<bean id="conversationalSessionAttributeStore" class="com.humandevice.coop.webapp.mvc.ConversationSessionAttributeStore">
-	  <property name="keepAliveConversations" value="10"/>
-	</bean>	
+
+	<!-- <bean id="conversationalSessionAttributeStore" class="it.coderunner.webapp.mvc.ConversationSessionAttributeStore"> 
+		<property name="keepAliveConversations" value="10"/> </bean> -->
 
 </beans>

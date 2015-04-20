@@ -1,10 +1,10 @@
 package it.coderunner.gigs.model.comment;
 
-import java.sql.Date;
-
 import it.coderunner.gigs.model.BaseEntity;
-import lombok.Getter;
-import lombok.Setter;
+import it.coderunner.gigs.model.gig.Gig;
+import it.coderunner.gigs.model.user.User;
+
+import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,11 +15,13 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * Created by Jakub on 2015-04-14.
  */
 
-//TODO to nie jest skończone, brakuje AI ID, artist jako id?
 @Entity
 @Table(name="comments")
 public class Comment extends BaseEntity<Long> {
@@ -32,20 +34,20 @@ public class Comment extends BaseEntity<Long> {
     private Long id;
     
     
-    @Getter@Setter
-    @Column(name="user_id")
+    @Getter @Setter
+    @JoinColumn(name="user_id")
     @ManyToOne(fetch=FetchType.LAZY)
-    private Long userId;	
-    
+    private User user;	
     
     @Getter@Setter
     @ManyToOne(fetch=FetchType.LAZY)
-    @Column(name="concert_id")
-    private Long concertId;
+    @JoinColumn(name="gig_id")
+    private Gig gig;
     
-    @Getter@Setter
+    @Getter @Setter
     private String comment;
     
-    @Getter@Setter
-    private Date added;
+    @Column(name="date_added")
+    @Getter @Setter
+    private Date dateAdded;
 }
