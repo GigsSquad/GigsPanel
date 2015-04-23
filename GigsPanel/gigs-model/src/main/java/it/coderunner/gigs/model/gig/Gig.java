@@ -23,11 +23,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * Tabela gigs:
- * polaczenia z tabela :
- * 	artists (ManyToOne)
- * 	spots(ManyToOne)
- * 	
+ * Lista koncertów, połączona ze spots oraz artists
+ * @author Jakub
+ *
  */
 @Entity
 @Table(name="gigs")
@@ -46,8 +44,8 @@ public class Gig extends BaseEntity<Long> {
     
     @Getter
     @Setter
-    @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="id_spot")
+    @ManyToOne(fetch=FetchType.LAZY)
     private Spot spot;
 
     @Getter

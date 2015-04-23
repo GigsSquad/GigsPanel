@@ -2,6 +2,7 @@ package it.coderunner.gigs.model.user;
 
 import it.coderunner.gigs.model.BaseEntity;
 import it.coderunner.gigs.model.comment.Comment;
+import it.coderunner.gigs.model.stat.Stat;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -33,18 +34,24 @@ public class User extends BaseEntity<Long> {
 	private static final long serialVersionUID = -758076802868616147L;
 
 	@Id
-	@GeneratedValue
 	@Getter
+	@GeneratedValue
 	private Long id;
 
 	@Getter
 	@Setter
 	@OneToMany(mappedBy = "user", targetEntity = Comment.class, cascade = CascadeType.ALL)
+	//TODO brakuje joincolumn? bo skąd ma wiedzieć jak to połączyc
 	private Set<Comment> comments = new HashSet<>();
+	
+	@Getter
+	@Setter
+	@OneToMany(mappedBy = "stat", targetEntity = Stat.class, cascade = CascadeType.ALL)
+	private Set<Stat> stats = new HashSet<>();
 
 	@Getter
 	@Setter
-	private String name;
+	private String firstname;
 
 	@Getter
 	@Setter
@@ -64,9 +71,10 @@ public class User extends BaseEntity<Long> {
 
 	@Getter
 	@Setter
-	@Column(name = "fb_id")
-	private Long fbId;
-
+	@Column(name = "login_type")
+	@Enumerated(EnumType.STRING)
+	private UserLogin loginType;
+	
 	@Getter
 	@Setter
 	@Column(name = "date_registered")
