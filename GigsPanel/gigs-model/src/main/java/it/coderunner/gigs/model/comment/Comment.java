@@ -33,21 +33,20 @@ public class Comment extends BaseEntity<Long> {
     @GeneratedValue
     private Long id;
     
-    
     @Getter @Setter
     @JoinColumn(name="user_id")
     @ManyToOne(fetch=FetchType.LAZY)
     private User user;	
     
     @Getter@Setter
-    @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="gig_id")
+    @ManyToOne(fetch=FetchType.LAZY)
     private Gig gig;
     
     @Getter @Setter
     private String comment;
     
-    @Column(name="date_added")
     @Getter @Setter
+    @Column(name="date_added")
     private Date dateAdded;
 }
