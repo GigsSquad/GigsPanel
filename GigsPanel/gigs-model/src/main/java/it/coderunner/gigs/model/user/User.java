@@ -46,7 +46,7 @@ public class User extends BaseEntity<Long> {
 	
 	@Getter
 	@Setter
-	@OneToMany(mappedBy = "stat", targetEntity = Stat.class, cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "user", targetEntity = Stat.class, cascade = CascadeType.ALL)
 	private Set<Stat> stats = new HashSet<>();
 
 	@Getter
