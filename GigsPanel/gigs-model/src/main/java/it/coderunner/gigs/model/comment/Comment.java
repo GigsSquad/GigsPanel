@@ -38,7 +38,7 @@ public class Comment extends BaseEntity<Long> {
     @ManyToOne(fetch=FetchType.LAZY)
     private User user;	
     
-    @Getter@Setter
+    @Getter @Setter
     @JoinColumn(name="gig_id")
     @ManyToOne(fetch=FetchType.LAZY)
     private Gig gig;

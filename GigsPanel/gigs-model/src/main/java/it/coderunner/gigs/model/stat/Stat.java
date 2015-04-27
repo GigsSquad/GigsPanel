@@ -42,20 +42,13 @@ public class Stat extends BaseEntity<Long> {
 	@ManyToOne(fetch = FetchType.LAZY)
 	private User user;
 
-	/**
-	 * plainowy text co tam naskrobał w editTekscie lub datcie
-	 */
 	@Getter
 	@Setter
 	@Column(name = "search_token")
 	private String searchToken;
 
-	/**
-	 * z którego taba użytkownik szukał
-	 */
 	@Getter
 	@Setter
 	@Enumerated(EnumType.STRING)
 	private StatType type;
-
 }
