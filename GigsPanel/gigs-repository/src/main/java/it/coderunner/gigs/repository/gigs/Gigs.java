@@ -17,8 +17,7 @@ public abstract class Gigs extends Queryable<Gig, Long>{
 	protected Date fromDate;
 	protected Date tillDate;
 	
-	protected Gigs() {
-	};
+	protected Gigs() {};
 	
 	public Gigs withArtist(Artist artist){
 		this.artist = artist;
@@ -41,27 +40,27 @@ public abstract class Gigs extends Queryable<Gig, Long>{
 	}
 	
 	public Gigs withId(Long id) {
-		return (Gigs) _withId(id);
+		return (Gigs) super.withId(id);
 	}
 
 	public Gigs addOrder(OrderType orderType, String sortProperty) {
-		return (Gigs) _addOrder(orderType, sortProperty);
+		return (Gigs) super.addOrder(orderType, sortProperty);
 	}
 
 	public Gigs loadWith(String... propertyNames) {
-		return (Gigs) _loadWith(propertyNames);
+		return (Gigs) super.loadWith(propertyNames);
 	}
 
 	public Gigs paginate(int startingAt, int maxResults) {
-		return (Gigs) _paginate(startingAt, maxResults);
+		return (Gigs) super.paginate(startingAt, maxResults);
 	}
 
 	public Gigs randomOrder() {
-		return (Gigs) _randomOrder();
+		return (Gigs) super.randomOrder();
 	}
 	
 	public Gigs merge(Gigs other) {
-		_merge(other);
+		super.merge(other);
 		if (artist != null){
 			this.artist = other.artist;
 		}

@@ -14,10 +14,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	
 	@RequestMapping(value={"", "/"}, method = RequestMethod.GET)
-	public String home(Model model, HttpServletRequest request){
+	public String home(Model model, HttpServletRequest request) {
 		
 		log.info("Żyję!!!");
 		return null;
 	}
-
 }

@@ -25,30 +25,30 @@ public abstract class Queryable<T extends BaseEntity<S>, S extends Serializable>
 	protected S id;
 	protected Boolean randomOrder;
 	
-	protected Queryable<T, S> _addOrder(OrderType orderType, String sortProperty) {
+	protected Queryable<T, S> addOrder(OrderType orderType, String sortProperty) {
 		orderMap.put(sortProperty, orderType);
 		return this;
 	}
 
-	protected Queryable<T, S> _withId(S s) {
+	protected Queryable<T, S> withId(S s) {
 		this.id = s;
 		return this;
 	}
 
-	protected Queryable<T, S> _loadWith(String... propertyNames) {
+	protected Queryable<T, S> loadWith(String... propertyNames) {
 		for(String property : propertyNames){
 			this.loadWithPropertyNames.add(property);
 		}
 		return this;
 	}
 
-	protected Queryable<T, S> _paginate(int startingAt, int maxResults) {
+	protected Queryable<T, S> paginate(int startingAt, int maxResults) {
 		this.startingAt=startingAt;
 		this.maxResults=maxResults;
 		return this;
 	}
 	
-	protected Queryable<T, S> _merge(Queryable<T, S> other) {
+	protected Queryable<T, S> merge(Queryable<T, S> other) {
 		if(other.id!=null){
 			this.id=other.id;
 		}
@@ -70,7 +70,7 @@ public abstract class Queryable<T extends BaseEntity<S>, S extends Serializable>
 		return this;
 	}
 	
-	protected Queryable<T, S> _randomOrder(){
+	protected Queryable<T, S> randomOrder(){
 		this.randomOrder = true;
 		return this;
 	}

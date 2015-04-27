@@ -35,5 +35,4 @@ public class TestWorker extends Worker{
 		log.info(gigService.count(Gigs.findAll()));
 		
 	}
-
 }
