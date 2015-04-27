@@ -1,15 +1,18 @@
 package it.coderunner.gigs.service.gigs.impl;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
 import it.coderunner.gigs.model.gig.Gig;
 import it.coderunner.gigs.repository.gigs.GigRepository;
 import it.coderunner.gigs.repository.gigs.Gigs;
 import it.coderunner.gigs.service.gigs.IGigService;
 
+import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+@Service
+@Transactional(rollbackFor=Exception.class)
 public class GigService implements IGigService{
 	
 	@Autowired

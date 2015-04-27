@@ -1,5 +1,8 @@
 package it.coderunner.gigs.model.tag;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import it.coderunner.gigs.model.BaseEntity;
 import it.coderunner.gigs.model.artist.Artist;
 
@@ -30,9 +33,12 @@ public class Tag extends BaseEntity<Long>{
 	@Getter
 	private Long id;
 	
+	@Getter @Setter
+	private String tag;
+	
 	@Getter
 	@Setter
 	@OneToMany(mappedBy = "tag", targetEntity = Artist.class, cascade = CascadeType.ALL)
-	private String tag;
+	private Set<Artist> artists = new HashSet<>();
 	
 }
