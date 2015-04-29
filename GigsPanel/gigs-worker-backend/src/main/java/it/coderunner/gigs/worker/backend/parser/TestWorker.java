@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
  * 
  */
 @Log4j
-@Component
+//@Component
 public class TestWorker extends Worker{
 
 	private static final long serialVersionUID = 9013708701686852259L;

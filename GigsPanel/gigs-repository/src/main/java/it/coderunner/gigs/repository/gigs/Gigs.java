@@ -61,16 +61,16 @@ public abstract class Gigs extends Queryable<Gig, Long>{
 	
 	public Gigs merge(Gigs other) {
 		super.merge(other);
-		if (artist != null){
+		if (other.artist != null){
 			this.artist = other.artist;
 		}
-		if (date != null){
+		if (other.date != null){
 			this.date = other.date;
 		}
-		if (fromDate != null){
+		if (other.fromDate != null){
 			this.fromDate = other.fromDate;
 		}
-		if (tillDate != null){
+		if (other.tillDate != null){
 			this.tillDate = other.tillDate;
 		}
 		return this;

@@ -31,6 +31,8 @@ public class Artist extends BaseEntity<Long> {
 
 	private static final long serialVersionUID = 562030051334550950L;
 
+	
+	
 	@Id
 	@GeneratedValue
 	@Getter
