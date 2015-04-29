@@ -1,18 +1,25 @@
 package it.coderunner.gigs.worker.backend.parser.goahead;
 
 import it.coderunner.gigs.worker.backend.parser.ParserWorker;
+import it.coderunner.gigs.worker.backend.parser.TestWorker;
 
 import java.io.IOException;
+
+import lombok.extern.log4j.Log4j;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 
+@Log4j
+@Component
 public class GoAhead extends ParserWorker {
 
 	private static final long serialVersionUID = -9164638291706534689L;
-	
+
 	private final static String URL_GOAHEAD = new String("http://www.go-ahead.pl/pl/koncerty.html");
 
 	public GoAhead() {
@@ -42,6 +49,19 @@ public class GoAhead extends ParserWorker {
 			addConcert(name, city, spot, day, month, conYear, "GOAHEAD", url);
 		}
 
+	}
+
+	@Override
+	@Scheduled(fixedDelay = 550000)
+	public void process() {
+		try {
+			log.info("Uruchamiam Go Ahead");
+			workerActivityLogEntry(GoAhead.class.getSimpleName(), "1 AM every day");
+			getData();
+			log.info("Skończyłem");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }
