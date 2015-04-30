@@ -68,5 +68,16 @@ public class Gig extends BaseEntity<Long> {
     @JoinColumn(name="id_artist")
     @Getter @Setter
     private Artist artist;
+    
+    public Gig() {}
+    
+    public Gig(Artist artist, Spot spot, Date date, String agency, String url)
+    {
+    	this.artist = artist;
+    	this.spot = spot;
+    	this.date = date;
+    	this.agency = agency;
+    	this.url = url;
+    }
 
 }

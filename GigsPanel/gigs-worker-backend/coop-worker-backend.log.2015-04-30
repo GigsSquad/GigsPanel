@@ -1,0 +1,818 @@
+2015-04-30 15:46:33 INFO  GoAhead:57 - Uruchamiam Go Ahead
+2015-04-30 15:46:33 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-04-30 15:46:34 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       / Sopot ERGO ARENA   SEAWAVE FESTIVAL: ODWOŁANY              
+2015-04-30 15:46:35 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE REAL MCKENZIES                      
+2015-04-30 15:46:35 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           MAN WITHOUT COUNTRY                     
+2015-04-30 15:46:36 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              BEATSTEAKS                              
+2015-04-30 15:46:36 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Hala Wisły           ROCK IN SUMMER: LIMP BIZKIT             
+2015-04-30 15:46:37 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         LA DISPUTE                              
+2015-04-30 15:46:37 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Amfiteatr w Parku So ROCK IN SUMMER: BODY COUNT FEAT. ICE-T /
+2015-04-30 15:46:37 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              THE GASLIGHT ANTHEM                     
+2015-04-30 15:46:38 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE BLACK DAHLIA MURDER                 
+2015-04-30 15:46:38 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            THE BLACK DAHLIA MURDER                 
+2015-04-30 15:46:39 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            SUICIDE SILENCE                         
+2015-04-30 15:46:39 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           SUICIDE SILENCE                         
+2015-04-30 15:46:39 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            PASSENGER                               
+2015-04-30 15:46:40 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE SMITH STREET BAND                   
+2015-04-30 15:46:41 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE SMITH STREET BAND                   
+2015-04-30 15:46:41 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE MENZINGERS                          
+2015-04-30 15:46:41 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Sala Wielka CK Zamek MARK LANEGAN BAND                       
+2015-04-30 15:46:42 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MATISYAHU                               
+2015-04-30 15:46:42 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Eter                 MATISYAHU                               
+2015-04-30 15:46:43 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MACHINE HEAD                            
+2015-04-30 15:46:43 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            MACHINE HEAD                            
+2015-04-30 15:46:44 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Fabryka              MACHINE HEAD                            
+2015-04-30 15:46:44 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               APOCALYPTICA                            
+2015-04-30 15:46:45 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Teatr Łaźnia Nowa    APOCALYPTICA                            
+2015-04-30 15:46:45 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               JOE SATRIANI                            
+2015-04-30 15:46:45 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Eskulap              SNARKY PUPPY                            
+2015-04-30 15:46:46 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            SNARKY PUPPY                            
+2015-04-30 15:46:46 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            EDITORS                                 
+2015-04-30 15:46:47 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Hala nr 2 MTP        EDITORS                                 
+2015-04-30 15:46:47 INFO  GoAhead:60 - Skończyłem
+2015-04-30 15:47:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:47:00 CEST 2015
+------------------------------------------
+2015-04-30 15:47:23 INFO  GoAhead:57 - Uruchamiam Go Ahead
+2015-04-30 15:47:23 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-04-30 15:47:26 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       / Sopot ERGO ARENA   SEAWAVE FESTIVAL: ODWOŁANY              
+2015-04-30 15:47:26 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE REAL MCKENZIES                      
+2015-04-30 15:47:27 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           MAN WITHOUT COUNTRY                     
+2015-04-30 15:47:27 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              BEATSTEAKS                              
+2015-04-30 15:47:27 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Hala Wisły           ROCK IN SUMMER: LIMP BIZKIT             
+2015-04-30 15:47:28 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         LA DISPUTE                              
+2015-04-30 15:47:28 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Amfiteatr w Parku So ROCK IN SUMMER: BODY COUNT FEAT. ICE-T /
+2015-04-30 15:47:28 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              THE GASLIGHT ANTHEM                     
+2015-04-30 15:47:29 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE BLACK DAHLIA MURDER                 
+2015-04-30 15:47:29 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            THE BLACK DAHLIA MURDER                 
+2015-04-30 15:47:30 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            SUICIDE SILENCE                         
+2015-04-30 15:47:30 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           SUICIDE SILENCE                         
+2015-04-30 15:47:31 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            PASSENGER                               
+2015-04-30 15:47:31 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE SMITH STREET BAND                   
+2015-04-30 15:47:32 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE SMITH STREET BAND                   
+2015-04-30 15:47:32 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE MENZINGERS                          
+2015-04-30 15:47:33 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Sala Wielka CK Zamek MARK LANEGAN BAND                       
+2015-04-30 15:47:33 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MATISYAHU                               
+2015-04-30 15:47:34 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Eter                 MATISYAHU                               
+2015-04-30 15:47:35 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MACHINE HEAD                            
+2015-04-30 15:47:35 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            MACHINE HEAD                            
+2015-04-30 15:47:36 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Fabryka              MACHINE HEAD                            
+2015-04-30 15:47:36 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               APOCALYPTICA                            
+2015-04-30 15:47:37 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Teatr Łaźnia Nowa    APOCALYPTICA                            
+2015-04-30 15:47:37 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               JOE SATRIANI                            
+2015-04-30 15:47:38 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Eskulap              SNARKY PUPPY                            
+2015-04-30 15:47:38 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            SNARKY PUPPY                            
+2015-04-30 15:47:38 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            EDITORS                                 
+2015-04-30 15:47:39 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Hala nr 2 MTP        EDITORS                                 
+2015-04-30 15:47:39 INFO  GoAhead:60 - Skończyłem
+2015-04-30 15:48:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:48:00 CEST 2015
+------------------------------------------
+2015-04-30 15:48:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:48:00 CEST 2015
+------------------------------------------
+2015-04-30 15:49:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:49:00 CEST 2015
+------------------------------------------
+2015-04-30 15:49:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:49:00 CEST 2015
+------------------------------------------
+2015-04-30 15:50:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:50:00 CEST 2015
+------------------------------------------
+2015-04-30 15:50:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:50:00 CEST 2015
+------------------------------------------
+2015-04-30 15:50:31 INFO  GoAhead:57 - Uruchamiam Go Ahead
+2015-04-30 15:50:31 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-04-30 15:50:32 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       / Sopot ERGO ARENA   SEAWAVE FESTIVAL: ODWOŁANY              
+2015-04-30 15:50:33 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE REAL MCKENZIES                      
+2015-04-30 15:50:33 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           MAN WITHOUT COUNTRY                     
+2015-04-30 15:50:37 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              BEATSTEAKS                              
+2015-04-30 15:50:37 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Hala Wisły           ROCK IN SUMMER: LIMP BIZKIT             
+2015-04-30 15:50:37 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         LA DISPUTE                              
+2015-04-30 15:50:38 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Amfiteatr w Parku So ROCK IN SUMMER: BODY COUNT FEAT. ICE-T /
+2015-04-30 15:50:38 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              THE GASLIGHT ANTHEM                     
+2015-04-30 15:50:39 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE BLACK DAHLIA MURDER                 
+2015-04-30 15:50:39 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            THE BLACK DAHLIA MURDER                 
+2015-04-30 15:50:40 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            SUICIDE SILENCE                         
+2015-04-30 15:50:40 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           SUICIDE SILENCE                         
+2015-04-30 15:50:41 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            PASSENGER                               
+2015-04-30 15:50:41 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE SMITH STREET BAND                   
+2015-04-30 15:50:41 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE SMITH STREET BAND                   
+2015-04-30 15:50:42 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE MENZINGERS                          
+2015-04-30 15:50:42 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Sala Wielka CK Zamek MARK LANEGAN BAND                       
+2015-04-30 15:50:43 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MATISYAHU                               
+2015-04-30 15:50:43 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Eter                 MATISYAHU                               
+2015-04-30 15:50:44 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MACHINE HEAD                            
+2015-04-30 15:50:44 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            MACHINE HEAD                            
+2015-04-30 15:50:45 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Fabryka              MACHINE HEAD                            
+2015-04-30 15:50:45 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               APOCALYPTICA                            
+2015-04-30 15:50:46 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Teatr Łaźnia Nowa    APOCALYPTICA                            
+2015-04-30 15:50:46 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               JOE SATRIANI                            
+2015-04-30 15:50:47 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Eskulap              SNARKY PUPPY                            
+2015-04-30 15:50:47 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            SNARKY PUPPY                            
+2015-04-30 15:50:47 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            EDITORS                                 
+2015-04-30 15:50:48 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Hala nr 2 MTP        EDITORS                                 
+2015-04-30 15:50:48 INFO  GoAhead:60 - Skończyłem
+2015-04-30 15:51:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:51:00 CEST 2015
+------------------------------------------
+2015-04-30 15:51:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:51:00 CEST 2015
+------------------------------------------
+2015-04-30 15:51:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:51:00 CEST 2015
+------------------------------------------
+2015-04-30 15:51:16 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-04-30 15:51:16 INFO  GoAhead:57 - Uruchamiam Go Ahead
+2015-04-30 15:51:18 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       / Sopot ERGO ARENA   SEAWAVE FESTIVAL: ODWOŁANY              
+2015-04-30 15:51:18 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE REAL MCKENZIES                      
+2015-04-30 15:51:19 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           MAN WITHOUT COUNTRY                     
+2015-04-30 15:51:19 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              BEATSTEAKS                              
+2015-04-30 15:51:20 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Hala Wisły           ROCK IN SUMMER: LIMP BIZKIT             
+2015-04-30 15:51:20 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         LA DISPUTE                              
+2015-04-30 15:51:20 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Amfiteatr w Parku So ROCK IN SUMMER: BODY COUNT FEAT. ICE-T /
+2015-04-30 15:51:21 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              THE GASLIGHT ANTHEM                     
+2015-04-30 15:51:21 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE BLACK DAHLIA MURDER                 
+2015-04-30 15:51:22 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            THE BLACK DAHLIA MURDER                 
+2015-04-30 15:51:22 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            SUICIDE SILENCE                         
+2015-04-30 15:51:22 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           SUICIDE SILENCE                         
+2015-04-30 15:51:23 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            PASSENGER                               
+2015-04-30 15:51:23 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE SMITH STREET BAND                   
+2015-04-30 15:51:23 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE SMITH STREET BAND                   
+2015-04-30 15:51:24 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE MENZINGERS                          
+2015-04-30 15:51:27 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Sala Wielka CK Zamek MARK LANEGAN BAND                       
+2015-04-30 15:51:28 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MATISYAHU                               
+2015-04-30 15:51:28 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Eter                 MATISYAHU                               
+2015-04-30 15:51:29 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MACHINE HEAD                            
+2015-04-30 15:51:29 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            MACHINE HEAD                            
+2015-04-30 15:51:29 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Fabryka              MACHINE HEAD                            
+2015-04-30 15:51:33 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               APOCALYPTICA                            
+2015-04-30 15:51:33 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Teatr Łaźnia Nowa    APOCALYPTICA                            
+2015-04-30 15:51:34 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               JOE SATRIANI                            
+2015-04-30 15:51:35 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Eskulap              SNARKY PUPPY                            
+2015-04-30 15:51:35 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            SNARKY PUPPY                            
+2015-04-30 15:51:36 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            EDITORS                                 
+2015-04-30 15:51:36 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Hala nr 2 MTP        EDITORS                                 
+2015-04-30 15:51:36 INFO  GoAhead:60 - Skończyłem
+2015-04-30 15:52:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:52:00 CEST 2015
+------------------------------------------
+2015-04-30 15:52:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:52:00 CEST 2015
+------------------------------------------
+2015-04-30 15:52:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:52:00 CEST 2015
+------------------------------------------
+2015-04-30 15:53:52 INFO  GoAhead:56 - Uruchamiam Go Ahead
+2015-04-30 15:53:52 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-04-30 15:53:53 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       / Sopot ERGO ARENA   SEAWAVE FESTIVAL: ODWOŁANY              
+2015-04-30 15:53:53 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE REAL MCKENZIES                      
+2015-04-30 15:53:54 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           MAN WITHOUT COUNTRY                     
+2015-04-30 15:53:57 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              BEATSTEAKS                              
+2015-04-30 15:53:57 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Hala Wisły           ROCK IN SUMMER: LIMP BIZKIT             
+2015-04-30 15:53:58 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         LA DISPUTE                              
+2015-04-30 15:53:58 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Amfiteatr w Parku So ROCK IN SUMMER: BODY COUNT FEAT. ICE-T /
+2015-04-30 15:53:59 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              THE GASLIGHT ANTHEM                     
+2015-04-30 15:53:59 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE BLACK DAHLIA MURDER                 
+2015-04-30 15:54:00 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            THE BLACK DAHLIA MURDER                 
+2015-04-30 15:54:00 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            SUICIDE SILENCE                         
+2015-04-30 15:54:01 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           SUICIDE SILENCE                         
+2015-04-30 15:54:01 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            PASSENGER                               
+2015-04-30 15:54:05 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE SMITH STREET BAND                   
+2015-04-30 15:54:05 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE SMITH STREET BAND                   
+2015-04-30 15:54:06 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE MENZINGERS                          
+2015-04-30 15:54:06 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Sala Wielka CK Zamek MARK LANEGAN BAND                       
+2015-04-30 15:54:06 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MATISYAHU                               
+2015-04-30 15:54:07 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Eter                 MATISYAHU                               
+2015-04-30 15:54:07 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MACHINE HEAD                            
+2015-04-30 15:54:07 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            MACHINE HEAD                            
+2015-04-30 15:54:08 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Fabryka              MACHINE HEAD                            
+2015-04-30 15:54:08 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               APOCALYPTICA                            
+2015-04-30 15:54:09 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Teatr Łaźnia Nowa    APOCALYPTICA                            
+2015-04-30 15:54:10 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               JOE SATRIANI                            
+2015-04-30 15:54:10 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Eskulap              SNARKY PUPPY                            
+2015-04-30 15:54:10 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            SNARKY PUPPY                            
+2015-04-30 15:54:11 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            EDITORS                                 
+2015-04-30 15:54:11 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Hala nr 2 MTP        EDITORS                                 
+2015-04-30 15:54:11 INFO  GoAhead:59 - Skończyłem
+2015-04-30 15:54:11 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:54:11 CEST 2015
+------------------------------------------
+2015-04-30 15:55:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 15:55:00 CEST 2015
+------------------------------------------
+2015-04-30 23:43:55 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-04-30 23:44:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:44:00 CEST 2015
+------------------------------------------
+2015-04-30 23:44:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:44:00 CEST 2015
+------------------------------------------
+2015-04-30 23:44:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:44:00 CEST 2015
+------------------------------------------
+2015-04-30 23:44:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:44:00 CEST 2015
+------------------------------------------
+2015-04-30 23:44:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:44:00 CEST 2015
+------------------------------------------
+2015-04-30 23:44:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:44:00 CEST 2015
+------------------------------------------
+2015-04-30 23:44:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:44:00 CEST 2015
+------------------------------------------
+2015-04-30 23:44:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:44:00 CEST 2015
+------------------------------------------
+2015-04-30 23:45:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:45:00 CEST 2015
+------------------------------------------
+2015-04-30 23:45:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:45:00 CEST 2015
+------------------------------------------
+2015-04-30 23:45:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:45:00 CEST 2015
+------------------------------------------
+2015-04-30 23:45:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:45:00 CEST 2015
+------------------------------------------
+2015-04-30 23:45:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:45:00 CEST 2015
+------------------------------------------
+2015-04-30 23:45:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:45:00 CEST 2015
+------------------------------------------
+2015-04-30 23:45:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:45:00 CEST 2015
+------------------------------------------
+2015-04-30 23:45:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:45:00 CEST 2015
+------------------------------------------
+2015-04-30 23:45:56 INFO  GoAhead:56 - Uruchamiam Go Ahead
+2015-04-30 23:45:56 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-04-30 23:45:57 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       / Sopot ERGO ARENA   SEAWAVE FESTIVAL: ODWOŁANY              
+2015-04-30 23:45:58 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE REAL MCKENZIES                      
+2015-04-30 23:45:58 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           MAN WITHOUT COUNTRY                     
+2015-04-30 23:45:58 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              BEATSTEAKS                              
+2015-04-30 23:45:59 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Hala Wisły           ROCK IN SUMMER: LIMP BIZKIT             
+2015-04-30 23:45:59 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         LA DISPUTE                              
+2015-04-30 23:46:00 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Amfiteatr w Parku So ROCK IN SUMMER: BODY COUNT FEAT. ICE-T /
+2015-04-30 23:46:00 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              THE GASLIGHT ANTHEM                     
+2015-04-30 23:46:00 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE BLACK DAHLIA MURDER                 
+2015-04-30 23:46:01 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            THE BLACK DAHLIA MURDER                 
+2015-04-30 23:46:01 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            SUICIDE SILENCE                         
+2015-04-30 23:46:02 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           SUICIDE SILENCE                         
+2015-04-30 23:46:02 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            PASSENGER                               
+2015-04-30 23:46:03 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE SMITH STREET BAND                   
+2015-04-30 23:46:03 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE SMITH STREET BAND                   
+2015-04-30 23:46:04 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE MENZINGERS                          
+2015-04-30 23:46:04 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Sala Wielka CK Zamek MARK LANEGAN BAND                       
+2015-04-30 23:46:04 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MATISYAHU                               
+2015-04-30 23:46:05 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Eter                 MATISYAHU                               
+2015-04-30 23:46:05 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MACHINE HEAD                            
+2015-04-30 23:46:06 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            MACHINE HEAD                            
+2015-04-30 23:46:06 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Fabryka              MACHINE HEAD                            
+2015-04-30 23:46:06 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               APOCALYPTICA                            
+2015-04-30 23:47:27 INFO  AlterArt:56 - Uruchamiam AlterArt
+2015-04-30 23:47:27 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-04-30 23:47:29 INFO  ParserWorker:72 - DODAJE ALTE Warszawa     Basen, ul. Marii Kon The Afghan Whigs                        
+2015-04-30 23:47:30 INFO  ParserWorker:72 - DODAJE ALTE Kraków       Klub Fabryka, Zabłoc The Afghan Whigs                        
+2015-04-30 23:47:30 INFO  ParserWorker:72 - DODAJE ALTE Warszawa     Palladium, Złota 9   Royal Blood                             
+2015-04-30 23:47:30 INFO  ParserWorker:72 - DODAJE ALTE Warszawa     Basen, ul. M.Konopni Warpaint - Selector - odwołany          
+2015-04-30 23:47:34 INFO  ParserWorker:72 - DODAJE ALTE WARSZAWA     BASEN, UL. MARII KON SBTRKT - Selector                       
+2015-04-30 23:47:34 INFO  ParserWorker:72 - DODAJE ALTE KRAKÓW       UL. ŚW. WAWRZYŃCA 12 JACK WHITE                              
+2015-04-30 23:47:35 INFO  ParserWorker:72 - DODAJE ALTE Katowice     Spodek               Nine Inch Nails                         
+2015-04-30 23:47:35 INFO  ParserWorker:72 - DODAJE ALTE Warszawa     Nowy Teatr           Savages                                 
+2015-04-30 23:47:35 INFO  ParserWorker:72 - DODAJE ALTE Warszawa     Stodoła              Foals                                   
+2015-04-30 23:47:36 INFO  ParserWorker:72 - DODAJE ALTE Gdynia       Lotnisko Gdynia-Kosa Rihanna                                 
+2015-04-30 23:47:36 INFO  ParserWorker:72 - DODAJE ALTE Warszawa     Amfiteatr w Parku So Sigur Rós                               
+2015-04-30 23:47:37 INFO  ParserWorker:72 - DODAJE ALTE Łódź         Atlas Arena          Green Day                               
+2015-04-30 23:47:37 INFO  ParserWorker:72 - DODAJE ALTE Warszawa     Hala Torwar          The xx                                  
+2015-04-30 23:47:37 INFO  ParserWorker:72 - DODAJE ALTE Warszawa     Basen, ul. Konopnick Yeasayer                                
+2015-04-30 23:47:38 INFO  ParserWorker:72 - DODAJE ALTE Warszawa     Stadion Narodowy     Coldplay                                
+2015-04-30 23:47:38 INFO  AlterArt:59 - Skończyłem
+2015-04-30 23:47:38 INFO  EBilet:92 - Uruchamiam EBilet
+2015-04-30 23:47:41 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Pod Minogą      The Real McKenzies                      
+2015-04-30 23:47:42 INFO  ParserWorker:72 - DODAJE EBIL 00:00</font> Atlas Arena_<br /><s Impact Festival                         
+2015-04-30 23:47:46 INFO  ParserWorker:72 - DODAJE EBIL 18:00</font> HALA TORWAR<br /><sm Def Leppard + Lessdress, Exlibris       
+2015-04-30 23:47:47 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Sala Gotycka<br /><s Ethno Jazz Festival - Muzyka Świata w St
+2015-04-30 23:47:49 INFO  ParserWorker:72 - DODAJE EBIL 19:00</font> Teatr Syrena<br /><s Syrena Music - Koncert Krzysztofa Antkow
+2015-04-30 23:47:50 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Progresja Music Zone Hirax / Nervosa                         
+2015-04-30 23:47:51 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub Fabryka         The Real Mckenzies + Pipes & Pints + Hud
+2015-04-30 23:47:53 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> KLUB &quot;2DOORS&qu KęKę                                    
+2015-04-30 23:47:57 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Eskulap         Selah Sue                               
+2015-04-30 23:47:57 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Palladium       Selah Sue                               
+2015-04-30 23:47:58 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Studio          Selah Sue                               
+2015-04-30 23:47:59 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> Klub Remont          Te-Tris                                 
+2015-04-30 23:48:00 INFO  ParserWorker:72 - DODAJE EBIL 17:30</font> ERGO ARENA           30 Seconds to Mars                      
+2015-04-30 23:48:01 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Sala Koncertowa Radi Ale CZAD!, czyli podróże Grupy MoCarta  
+2015-04-30 23:48:03 INFO  ParserWorker:72 - DODAJE EBIL 17:30</font> Klub muzyczny Stary  EKT - Gdynia                            
+2015-04-30 23:48:04 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> KLUB PALLADIUM<br /> PASSENGER, support: Stu Larsen          
+2015-04-30 23:48:05 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> Klub Proxima         Obscure Sphinx                          
+2015-04-30 23:48:06 INFO  ParserWorker:72 - DODAJE EBIL 17:30</font> Studio Koncertowe Po Cykl Światowa Scena Jazzarium: Samuel Bl
+2015-04-30 23:48:07 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> HALA_Torwar<br /><sm Diana Krall                             
+2015-04-30 23:48:08 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub Pod Minogą      COMEBACK KID + BANE + MY IRON LUNG + WOR
+2015-04-30 23:48:10 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> HALA MG Sport Sp. z  Koncert Teresy Werner                   
+2015-04-30 23:48:10 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> AULA Państwowej Wyżs Koncert Teresy Werner                   
+2015-04-30 23:48:11 INFO  ParserWorker:72 - DODAJE EBIL 15:30</font> Plaża nad Wisłą      Audioriver Festival - KARNET 2 DNI      
+2015-04-30 23:48:15 INFO  ParserWorker:72 - DODAJE EBIL 13:30</font> Amfiteatr Mrągowo<br 21. Festiwal Kultury Kresowej           
+2015-04-30 23:48:16 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Scena Teatralna NOT< Martyna Jakubowicz - The Best of        
+2015-04-30 23:48:18 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Hydrozagadka    The Smith Street Band                   
+2015-04-30 23:48:18 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Pod Minogą           The Smith Street Band                   
+2015-04-30 23:48:19 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> 2 DOORS Music Club   Moskwa                                  
+2015-04-30 23:48:21 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Wytw&oacute;rni FISZ EMADE TWORZYWO MAMUT               
+2015-04-30 23:48:22 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Projekt Teatr Warsza POD DACHAMI EUROPY- Premiera!!!         
+2015-04-30 23:48:23 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Hydrozagadka         DEFEATER + IN HEARTS WAKE + LIE AFTER LI
+2015-04-30 23:48:24 INFO  ParserWorker:72 - DODAJE EBIL 13:00</font> Gdynia               Open`er Festival 2015, Karnet Weekendowy
+2015-04-30 23:48:25 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Blue Note Jazz Club< SEBASTIAN ZAWADZKI: LUMINESCENCE        
+2015-04-30 23:48:27 INFO  ParserWorker:72 - DODAJE EBIL 14:00</font> Stary Klasztor - Sal Ethno Jazz Festival prezentuje: "WARSZAW
+2015-04-30 23:48:28 INFO  ParserWorker:72 - DODAJE EBIL 11:00</font> Pas startowy Muzeum  Festiwal DiscoPolo HUSHnalia Festiwal   
+2015-04-30 23:48:29 INFO  ParserWorker:72 - DODAJE EBIL 17:30</font> Studio Koncertowe Po Cykl Światowa Scena Jazzarium: Myra Melf
+2015-04-30 23:48:30 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Blue Note Jazz Club< SKOWROŃSKI / TRIFFONOF / ZAGÓRSKI / GAMO
+2015-04-30 23:48:32 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Sala Koncertowa Radi "Paganini Millennium Tour" - Mariusz Pat
+2015-04-30 23:48:33 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Jarocin              Jarocin Festiwal 2015 - KARNET (17-19 li
+2015-04-30 23:48:33 INFO  ParserWorker:72 - DODAJE EBIL 17:30</font> Hala Torwar<br /><sm Motorhead                               
+2015-04-30 23:48:35 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Klub Studio          Wybory Najmilszej Studentki Krakowa & AN
+2015-04-30 23:48:36 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub B90             Machine Head                            
+2015-04-30 23:48:37 INFO  ParserWorker:72 - DODAJE EBIL 20:59</font> Teatr im. A. Mickiew testDan2                                
+2015-04-30 23:48:38 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub Fabryka         Accept + Reds' Cool                     
+2015-04-30 23:48:40 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Kino &quot;Kryterium Recital Edyty Geppert                   
+2015-04-30 23:48:42 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Progresja Music Zone Blue                                    
+2015-04-30 23:48:43 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Hydrozagadka    The Black Dahlia Murder                 
+2015-04-30 23:48:44 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Klub Forty Kleparz   KAZIK & ProForma                        
+2015-04-30 23:48:45 INFO  ParserWorker:72 - DODAJE EBIL 12:00</font> Filharmonia Pomorska 330.ROCZNICA URODZIN J.S.BACHA          
+2015-04-30 23:48:46 INFO  ParserWorker:72 - DODAJE EBIL 18:00</font> Hala Torwar<br /><sm Simply Red                              
+2015-04-30 23:48:47 INFO  ParserWorker:72 - DODAJE EBIL występ.</fon Hala Torwar<br /><sm Simply Red                              
+2015-04-30 23:48:48 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Soho Factory<br /><s Warsaw Summer Jazz Days 2015: Laureat ko
+2015-04-30 23:48:49 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Millenium Hall Squar GANG ALBANII oraz BEZCZEL & Z.B.U.K.U. (
+2015-04-30 23:48:51 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Amfiteatr Kadzielnia IRA akustycznie                         
+2015-04-30 23:48:51 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Amfiteatr NCPP       IRA akustycznie                         
+2015-04-30 23:48:52 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Amfiteatr ZOK        IRA akustycznie                         
+2015-04-30 23:48:52 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Amfiteatr Teatr Letn IRA akustycznie                         
+2015-04-30 23:48:52 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Hala Spodek          IRA akustycznie                         
+2015-04-30 23:48:53 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Hala Arena           IRA akustycznie                         
+2015-04-30 23:48:53 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Ergo Arena           IRA akustycznie                         
+2015-04-30 23:48:54 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Hala Urania          IRA akustycznie                         
+2015-04-30 23:48:54 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Dziedziniec Pałacu B IRA akustycznie                         
+2015-04-30 23:48:54 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Hala Globus          IRA akustycznie                         
+2015-04-30 23:48:55 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Hala Podpromie       IRA akustycznie                         
+2015-04-30 23:48:55 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Stadion Cracovii     IRA akustycznie                         
+2015-04-30 23:48:56 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Hala Stulecia        IRA akustycznie                         
+2015-04-30 23:48:56 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Plac przy Hali MOSiR IRA akustycznie                         
+2015-04-30 23:48:56 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Hala Łuczniczka      IRA akustycznie                         
+2015-04-30 23:48:57 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Hala Torwar          IRA akustycznie                         
+2015-04-30 23:48:58 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Dom Muzyki i Tańca<b Edith Piaf Show                         
+2015-04-30 23:48:59 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> HALA ORBITA WE WROCŁ Edith Piaf Show                         
+2015-04-30 23:48:59 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Filharmonia_Bałtycka Edith Piaf Show                         
+2015-04-30 23:48:59 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Aula UMK w Toruniu<b Edith Piaf Show                         
+2015-04-30 23:49:00 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> ARENA URSYN&Oacute;W Edith Piaf Show                         
+2015-04-30 23:49:01 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Filharmonia Częstoch Muzyka zespołu QUEEN Symfonicznie       
+2015-04-30 23:49:01 INFO  ParserWorker:72 - DODAJE EBIL 16:30</font> Aula WPA UAM w Kalis Muzyka zespołu QUEEN Symfonicznie       
+2015-04-30 23:49:02 INFO  ParserWorker:72 - DODAJE EBIL 16:30</font> Filharmonia Śląska w Muzyka zespołu QUEEN Symfonicznie       
+2015-04-30 23:49:02 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Sala Koncertowa PKiN Muzyka zespołu QUEEN Symfonicznie       
+2015-04-30 23:49:03 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Sala Koncertowa Filh Muzyka zespołu QUEEN Symfonicznie       
+2015-04-30 23:49:03 INFO  ParserWorker:72 - DODAJE EBIL 16:30</font> Bielskie Centrum Kul Muzyka zespołu QUEEN Symfonicznie       
+2015-04-30 23:49:04 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> BF Impart<br /><smal Ethno Jazz Festival prezentuje: TOMASZ S
+2015-04-30 23:49:06 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Klub Stodoła         FISMOLL                                 
+2015-04-30 23:49:08 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> Klub Remont          Koncert Z.B.U.K.U.                      
+2015-04-30 23:49:09 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> HALA TORWAR          The Godfather Live                      
+2015-04-30 23:49:09 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> HALA ORBITA WE WROCŁ The Godfather Live                      
+2015-04-30 23:49:10 INFO  ParserWorker:72 - DODAJE EBIL 13:30</font> Pas startowy Muzeum  Festiwal Czyżynalia 2015 - BILETY 1-DNIO
+2015-04-30 23:49:11 INFO  ParserWorker:72 - DODAJE EBIL 13:30</font> Pas startowy Muzeum  Festiwal Czyżynalia 2015 - BILETY 1-DNIO
+2015-04-30 23:49:12 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub B90             Selah Sue                               
+2015-04-30 23:49:13 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Hala Orbita - Wrocła TOTO                                    
+2015-04-30 23:49:13 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> HALA TORWAR          TOTO                                    
+2015-04-30 23:49:15 INFO  ParserWorker:72 - DODAJE EBIL 20:00</font> Klub Remont          Mega Dance                              
+2015-04-30 23:49:16 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Progresja Music Zone Korpus + Vincent                        
+2015-04-30 23:49:17 INFO  ParserWorker:72 - DODAJE EBIL 18:00</font> L'enfant Terrible    Zespół Reprezentacyjny                  
+2015-04-30 23:49:18 INFO  ParserWorker:72 - DODAJE EBIL 18:00</font> Bielańska Scena Kame "I WISH YOU LOVE"-Koncert Wojciecha Gąss
+2015-04-30 23:49:20 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Teatr Rozrywki Lutni Wielka Gala Trzech Tenorów              
+2015-04-30 23:49:22 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Hydrozagadka         REBELS OF SCANDINAVIA: SuperCharger + Th
+2015-04-30 23:49:23 INFO  ParserWorker:72 - DODAJE EBIL 13:00</font> Gdynia               Open`er Festival 2015, bilety jednodniow
+2015-04-30 23:49:23 INFO  ParserWorker:72 - DODAJE EBIL 13:00</font> Gdynia               Open`er Festival 2015, bilety jednodniow
+2015-04-30 23:49:24 INFO  ParserWorker:72 - DODAJE EBIL 13:00</font> Gdynia               Open`er Festival 2015, bilety jednodniow
+2015-04-30 23:49:24 INFO  ParserWorker:72 - DODAJE EBIL 13:00</font> Gdynia               Open`er Festival 2015, bilety jednodniow
+2015-04-30 23:49:25 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Plac Koncertowy      SEVEN FESTIVAL MUSIC & MORE WĘGORZEWO 20
+2015-04-30 23:49:27 INFO  ParserWorker:72 - DODAJE EBIL 00:00</font> Katowice - Dolina Tr OFF Festival Katowice 2015 - karnet trzy
+2015-04-30 23:49:28 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Klub Palladium (b)<b Koncert galowy WARSZAWIANKA - Podaj serc
+2015-04-30 23:49:29 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> Progresja Music Zone Kamelot                                 
+2015-04-30 23:49:30 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> synagoga pod białym  British Rock Symphony                   
+2015-04-30 23:49:30 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Synagoga Tempel<br / British Rock Symphony                   
+2015-04-30 23:49:32 INFO  ParserWorker:72 - DODAJE EBIL 14:00</font> Duży Dziedziniec UW  Juwenalia UW 2015: KULT, Luxtorpeda, Arm
+2015-04-30 23:49:33 INFO  ParserWorker:72 - DODAJE EBIL 00:00</font> Hala Stulecia - Perg 3-MAJÓWKA 2015 - najlepsze polskie zespo
+2015-04-30 23:49:34 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Sala Koncertowa Radi Krystyna Prońko                         
+2015-04-30 23:49:35 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub Alibi           Cannibal Corpse + support               
+2015-04-30 23:49:37 INFO  ParserWorker:72 - DODAJE EBIL 18:00</font> Stadion Miejski w Ry Linkin Park                             
+2015-04-30 23:49:38 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub Fabryka         Midge Ure                               
+2015-04-30 23:49:40 INFO  ParserWorker:72 - DODAJE EBIL 18:00</font> Klub Kwadrat         Dub FX                                  
+2015-04-30 23:49:41 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Proxima         EXODUS + support                        
+2015-04-30 23:49:41 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Eskulap         EXODUS + support                        
+2015-04-30 23:49:43 INFO  ParserWorker:72 - DODAJE EBIL 12:00</font> Filharmonia Pomorska PERKUSJA I SMYCZKI                      
+2015-04-30 23:49:44 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Studio Koncertowe Po Cykl Światowa Scena Jazzarium: Irek Wojt
+2015-04-30 23:49:45 INFO  ParserWorker:72 - DODAJE EBIL 12:00</font> Teatr Muzyczny Roma< Musicalowy Odlot - Koncert Warsztatowej 
+2015-04-30 23:49:45 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Teatr Muzyczny Roma< Musicalowy Odlot - Koncert Warsztatowej 
+2015-04-30 23:49:46 INFO  ParserWorker:72 - DODAJE EBIL 10:00</font> Teatr Muzyczny Roma< Musicalowy Odlot - Koncert Warsztatowej 
+2015-04-30 23:49:46 INFO  ParserWorker:72 - DODAJE EBIL 14:00</font> Teatr Muzyczny Roma< Musicalowy Odlot - Koncert Warsztatowej 
+2015-04-30 23:49:47 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Progresja Music Zone Gang Albanii                            
+2015-04-30 23:49:49 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Aula Szkoły POMNIK   Koncert Zespołu DŻEM                    
+2015-04-30 23:49:50 INFO  ParserWorker:72 - DODAJE EBIL 17:30</font> Kuźnia Kulturalna    Marysia Sadowska "Jazz na ulicach"      
+2015-04-30 23:49:51 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Strefa Plaża         Juwenalia AGH: MELA KOTELUK & Młoda Scen
+2015-04-30 23:49:52 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Sala Gotycka - Stary Wino-Granie: SMOLIK & KEV FOX           
+2015-04-30 23:49:53 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Amfiteatr Kadzielnia WŁOSKA GALA OPEROWA                     
+2015-04-30 23:49:54 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Amfiteatr Opole<br / WŁOSKA GALA OPEROWA                     
+2015-04-30 23:49:54 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Teatr Muzyczny Capit WŁOSKA GALA OPEROWA                     
+2015-04-30 23:49:56 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub Proxima         VENOM INC, VADER, DIVINE CHAOS          
+2015-04-30 23:49:56 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub Parlament       VENOM INC, VADER, DIVINE CHAOS          
+2015-04-30 23:49:56 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub Alibi           VENOM INC, VADER, DIVINE CHAOS          
+2015-04-30 23:49:58 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> HALA GLOBUS<br /><sm Multimedialne Widowisko Muzyczne - SYMPH
+2015-04-30 23:49:58 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Ice Krak&oacute;w Co Multimedialne Widowisko Muzyczne - SYMPH
+2015-04-30 23:49:59 INFO  ParserWorker:72 - DODAJE EBIL 12:00</font> Hala SPODEK<br /><sm METAL HAMMER FESTIVAL 2015 - PROG EDITIO
+2015-04-30 23:50:00 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Sala Audytoryjna WCK John Mayall                             
+2015-04-30 23:50:02 INFO  ParserWorker:72 - DODAJE EBIL 18:00</font> ZATOKA SZTUKI        Cafe Mambo duet JAVI BARREDA & DENNY O. 
+2015-04-30 23:50:03 INFO  ParserWorker:72 - DODAJE EBIL 14:30</font> Sala Koncertowa Cent Gala Finałowa VI edycji Wawer Music Fest
+2015-04-30 23:50:04 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> Twierdza Boyen       Mazury Hip Hop Festiwal Giżycko 2015 - k
+2015-04-30 23:50:05 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> Klub Remont          Kajman                                  
+2015-04-30 23:50:07 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Atlas Arena<br /><sm Scorpions                               
+2015-04-30 23:50:08 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> KLUB &quot;2DOORS&qu PARADYGMAT                              
+2015-04-30 23:50:09 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub Fabryka         Blues Pills + Spiders + Rust            
+2015-04-30 23:50:09 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Hydrozagadka         Blues Pills + Spiders + Rust            
+2015-04-30 23:50:11 INFO  ParserWorker:72 - DODAJE EBIL 19:00</font> Klub Proxima         Agata Dziarmagowska                     
+2015-04-30 23:50:12 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Centrum Kultury w Ło Stan Borys                              
+2015-04-30 23:50:13 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Filharmonia Częstoch HEY Unplugged                           
+2015-04-30 23:50:14 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Filharmonia Częstoch Chór Alexandra Pustovalova - Best Songs 
+2015-04-30 23:50:15 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> ATM Scena na Bielana Chór Alexandra Pustovalova - Best Songs 
+2015-04-30 23:50:15 INFO  ParserWorker:72 - DODAJE EBIL 12:00</font> Filharmonia Śląska w Chór Alexandra Pustovalova - Best Songs 
+2015-04-30 23:50:15 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Filharmonia Śląska w Chór Alexandra Pustovalova - Best Songs 
+2015-04-30 23:50:16 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Filharmonia Ł&oacute Chór Alexandra Pustovalova - Best Songs 
+2015-04-30 23:50:16 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Filharmonia Opolska  Chór Alexandra Pustovalova - Best Songs 
+2015-04-30 23:50:17 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Strefa Plaża         Juwenalia AGH: ŁĄKI ŁAN & Młoda Scena   
+2015-04-30 23:50:19 INFO  ParserWorker:72 - DODAJE EBIL 13:00</font> Progresja Music Zone Covan wake the fuck up - koncert charyta
+2015-04-30 23:50:20 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Blue Note Jazz Club< GDAŃSK JAZZ QUARTET: SIKAŁA / PACIOREK /
+2015-04-30 23:50:21 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Amfiteatr Opole<br / 50 Jahre Heino - koncert jubileuszowy na
+2015-04-30 23:50:22 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Strefa Plaża         Juwenalia AGH: BRACIA FIGO FAGOT & Młoda
+2015-04-30 23:50:23 INFO  ParserWorker:72 - DODAJE EBIL 13:00</font> PLAŻA MIEJSKA PRZY U HIP HOP RAPORT PROJEKT EŁK 2015 - KARNET
+2015-04-30 23:50:24 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Progresja Music Zone Sonata Arctica / Freedom Call / Twilight
+2015-04-30 23:50:26 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub muzyczny Liverp The Black Dahlia Murder                 
+2015-04-30 23:50:27 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub Fabryka         Testament + Virgin Snatch               
+2015-04-30 23:50:28 INFO  ParserWorker:72 - DODAJE EBIL 19:00</font> Aviator              Podniebny Parkiet - koncert zespołu The 
+2015-04-30 23:50:29 INFO  ParserWorker:72 - DODAJE EBIL 19:00</font> Aviator              Podniebny Parkiet - koncert zespołu The 
+2015-04-30 23:50:30 INFO  ParserWorker:72 - DODAJE EBIL 18:00</font> ZATOKA SZTUKI        Jazzy Jeff - Zatoka Sztuki Beach Club   
+2015-04-30 23:50:31 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Progresja Music Zone Gazpacho / Iamthemorning                
+2015-04-30 23:50:32 INFO  ParserWorker:72 - DODAJE EBIL 19:00</font> Klub B90             Airbourne                               
+2015-04-30 23:50:33 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Nowohuckie Centrum K Edyta Geppert z zespołem Vasie          
+2015-04-30 23:50:35 INFO  ParserWorker:72 - DODAJE EBIL 17:30</font> Kuźnia Kulturalna    Michał Bajor                            
+2015-04-30 23:50:36 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> Twierdza Boyen       Mazury Hip Hop Festiwal Giżycko 2015 - k
+2015-04-30 23:50:37 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> SALA ZIEMI _POZNAŃ<b Grzegorz TURNAU & ZAKOPOWER             
+2015-04-30 23:50:38 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> SCENA PLENEROWA PRZY KONCERT ANDRZEJA PIASECZNEGO            
+2015-04-30 23:50:40 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Klub STUDIO          Wybory SuperStudenta Krakowa | MALEO REG
+2015-04-30 23:50:41 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Teatr Łaźnia Nowa    BEFORE TAURON NOWA MUZYKA 2015 - Nils Fr
+2015-04-30 23:50:42 INFO  ParserWorker:72 - DODAJE EBIL 18:00</font> HALA TORWAR<br /><sm Roxette                                 
+2015-04-30 23:50:43 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Blue Note       THE DUMPLINGS                           
+2015-04-30 23:50:44 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Stary Klasztor       THE DUMPLINGS                           
+2015-04-30 23:50:45 INFO  ParserWorker:72 - DODAJE EBIL 12:00</font> AMFITEATR Pod Grojce Gala Operetkowa - Wiesław Ochman i Jego 
+2015-04-30 23:50:46 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> Klub Remont          Bezczel                                 
+2015-04-30 23:50:47 INFO  ParserWorker:72 - DODAJE EBIL 10:00</font> Teatr Muzyczny w Łod Nie ma jak u Mamy - Najpiękniejsze piose
+2015-04-30 23:50:49 INFO  ParserWorker:72 - DODAJE EBIL 18:00</font> ZATOKA SZTUKI        HEY - Zatoka Sztuki Beach Club          
+2015-04-30 23:50:50 INFO  ParserWorker:72 - DODAJE EBIL 13:30</font> Pas startowy Muzeum  Festiwal Czyżynalia 2015 - KARNET (15-16
+2015-04-30 23:50:51 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Kino Teatr Apollo<br Recital Edyty Geppert na BIS            
+2015-04-30 23:50:52 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Soho Factory<br /><s Warsaw Summer Jazz Days 2015 - KARNET (9
+2015-04-30 23:50:53 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Sala Gotycka - Stary Ethno Jazz Festival - Muzyka Świata w St
+2015-04-30 23:50:54 INFO  ParserWorker:72 - DODAJE EBIL 18:00</font> Atlas Arena_<br /><s Nickelback                              
+2015-04-30 23:50:56 INFO  ParserWorker:72 - DODAJE EBIL 14:00</font> Hala Stulecia        Thanks Jimi Festival 2015 - Koncert Gwia
+2015-04-30 23:50:57 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Blue Note Jazz Club< STAND-UP POLSKA: KAŻDY INNY             
+2015-04-30 23:50:58 INFO  ParserWorker:72 - DODAJE EBIL 17:30</font> <br /><font class="b Koncert Rise Against                    
+2015-04-30 23:50:59 INFO  ParserWorker:72 - DODAJE EBIL 15:30</font> Hala im. Zdzisława N Impreza z cyklu "NIEĆPA 2015" z udziałem
+2015-04-30 23:51:01 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> Klub BASEN           HVOB                                    
+2015-04-30 23:51:02 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Tauron Arena Krak&oa FAITH NO MORE                           
+2015-04-30 23:51:04 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Azoty Arena<br /><sm Chris Botti                             
+2015-04-30 23:51:04 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> SALA ZIEMI _POZNAŃ<b Chris Botti                             
+2015-04-30 23:51:04 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Hala Stulecia.<br /> Chris Botti                             
+2015-04-30 23:51:05 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Hala GLOBUS_<br /><s Chris Botti                             
+2015-04-30 23:51:05 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Ice Krak&oacute;w Co Chris Botti                             
+2015-04-30 23:51:06 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> HALA_Torwar<br /><sm Chris Botti                             
+2015-04-30 23:51:07 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Chmury               Fiolet                                  
+2015-04-30 23:51:08 INFO  ParserWorker:72 - DODAJE EBIL 12:00</font> Filharmonia Pomorska W LETNIM NASTROJU                       
+2015-04-30 23:51:09 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> Klub BASEN           I urodziny MM: W.E.N.A., ABEL, MAŁE MIAS
+2015-04-30 23:51:10 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Stadion Narodowy<br  Violetta                                
+2015-04-30 23:51:11 INFO  ParserWorker:72 - DODAJE EBIL 14:00</font> TAURON Arena Krak&oa Violetta                                
+2015-04-30 23:51:12 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Progresja Music Zone Rotting Christ                          
+2015-04-30 23:51:13 INFO  ParserWorker:72 - DODAJE EBIL 12:00</font> Filharmonia Pomorska GALA MUZYKI ROSYJSKIEJ                  
+2015-04-30 23:51:14 INFO  ParserWorker:72 - DODAJE EBIL 19:00</font> Aviator              Koncert Zespołu KLINTON                 
+2015-04-30 23:51:15 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub Pod Minogą      Obscure Sphinx + Spiri, Butterfly trajec
+2015-04-30 23:51:17 INFO  ParserWorker:72 - DODAJE EBIL 17:30</font> Studio Koncertowe Po Cykl Światowa Scena Jazzarium: Renaud Ga
+2015-04-30 23:51:18 INFO  ParserWorker:72 - DODAJE EBIL 18:00</font> Sala Koncertowa Radi Henry Rollins "The Charmingly Obstinate"
+2015-04-30 23:51:19 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Progresja Music Zone The Beauty Of Gemina / Spiral69         
+2015-04-30 23:51:20 INFO  ParserWorker:72 - DODAJE EBIL 14:00</font> synagoga pod białym  Freddie Mercury Rock-Operowo            
+2015-04-30 23:51:20 INFO  ParserWorker:72 - DODAJE EBIL 14:00</font> Synagoga Tempel<br / Freddie Mercury Rock-Operowo            
+2015-04-30 23:51:22 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Klub Stodoła - Open  Olivia Livki                            
+2015-04-30 23:51:23 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Sala Koncertowa Radi Kuba Badach "Tribute to Zaucha. OBECNY" 
+2015-04-30 23:51:24 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Progresja Music Zone Blaze Bayley + Chainsaw                 
+2015-04-30 23:51:25 INFO  ParserWorker:72 - DODAJE EBIL 17:30</font> Kij&oacute;w.Centrum Zenon Laskowik "W blasku jubileuszu"    
+2015-04-30 23:51:26 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Scena           Sopot Hip Hop Festiwal - Warm Up Party  
+2015-04-30 23:51:27 INFO  ParserWorker:72 - DODAJE EBIL 14:00</font> plac Koncertowy      Polo TV Hit Festival Szczecinek 2015    
+2015-04-30 23:51:29 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> Pijalnia Gł&oacute;w Raz Dwa Trzy                            
+2015-04-30 23:51:30 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Pijalnia Gł&oacute;w STANISŁAW SOYKA                         
+2015-04-30 23:51:31 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub muzyczny Liverp Suicide Silence                         
+2015-04-30 23:51:32 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Klub Pod Minogą      Suicide Silence                         
+2015-04-30 23:51:33 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Klub Stodoła         T.LOVE                                  
+2015-04-30 23:51:34 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Teatr im. Wandy Siem Justyna Steczkowska - trasa koncertowa "
+2015-04-30 23:51:34 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Kieleckie Centrum Ku Justyna Steczkowska - trasa koncertowa "
+2015-04-30 23:51:36 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Klub Stodoła<br /><s Renata Przemyk                          
+2015-04-30 23:51:37 INFO  ParserWorker:72 - DODAJE EBIL 13:00</font> Gdynia               Open`er Festival 2015 - Karnet 4-dniowy 
+2015-04-30 23:51:38 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Soho Factory<br /><s Warsaw Summer Jazz Days 2015: Sly & Robb
+2015-04-30 23:51:39 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Hydrozagadka    The Menzingers                          
+2015-04-30 23:51:40 INFO  ParserWorker:72 - DODAJE EBIL 16:30</font> Opera Leśna          Polsat SuperHit Festiwal 2015 - Dzień 1 
+2015-04-30 23:51:42 INFO  ParserWorker:72 - DODAJE EBIL 17:00</font> Klub Proxima         The Gaslight Anthem                     
+2015-04-30 23:51:43 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> PLAŻA BRODNICA       III FESTIWAL MUZYKI DANCE I DISCO       
+2015-04-30 23:51:44 INFO  ParserWorker:72 - DODAJE EBIL 16:15</font> Opera Nova w Bydgosz 7. Festiwal Serca Bicie Pamięci Andrzeja
+2015-04-30 23:51:45 INFO  ParserWorker:72 - DODAJE EBIL 12:00</font> Filharmonia Pomorska KONCERT DLA WSZYSTKICH MAM              
+2015-04-30 23:51:46 INFO  ParserWorker:72 - DODAJE EBIL 15:00</font> Centrum Kongresowo-D TGD (Trzecia Godzina Dnia)              
+2015-04-30 23:51:47 INFO  ParserWorker:72 - DODAJE EBIL 23:59</font> KLUB &quot;2DOORS&qu DWA SŁAWY                               
+2015-04-30 23:51:49 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Sala Gotycka w Stary RED BOX - legenda lat 80. powraca!      
+2015-04-30 23:51:50 INFO  ParserWorker:72 - DODAJE EBIL 12:00</font> Filharmonia Pomorska 69. OD BRZUSZKA DO USZKA MALUSZKA       
+2015-04-30 23:51:51 INFO  ParserWorker:72 - DODAJE EBIL 00:02</font> Progresja Music Zone Jinjer / Totem                          
+2015-04-30 23:51:52 INFO  ParserWorker:72 - DODAJE EBIL 16:00</font> Klub Palladium       Cody Simpson + support: Ryan Beatty     
+2015-04-30 23:51:53 INFO  GoAhead:56 - Uruchamiam Go Ahead
+2015-04-30 23:51:54 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       / Sopot ERGO ARENA   SEAWAVE FESTIVAL: ODWOŁANY              
+2015-04-30 23:51:54 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE REAL MCKENZIES                      
+2015-04-30 23:51:55 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           MAN WITHOUT COUNTRY                     
+2015-04-30 23:51:55 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              BEATSTEAKS                              
+2015-04-30 23:51:56 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Hala Wisły           ROCK IN SUMMER: LIMP BIZKIT             
+2015-04-30 23:51:56 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         LA DISPUTE                              
+2015-04-30 23:51:56 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Amfiteatr w Parku So ROCK IN SUMMER: BODY COUNT FEAT. ICE-T /
+2015-04-30 23:51:57 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Proxima              THE GASLIGHT ANTHEM                     
+2015-04-30 23:51:57 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE BLACK DAHLIA MURDER                 
+2015-04-30 23:51:57 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            THE BLACK DAHLIA MURDER                 
+2015-04-30 23:51:58 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Liverpool            SUICIDE SILENCE                         
+2015-04-30 23:51:58 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           SUICIDE SILENCE                         
+2015-04-30 23:51:59 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            PASSENGER                               
+2015-04-30 23:51:59 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE SMITH STREET BAND                   
+2015-04-30 23:51:59 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Pod Minogą           THE SMITH STREET BAND                   
+2015-04-30 23:52:00 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Hydrozagadka         THE MENZINGERS                          
+2015-04-30 23:52:00 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Sala Wielka CK Zamek MARK LANEGAN BAND                       
+2015-04-30 23:52:01 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MATISYAHU                               
+2015-04-30 23:52:01 INFO  ParserWorker:72 - DODAJE GOAH Wrocław      Eter                 MATISYAHU                               
+2015-04-30 23:52:02 INFO  ParserWorker:72 - DODAJE GOAH Gdańsk       B90                  MACHINE HEAD                            
+2015-04-30 23:52:02 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            MACHINE HEAD                            
+2015-04-30 23:52:03 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Fabryka              MACHINE HEAD                            
+2015-04-30 23:52:03 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               APOCALYPTICA                            
+2015-04-30 23:52:03 INFO  ParserWorker:72 - DODAJE GOAH Kraków       Teatr Łaźnia Nowa    APOCALYPTICA                            
+2015-04-30 23:52:04 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Torwar               JOE SATRIANI                            
+2015-04-30 23:52:04 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Eskulap              SNARKY PUPPY                            
+2015-04-30 23:52:05 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Palladium            SNARKY PUPPY                            
+2015-04-30 23:52:05 INFO  ParserWorker:72 - DODAJE GOAH Warszawa     Progresja            EDITORS                                 
+2015-04-30 23:52:06 INFO  ParserWorker:72 - DODAJE GOAH Poznań       Hala nr 2 MTP        EDITORS                                 
+2015-04-30 23:52:06 INFO  GoAhead:59 - Skończyłem
+2015-04-30 23:52:06 INFO  Kayax:96 - Uruchamiam Kayax
+2015-04-30 23:52:08 INFO  ParserWorker:72 - DODAJE KAYA  akustycznie  Cieszyn             Urszula Dudziak                         
+2015-04-30 23:52:08 INFO  ParserWorker:72 - DODAJE KAYA  Kielce      Kieleckie Centrum Ku HEY Unplugged                           
+2015-04-30 23:52:09 INFO  ParserWorker:72 - DODAJE KAYA  Warszawa    Teatr Muzyczny Roma  HWY Unplugged                           
+2015-04-30 23:52:09 INFO  ParserWorker:72 - DODAJE KAYA  BIAŁYSTOK   Zmiana Klimatu       MARIA PESZEK                            
+2015-04-30 23:52:09 INFO  ParserWorker:72 - DODAJE KAYA  Mosina      Mosiński Ośrodek Kul Skubas                                  
+2015-04-30 23:52:10 INFO  ParserWorker:72 - DODAJE KAYA  Chorzów      impreza zamknięta   Urszula Dudziak                         
+2015-04-30 23:52:10 INFO  ParserWorker:72 - DODAJE KAYA  Olsztyn     Andergrant           Zalef                                   
+2015-04-30 23:52:10 INFO  ParserWorker:72 - DODAJE KAYA  Szamotuły   Szamotulski Ośrodek  Skubas                                  
+2015-04-30 23:52:11 INFO  ParserWorker:72 - DODAJE KAYA  Kraków      ICE Kraków Internati Marek Dyjak                             
+2015-04-30 23:52:11 INFO  ParserWorker:72 - DODAJE KAYA  Elbląg      Klub Mjazzga         Zalef                                   
+2015-04-30 23:52:12 INFO  ParserWorker:72 - DODAJE KAYA  Damasławek  Gminny Ośrodek Kultu Skubas                                  
+2015-04-30 23:52:12 INFO  ParserWorker:72 - DODAJE KAYA  Łódź        Klub Wytwórnia       Marek Dyjak                             
+2015-04-30 23:52:12 INFO  ParserWorker:72 - DODAJE KAYA  Gdańsk      AK PG Kwadratowa Sie Zalef                                   
+2015-04-30 23:52:13 INFO  ParserWorker:72 - DODAJE KAYA  Spring Brea Centrum Kultury Zame Skubas                                  
+2015-04-30 23:52:13 INFO  ParserWorker:72 - DODAJE KAYA  Leszno      Centrum Kultury i Sz Skubas                                  
+2015-04-30 23:52:14 INFO  ParserWorker:72 - DODAJE KAYA  Konin       Kino Oskard          Zalef                                   
+2015-04-30 23:52:14 INFO  ParserWorker:72 - DODAJE KAYA  Warszawa    Nowa Kuźnia          Marek Dyjak                             
+2015-04-30 23:52:14 INFO  ParserWorker:72 - DODAJE KAYA  Łódź        Bedroom Club         Skubas                                  
+2015-04-30 23:52:15 INFO  ParserWorker:72 - DODAJE KAYA  akustycznie  Mińsk Mazowiecki    Urszula Dudziak                         
+2015-04-30 23:52:15 INFO  ParserWorker:72 - DODAJE KAYA  Olsztyn     Hala Widowiskowo-Spo HEY Unplugged                           
+2015-04-30 23:52:16 INFO  ParserWorker:72 - DODAJE KAYA  Świdnica    Świdnicki Ośrodek Ku Skubas                                  
+2015-04-30 23:52:16 INFO  ParserWorker:72 - DODAJE KAYA  Miasteczko  Miejski Ośrodek Kult Skubas                                  
+2015-04-30 23:52:18 INFO  ParserWorker:72 - DODAJE KAYA  Kraków       OFF PLUS Camera     Skubas                                  
+2015-04-30 23:52:18 INFO  ParserWorker:72 - DODAJE KAYA  Lublin                           Skubas                                  
+2015-04-30 23:52:18 INFO  ParserWorker:72 - DODAJE KAYA  KRAKÓW      CZYŻYNALIA           MARIA PESZEK                            
+2015-04-30 23:52:19 INFO  ParserWorker:72 - DODAJE KAYA  Goleniów    Plac Planty          Zakopower                               
+2015-04-30 23:52:19 INFO  ParserWorker:72 - DODAJE KAYA  Konstancin  Park Zdrojowy        Skubas                                  
+2015-04-30 23:52:20 INFO  ParserWorker:72 - DODAJE KAYA  Rzeszów      Festiwal Przestrzen Skubas                                  
+2015-04-30 23:52:20 INFO  ParserWorker:72 - DODAJE KAYA  KATOWICE    Juwenalia Śląskie 20 MARIA PESZEK                            
+2015-04-30 23:52:20 INFO  ParserWorker:72 - DODAJE KAYA  POZNAŃ      JUWENALIA - ul. Ptas MARIA PESZEK                            
+2015-04-30 23:52:22 INFO  ParserWorker:72 - DODAJE KAYA  KIELCE      Bohomass Lab         MARIA PESZEK                            
+2015-04-30 23:52:22 INFO  ParserWorker:72 - DODAJE KAYA  WARSZAWA    Orange Warsaw Festiv MARIA PESZEK                            
+2015-04-30 23:52:23 INFO  ParserWorker:72 - DODAJE KAYA  Transorient  LFO Oświęcim        Kayah                                   
+2015-04-30 23:52:23 INFO  ParserWorker:72 - DODAJE KAYA  Koszalin                         Skubas                                  
+2015-04-30 23:52:24 INFO  ParserWorker:72 - DODAJE KAYA  Tarnów                           Skubas                                  
+2015-04-30 23:52:24 INFO  ParserWorker:72 - DODAJE KAYA  Bochnia                          Skubas                                  
+2015-04-30 23:52:24 INFO  ParserWorker:72 - DODAJE KAYA  Gorzów Wiel Gorzów Wielkopolski  Zakopower                               
+2015-04-30 23:52:26 INFO  ParserWorker:72 - DODAJE KAYA  Opener                           Skubas                                  
+2015-04-30 23:52:26 INFO  ParserWorker:72 - DODAJE KAYA  TORUŃ       Amfiteatr Muzeum Etn MARIA PESZEK                            
+2015-04-30 23:52:27 INFO  ParserWorker:72 - DODAJE KAYA  Nidzica     Nidzica              Zakopower                               
+2015-04-30 23:52:27 INFO  ParserWorker:72 - DODAJE KAYA  Węgorzewo    Seven Fest          Skubas                                  
+2015-04-30 23:52:28 INFO  ParserWorker:72 - DODAJE KAYA  Czarnków                         Zakopower                               
+2015-04-30 23:52:28 INFO  ParserWorker:72 - DODAJE KAYA  Olesno      Amfiteatr            Kayah                                   
+2015-04-30 23:52:28 INFO  ParserWorker:72 - DODAJE KAYA  Olesno      Olesno               Kayah                                   
+2015-04-30 23:52:30 INFO  ParserWorker:72 - DODAJE KAYA  Pruszcz Gd.  Faktoria Kultury    Skubas                                  
+2015-04-30 23:52:30 INFO  ParserWorker:72 - DODAJE KAYA  Kępno       Na terenie KOSiR     Kayah                                   
+2015-04-30 23:52:31 INFO  ParserWorker:72 - DODAJE KAYA  Koszalin                         Zakopower                               
+2015-04-30 23:52:32 INFO  ParserWorker:72 - DODAJE KAYA  Grębocice   Grębocice            Zakopower                               
+2015-04-30 23:52:33 INFO  Kayax:99 - Skończyłem
+2015-04-30 23:52:33 INFO  LiveNation:114 - Uruchamiam LiveNation
+2015-04-30 23:52:34 INFO  ParserWorker:72 - DODAJE LIVE Warsaw       Torwar               Def Leppard Lessdress, Exlibris         
+2015-04-30 23:52:35 INFO  ParserWorker:72 - DODAJE LIVE Lódz         Atlas Arena          IMPACT FESTIVAL 2015 Slipknot, Godsmack,
+2015-04-30 23:52:35 INFO  ParserWorker:72 - DODAJE LIVE Kraków       Kwadrat Klub         Gojira                                  
+2015-04-30 23:52:35 INFO  ParserWorker:72 - DODAJE LIVE Warsaw       Torwar               Roxette Eskobar                         
+2015-04-30 23:52:36 INFO  ParserWorker:72 - DODAJE LIVE Lódz         Atlas Arena          Judas Priest Five Finger Death Punch    
+2015-04-30 23:52:36 INFO  ParserWorker:72 - DODAJE LIVE Kraków       TAURON Arena Kraków  Mark Knopfler                           
+2015-04-30 23:52:37 INFO  ParserWorker:72 - DODAJE LIVE Warsaw       Stadion Narodowy     AC/DC                                   
+2015-04-30 23:52:37 INFO  ParserWorker:72 - DODAJE LIVE Gdansk       ERGO ARENA           Lenny Kravitz                           
+2015-04-30 23:52:37 INFO  ParserWorker:72 - DODAJE LIVE Warsaw       Stadion Narodowy     Violetta                                
+2015-04-30 23:52:38 INFO  ParserWorker:72 - DODAJE LIVE Kraków       TAURON Arena Kraków  Violetta                                
+2015-04-30 23:52:38 INFO  ParserWorker:72 - DODAJE LIVE Warsaw       Stodoła              UB40 (Ali Campbell, Astro and Mickey Vir
+2015-04-30 23:52:38 INFO  ParserWorker:72 - DODAJE LIVE Kraków       TAURON Arena Kraków  Violetta                                
+2015-04-30 23:52:39 INFO  ParserWorker:72 - DODAJE LIVE Lódz         Atlas Arena          Nickelback: No Fixed Address Tour Nickel
+2015-04-30 23:52:42 INFO  ParserWorker:72 - DODAJE LIVE Warsaw       Torwar               Diana Krall                             
+2015-04-30 23:52:43 INFO  ParserWorker:72 - DODAJE LIVE Warsaw       Torwar               Simply Red                              
+2015-04-30 23:52:43 INFO  ParserWorker:72 - DODAJE LIVE Szczecin     Azoty Arena          Chris Botti                             
+2015-04-30 23:52:43 INFO  ParserWorker:72 - DODAJE LIVE Poznan       MTP - Sala Ziemi     Chris Botti                             
+2015-04-30 23:52:44 INFO  ParserWorker:72 - DODAJE LIVE Wroclaw      Hala Stulecia        Chris Botti                             
+2015-04-30 23:52:44 INFO  ParserWorker:72 - DODAJE LIVE Lublin       Hala Globus          Chris Botti                             
+2015-04-30 23:52:44 INFO  ParserWorker:72 - DODAJE LIVE Wroclaw      Sala audytoryjna WCK John Mayall                             
+2015-04-30 23:52:45 INFO  ParserWorker:72 - DODAJE LIVE Kraków       ICE Kraków Congress  Chris Botti                             
+2015-04-30 23:52:46 INFO  ParserWorker:72 - DODAJE LIVE Warsaw       Torwar               Chris Botti                             
+2015-04-30 23:52:46 INFO  Prestige:62 - Uruchamiam Prestige
+2015-04-30 23:52:47 INFO  ParserWorker:72 - DODAJE PRES <br />Gdańsk <br />Gdańsk/Sopot   Thirty Seconds To Mars                  
+2015-04-30 23:52:47 INFO  ParserWorker:72 - DODAJE PRES ATLAS ARENA
+ ATLAS ARENA
+<br />Ł& Scorpions                               
+2015-04-30 23:52:48 INFO  ParserWorker:72 - DODAJE PRES HALA TORWAR
+ HALA TORWAR
+<br />Wa Spring Love Festival INDILA             
+2015-04-30 23:52:48 INFO  ParserWorker:72 - DODAJE PRES Progresja
+<b Progresja
+<br />Wars Rise Against                            
+2015-04-30 23:52:52 INFO  ParserWorker:72 - DODAJE PRES HALA TORWAR
+ HALA TORWAR
+<br />Wa Motorhead                               
+2015-04-30 23:52:52 INFO  ParserWorker:72 - DODAJE PRES Jarocin
+<br  Jarocin
+<br />Jaroci Jarocin Festiwal 2015                   
+2015-04-30 23:52:52 INFO  ParserWorker:72 - DODAJE PRES Stadion MOSi Stadion MOSiR RYBNIK Linkin Park                             
+2015-04-30 23:52:53 INFO  ParserWorker:72 - DODAJE PRES ERGO ARENA
+< ERGO ARENA
+<br />Gda Dave Matthews Band                      
+2015-04-30 23:52:53 INFO  ParserWorker:72 - DODAJE PRES HALA TORWAR
+ HALA TORWAR
+<br />Wa Manowar Torwar                          
+2015-04-30 23:52:53 INFO  Prestige:65 - Skończyłem
+2015-04-30 23:52:53 INFO  SongKick:83 - Uruchamiam SongKick
+2015-04-30 23:52:55 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Narodowy             AC/DC                                   
+2015-04-30 23:52:55 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Hall                 Motörhead                               
+2015-04-30 23:52:56 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Palladium            Passenger                               
+2015-04-30 23:52:56 INFO  ParserWorker:72 - DODAJE SONG Rybnik       Stadium              Linkin Park                             
+2015-04-30 23:52:57 INFO  ParserWorker:72 - DODAJE SONG Krakow       Arena                Faith No More                           
+2015-04-30 23:52:57 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Zone                 Rise Against                            
+2015-04-30 23:52:58 INFO  ParserWorker:72 - DODAJE SONG Krakow       Kraków               Mark Knopfler                           
+2015-04-30 23:52:58 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Hall                 Def Leppard                             
+2015-04-30 23:52:59 INFO  ParserWorker:72 - DODAJE SONG Gdansk       Arena                Lenny Kravitz                           
+2015-04-30 23:53:00 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Hall                 Roxette                                 
+2015-04-30 23:53:00 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Hall                 Simply Red                              
+2015-04-30 23:53:00 INFO  ParserWorker:72 - DODAJE SONG Krakow       Wisly                Limp Bizkit                             
+2015-04-30 23:53:01 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Torwar               Apocalyptica                            
+2015-04-30 23:53:01 INFO  ParserWorker:72 - DODAJE SONG Lodz         Arena                Deep Purple                             
+2015-04-30 23:53:05 INFO  ParserWorker:72 - DODAJE SONG Lodz         Arena                Scorpions                               
+2015-04-30 23:53:05 INFO  ParserWorker:72 - DODAJE SONG Lodz         Arena                Judas Priest                            
+2015-04-30 23:53:07 INFO  ParserWorker:72 - DODAJE SONG Krakow       Nowa                 Apocalyptica                            
+2015-04-30 23:53:08 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Hall                 Diana Krall                             
+2015-04-30 23:53:08 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Hall                 Toto                                    
+2015-04-30 23:53:09 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Hall                 Manowar                                 
+2015-04-30 23:53:09 INFO  ParserWorker:72 - DODAJE SONG Krakow       Kraków               Foo Fighters                            
+2015-04-30 23:53:10 INFO  ParserWorker:72 - DODAJE SONG Gdansk       Arena                Dave Matthews Band                      
+2015-04-30 23:53:10 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Hall                 Marcus Miller                           
+2015-04-30 23:53:11 INFO  ParserWorker:72 - DODAJE SONG Krakow       Kwadrat              Gojira                                  
+2015-04-30 23:53:11 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Palladium            Selah Sue                               
+2015-04-30 23:53:11 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Studio               Flying Lotus                            
+2015-04-30 23:53:13 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Zone                 Editors                                 
+2015-04-30 23:53:13 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Zone                 Blind Guardian                          
+2015-04-30 23:53:13 INFO  ParserWorker:72 - DODAJE SONG Wrocław      Orbita               Toto                                    
+2015-04-30 23:53:14 INFO  ParserWorker:72 - DODAJE SONG Wrocław      Stulecia             Hans Zimmer                             
+2015-04-30 23:53:14 INFO  ParserWorker:72 - DODAJE SONG Krakow       Centre               Kraftwerk                               
+2015-04-30 23:53:14 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Progresja            Rotting Christ                          
+2015-04-30 23:53:15 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Iskra                Fatboy Slim                             
+2015-04-30 23:53:15 INFO  ParserWorker:72 - DODAJE SONG Słupsk       Charlotty            Santana                                 
+2015-04-30 23:53:16 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Hall                 Chris Botti                             
+2015-04-30 23:53:17 INFO  ParserWorker:72 - DODAJE SONG Wrocław      Helios)              Selah Sue                               
+2015-04-30 23:53:17 INFO  ParserWorker:72 - DODAJE SONG Lodz         Arena                Nickelback                              
+2015-04-30 23:53:18 INFO  ParserWorker:72 - DODAJE SONG Krakow       Studio               Selah Sue                               
+2015-04-30 23:53:18 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Proxima              The Gaslight Anthem                     
+2015-04-30 23:53:18 INFO  ParserWorker:72 - DODAJE SONG Gdansk       Arena                Thirty Seconds to Mars                  
+2015-04-30 23:53:22 INFO  ParserWorker:72 - DODAJE SONG Słupsk       Charlotty            Robert Plant                            
+2015-04-30 23:53:22 INFO  ParserWorker:72 - DODAJE SONG Katowice     Festival             Kiasmos                                 
+2015-04-30 23:53:24 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Zone                 Die Krupps                              
+2015-04-30 23:53:24 INFO  ParserWorker:72 - DODAJE SONG Poznan       Ziemi                Marcus Miller                           
+2015-04-30 23:53:24 INFO  ParserWorker:72 - DODAJE SONG Słupsk       Charlotty            ZZ Top                                  
+2015-04-30 23:53:25 INFO  ParserWorker:72 - DODAJE SONG Wrocław      Switu                D.R.I.                                  
+2015-04-30 23:53:25 INFO  ParserWorker:72 - DODAJE SONG Krakow       Kraków               Eros Ramazzotti                         
+2015-04-30 23:53:26 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Palladium            Cody Simpson                            
+2015-04-30 23:53:26 INFO  ParserWorker:72 - DODAJE SONG Lodz         Wytwornia            Selah Sue                               
+2015-04-30 23:53:27 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Arsenal              Yasmine Hamdan                          
+2015-04-30 23:53:28 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Zone                 Stratovarius                            
+2015-04-30 23:53:28 INFO  ParserWorker:72 - DODAJE SONG Wrocław      Stulecia             Chris Botti                             
+2015-04-30 23:53:28 INFO  ParserWorker:72 - DODAJE SONG Poznan       Poznańskie           Editors                                 
+2015-04-30 23:53:32 INFO  ParserWorker:72 - DODAJE SONG Gdansk       B90                  Selah Sue                               
+2015-04-30 23:53:32 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Hydrozagadka         La Dispute                              
+2015-04-30 23:53:32 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Zone                 Machine Head                            
+2015-04-30 23:53:33 INFO  ParserWorker:72 - DODAJE SONG Wrocław      Wck                  John Mayall                             
+2015-04-30 23:53:34 INFO  ParserWorker:72 - DODAJE SONG Krakow       Centre               Chris Botti                             
+2015-04-30 23:53:34 INFO  ParserWorker:72 - DODAJE SONG Katowice     Katowice             Marcus Miller                           
+2015-04-30 23:53:35 INFO  ParserWorker:72 - DODAJE SONG Krakow       ZOO                  Dinner                                  
+2015-04-30 23:53:35 INFO  ParserWorker:72 - DODAJE SONG Krakow       Arena                André Rieu                              
+2015-04-30 23:53:36 INFO  ParserWorker:72 - DODAJE SONG Gdynia       Atlantic             Rotting Christ                          
+2015-04-30 23:53:36 INFO  ParserWorker:72 - DODAJE SONG Krakow       Fabryka              Testament                               
+2015-04-30 23:53:36 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Kulturalna           Buke and Gase                           
+2015-04-30 23:53:37 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Arsenal              Yasmine Hamdan                          
+2015-04-30 23:53:37 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Hydrozagadka         Rosetta                                 
+2015-04-30 23:53:38 INFO  ParserWorker:72 - DODAJE SONG Krakow       Fabryka              Machine Head                            
+2015-04-30 23:53:39 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Hall                 Joe Satriani                            
+2015-04-30 23:53:40 INFO  ParserWorker:72 - DODAJE SONG Krakow       Fabryka              Annihilator                             
+2015-04-30 23:53:40 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Torwar               John Williams (Composer)                
+2015-04-30 23:53:41 INFO  ParserWorker:72 - DODAJE SONG Poznan       Minogą               The Real McKenzies                      
+2015-04-30 23:53:41 INFO  ParserWorker:72 - DODAJE SONG Gdansk       B90                  Testament                               
+2015-04-30 23:53:42 INFO  ParserWorker:72 - DODAJE SONG Poznan       Ziemi                Chris Botti                             
+2015-04-30 23:53:42 INFO  ParserWorker:72 - DODAJE SONG Krakow       Nowa                 Epica and Eluveitie                     
+2015-04-30 23:53:43 INFO  ParserWorker:72 - DODAJE SONG Pola Rise    Friends              Fair Weather Friends, Pola Rise, and Dog
+2015-04-30 23:53:44 INFO  ParserWorker:72 - DODAJE SONG Szczecin     venue                AERA                                    
+2015-04-30 23:53:44 INFO  ParserWorker:72 - DODAJE SONG Lodz         venue                Vólkova                                 
+2015-04-30 23:53:45 INFO  ParserWorker:72 - DODAJE SONG Warsaw       venue                Vólkova                                 
+2015-04-30 23:53:45 INFO  ParserWorker:72 - DODAJE SONG Wrocław      Festival             King Dude                               
+2015-04-30 23:53:46 INFO  ParserWorker:72 - DODAJE SONG Krakow       RE                   Screaming Females                       
+2015-04-30 23:53:46 INFO  ParserWorker:72 - DODAJE SONG Krakow       Rdza                 Moon Boots                              
+2015-04-30 23:53:47 INFO  ParserWorker:72 - DODAJE SONG Poznan       Lab                  Moon Boots                              
+2015-04-30 23:53:48 INFO  ParserWorker:72 - DODAJE SONG Kielce       Kadzielnia           Perfect                                 
+2015-04-30 23:53:48 INFO  ParserWorker:72 - DODAJE SONG Gniezno      Gniezno              UFly                                    
+2015-04-30 23:53:48 INFO  ParserWorker:72 - DODAJE SONG Krakow       Fabryka              The Real McKenzies                      
+2015-04-30 23:53:52 INFO  ParserWorker:72 - DODAJE SONG Poznan       Minoga               Man Without Country                     
+2015-04-30 23:53:52 INFO  ParserWorker:72 - DODAJE SONG Krakow       Fabryka              Accept                                  
+2015-04-30 23:53:53 INFO  ParserWorker:72 - DODAJE SONG Poznan       LAS                  Shivas Nat                              
+2015-04-30 23:53:53 INFO  ParserWorker:72 - DODAJE SONG Krakow       Betel                Buke and Gase                           
+2015-04-30 23:53:53 INFO  ParserWorker:72 - DODAJE SONG Wrocław      Arsenal              Yasmine Hamdan                          
+2015-04-30 23:53:54 INFO  ParserWorker:72 - DODAJE SONG Wrocław      Alibi                Cannibal Corpse                         
+2015-04-30 23:53:55 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Stodoła              Fismoll                                 
+2015-04-30 23:53:55 INFO  ParserWorker:72 - DODAJE SONG Lodz         Arena                Imagine Dragons                         
+2015-04-30 23:53:56 INFO  ParserWorker:72 - DODAJE SONG Poznan       Kontenerart          Sun Glitters                            
+2015-04-30 23:53:56 INFO  ParserWorker:72 - DODAJE SONG Sopot        Sztuki               DJ Jazzy Jeff                           
+2015-04-30 23:53:57 INFO  ParserWorker:72 - DODAJE SONG Warsaw       Chmury               Coughdust and Demonic Death Judge       
+2015-04-30 23:53:57 INFO  ParserWorker:72 - DODAJE SONG Vedonist     Denied               Vesania                                 
+2015-04-30 23:53:57 INFO  ParserWorker:72 - DODAJE SONG Krakow       Centre               Leszek Mozdzer                          
+2015-04-30 23:53:58 INFO  ParserWorker:72 - DODAJE SONG Wrocław      Alibi                Kat & Roman Kostrzewski                 
+2015-04-30 23:55:58 INFO  AlterArt:56 - Uruchamiam AlterArt
+2015-04-30 23:55:58 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-04-30 23:55:58 INFO  EBilet:92 - Uruchamiam EBilet
+2015-04-30 23:56:00 INFO  GoAhead:56 - Uruchamiam Go Ahead
+2015-04-30 23:56:01 INFO  Kayax:96 - Uruchamiam Kayax
+2015-04-30 23:56:02 INFO  LiveNation:114 - Uruchamiam LiveNation
+2015-04-30 23:56:03 INFO  Prestige:62 - Uruchamiam Prestige
+2015-04-30 23:56:04 INFO  SongKick:83 - Uruchamiam SongKick
+2015-04-30 23:56:05 INFO  TicketPro:132 - Uruchamiam TicketPro
+2015-04-30 23:56:47 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:56:47 CEST 2015
+------------------------------------------
+2015-04-30 23:56:47 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:56:47 CEST 2015
+------------------------------------------
+2015-04-30 23:56:47 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:56:47 CEST 2015
+------------------------------------------
+2015-04-30 23:56:47 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:56:47 CEST 2015
+------------------------------------------
+2015-04-30 23:56:47 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:56:47 CEST 2015
+------------------------------------------
+2015-04-30 23:56:47 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:56:47 CEST 2015
+------------------------------------------
+2015-04-30 23:56:47 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:56:47 CEST 2015
+------------------------------------------
+2015-04-30 23:56:47 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:56:47 CEST 2015
+------------------------------------------
+2015-04-30 23:57:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:57:00 CEST 2015
+------------------------------------------
+2015-04-30 23:57:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:57:00 CEST 2015
+------------------------------------------
+2015-04-30 23:57:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:57:00 CEST 2015
+------------------------------------------
+2015-04-30 23:57:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:57:00 CEST 2015
+------------------------------------------
+2015-04-30 23:57:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:57:00 CEST 2015
+------------------------------------------
+2015-04-30 23:57:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:57:00 CEST 2015
+------------------------------------------
+2015-04-30 23:57:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:57:00 CEST 2015
+------------------------------------------
+2015-04-30 23:57:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:57:00 CEST 2015
+------------------------------------------
+2015-04-30 23:57:45 INFO  AlterArt:56 - Uruchamiam AlterArt
+2015-04-30 23:57:45 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-04-30 23:57:46 INFO  EBilet:92 - Uruchamiam EBilet
+2015-04-30 23:57:48 INFO  GoAhead:56 - Uruchamiam Go Ahead
+2015-04-30 23:57:48 INFO  Kayax:96 - Uruchamiam Kayax
+2015-04-30 23:57:49 INFO  LiveNation:114 - Uruchamiam LiveNation
+2015-04-30 23:57:50 INFO  Prestige:62 - Uruchamiam Prestige
+2015-04-30 23:57:51 INFO  SongKick:83 - Uruchamiam SongKick
+2015-04-30 23:57:52 INFO  TicketPro:132 - Uruchamiam TicketPro
+2015-04-30 23:58:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:58:00 CEST 2015
+------------------------------------------
+2015-04-30 23:58:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:58:00 CEST 2015
+------------------------------------------
+2015-04-30 23:58:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:58:00 CEST 2015
+------------------------------------------
+2015-04-30 23:58:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:58:00 CEST 2015
+------------------------------------------
+2015-04-30 23:58:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:58:00 CEST 2015
+------------------------------------------
+2015-04-30 23:58:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:58:00 CEST 2015
+------------------------------------------
+2015-04-30 23:58:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:58:00 CEST 2015
+------------------------------------------
+2015-04-30 23:58:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:58:00 CEST 2015
+------------------------------------------
+2015-04-30 23:59:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:59:00 CEST 2015
+------------------------------------------
+2015-04-30 23:59:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:59:00 CEST 2015
+------------------------------------------
+2015-04-30 23:59:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:59:00 CEST 2015
+------------------------------------------
+2015-04-30 23:59:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:59:00 CEST 2015
+------------------------------------------
+2015-04-30 23:59:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:59:00 CEST 2015
+------------------------------------------
+2015-04-30 23:59:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:59:00 CEST 2015
+------------------------------------------
+2015-04-30 23:59:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:59:00 CEST 2015
+------------------------------------------
+2015-04-30 23:59:00 INFO  Worker:44 - Workers are alive @ Thu Apr 30 23:59:00 CEST 2015
+------------------------------------------

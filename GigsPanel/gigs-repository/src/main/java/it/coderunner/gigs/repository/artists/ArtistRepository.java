@@ -6,5 +6,4 @@ import it.coderunner.gigs.repository.IRepository;
 public interface ArtistRepository extends IRepository<Artist, Long> {
 
 	Artists findAll();
-
 }

@@ -1,7 +1,6 @@
 package it.coderunner.gigs.worker.backend.parser.goahead;
 
 import it.coderunner.gigs.worker.backend.parser.ParserWorker;
-import it.coderunner.gigs.worker.backend.parser.TestWorker;
 
 import java.io.IOException;
 
@@ -48,15 +47,14 @@ public class GoAhead extends ParserWorker {
 			int conYear = Integer.valueOf(date.split(" ")[2]);
 			addConcert(name, city, spot, day, month, conYear, "GOAHEAD", url);
 		}
-
 	}
 
 	@Override
-	@Scheduled(fixedDelay = 550000)
+	@Scheduled(fixedDelay = 600000)
 	public void process() {
 		try {
 			log.info("Uruchamiam Go Ahead");
-			workerActivityLogEntry(GoAhead.class.getSimpleName(), "1 AM every day");
+			workerActivityLogEntry(GoAhead.class.getSimpleName(), "Every hour of every day");
 			getData();
 			log.info("Skończyłem");
 		} catch (IOException e) {

@@ -1,27 +1,22 @@
 package it.coderunner.gigs.service.spots;
 
-import it.coderunner.gigs.model.gig.Gig;
-import it.coderunner.gigs.repository.gigs.Gigs;
-import it.coderunner.gigs.service.IService;
+import it.coderunner.gigs.model.spot.Spot;
+import it.coderunner.gigs.repository.spots.Spots;
 
 import java.util.List;
 
 public interface ISpotService {
 
-	
-		
-		void delete(Gig gig);
-		
-		void saveOrUpdate(Gig gig);
-		
-		void save(Gig gig);
+	void delete(Spot spot);
 
-		List<Gig> list(Gigs gigs);
+	void saveOrUpdate(Spot spot);
 
-		long count(Gigs gigs);
-		
-		Gig uniqueObject(Gigs gigs);
+	void save(Spot spot);
 
-	
+	List<Spot> list(Spots spots);
+
+	long count(Spots spots);
+
+	Spot uniqueObject(Spots spots);
 
 }

@@ -8,31 +8,31 @@ import org.hibernate.criterion.Restrictions;
 import it.coderunner.gigs.model.spot.Spot;
 import it.coderunner.gigs.repository.spots.Spots;
 
-public class CriteriaSpots  extends Spots{
+public class CriteriaSpots extends Spots {
 
-	
+	private static final long serialVersionUID = 5636548482181308854L;
 	protected Criteria criteria;
 	protected Criteria criteria2;
-	
-	public CriteriaSpots(Criteria criteria, Criteria criteria2){
+
+	public CriteriaSpots(Criteria criteria, Criteria criteria2) {
 		this.criteria = criteria;
 		this.criteria2 = criteria2;
 	}
-	
-	public Criteria modifyCriteria(Criteria criteria){
-		if (city != null){
+
+	public Criteria modifyCriteria(Criteria criteria) {
+		if (city != null) {
 			criteria.add(Restrictions.eq("city", city));
 		}
-		if (spot != null){
+		if (spot != null) {
 			criteria.add(Restrictions.eq("spot", spot));
 		}
-		if (country != null){
+		if (country != null) {
 			criteria.add(Restrictions.eq("country", country));
 		}
-		
+
 		return criteria;
 	}
-	
+
 	@Override
 	public long count() {
 		// TODO Auto-generated method stub
