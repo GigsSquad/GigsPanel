@@ -1,15 +1,15 @@
 package it.coderunner.gigs.repository.spots;
 
-import java.util.List;
-
 import it.coderunner.gigs.model.gig.Gig;
 import it.coderunner.gigs.model.spot.Spot;
 import it.coderunner.gigs.repository.OrderType;
 import it.coderunner.gigs.repository.Queryable;
-import it.coderunner.gigs.repository.gigs.Gigs;
+
+import java.util.List;
 
 public abstract class Spots extends Queryable<Spot, Long> {
 
+	private static final long serialVersionUID = 80164152842863393L;
 	protected String city;
 	protected String spot;
 	protected String country;

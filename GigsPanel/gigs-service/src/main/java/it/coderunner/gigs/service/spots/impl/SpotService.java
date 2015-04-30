@@ -1,45 +1,38 @@
 package it.coderunner.gigs.service.spots.impl;
 
-import java.util.List;
-
-import it.coderunner.gigs.model.gig.Gig;
-import it.coderunner.gigs.repository.gigs.Gigs;
+import it.coderunner.gigs.model.spot.Spot;
+import it.coderunner.gigs.repository.spots.Spots;
 import it.coderunner.gigs.service.spots.ISpotService;
+
+import java.util.List;
 
 public class SpotService implements ISpotService {
 
 	@Override
-	public void delete(Gig gig) {
-		// TODO Auto-generated method stub
-		
+	public void delete(Spot spot) {
 	}
 
 	@Override
-	public void saveOrUpdate(Gig gig) {
-		// TODO Auto-generated method stub
-		
+	public void saveOrUpdate(Spot spot) {
 	}
 
 	@Override
-	public void save(Gig gig) {
-		// TODO Auto-generated method stub
-		
+	public void save(Spot spot) {
 	}
 
 	@Override
-	public List<Gig> list(Gigs gigs) {
-		// TODO Auto-generated method stub
+	public List<Spot> list(Spots spots) {
 		return null;
 	}
 
 	@Override
-	public long count(Gigs gigs) {
+	public long count(Spots spots) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public Gig uniqueObject(Gigs gigs) {
+	public Spot uniqueObject(Spots spots) {
 		// TODO Auto-generated method stub
 		return null;
 	}
