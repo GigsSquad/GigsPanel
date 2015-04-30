@@ -1,5 +1,6 @@
 package it.coderunner.gigs.worker.backend.parser.goahead;
 
+import it.coderunner.gigs.model.gig.Agency;
 import it.coderunner.gigs.worker.backend.parser.ParserWorker;
 
 import java.io.IOException;
@@ -45,7 +46,7 @@ public class GoAhead extends ParserWorker {
 				month++;
 			month++;
 			int conYear = Integer.valueOf(date.split(" ")[2]);
-			addConcert(name, city, spot, day, month, conYear, "GOAHEAD", url);
+			addConcert(name, city, spot, day, month, conYear, Agency.GOAHEAD, url);
 		}
 	}
 

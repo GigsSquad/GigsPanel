@@ -51,4 +51,11 @@ public class Artist extends BaseEntity<Long> {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "tag")
 	private Tag tag;
+
+	public Artist() {
+	}
+
+	public Artist(String name) {
+		this.name = name;
+	}
 }

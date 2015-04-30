@@ -1,5 +1,6 @@
 package it.coderunner.gigs.worker.backend.parser.ticketpro;
 
+import it.coderunner.gigs.model.gig.Agency;
 import it.coderunner.gigs.worker.backend.parser.ParserWorker;
 
 import java.io.IOException;
@@ -71,7 +72,7 @@ public class TicketPro extends ParserWorker {
 						continue;
 					}
 
-					addConcert(conName, conCity, conSpot, conDay, conMonth, conYear, "TICKETPRO", conUrl);
+					addConcert(conName, conCity, conSpot, conDay, conMonth, conYear, Agency.TICKETPRO, conUrl);
 				} else
 					// jest wiecej niz jeden koncert
 					// System.out.println(conName);
@@ -115,7 +116,7 @@ public class TicketPro extends ParserWorker {
 					String[] conLocationArray = conLocation.split(",");
 					String conSpot = conLocationArray[0];
 					String conCity = conLocationArray[1];
-					addConcert(conName, conCity, conSpot, conDay, conMonth, conYear, "TICKETPRO", conUrl);
+					addConcert(conName, conCity, conSpot, conDay, conMonth, conYear, Agency.TICKETPRO, conUrl);
 
 				} catch (ArrayIndexOutOfBoundsException e) {
 					log.info("wygląda na obsługiwany, lol", e);

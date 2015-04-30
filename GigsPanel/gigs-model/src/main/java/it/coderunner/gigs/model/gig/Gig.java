@@ -54,7 +54,7 @@ public class Gig extends BaseEntity<Long> {
 
     @Getter
     @Setter
-    private String agency;
+    private Agency agency;
 
     @Getter
     @Setter
@@ -71,7 +71,7 @@ public class Gig extends BaseEntity<Long> {
     
     public Gig() {}
     
-    public Gig(Artist artist, Spot spot, Date date, String agency, String url)
+    public Gig(Artist artist, Spot spot, Date date, Agency agency, String url)
     {
     	this.artist = artist;
     	this.spot = spot;

@@ -1,5 +1,6 @@
 package it.coderunner.gigs.worker.backend.parser.kayax;
 
+import it.coderunner.gigs.model.gig.Agency;
 import it.coderunner.gigs.worker.backend.parser.ParserWorker;
 
 import java.io.IOException;
@@ -55,7 +56,7 @@ public class Kayax extends ParserWorker {
 					conName = conArtistCityArray[0];
 					conCity = conArtistCityArray[1];
 					conSpot = conArtistCityArray[2];
-					addConcert(conName, conCity, conSpot, conDay, conMonth, conYear, "KAYAX", conUrl);
+					addConcert(conName, conCity, conSpot, conDay, conMonth, conYear, Agency.KAYAX, conUrl);
 				}
 
 				if (conArtistCityArray.length == 2) // czasem nie ma klubu
@@ -75,12 +76,12 @@ public class Kayax extends ParserWorker {
 							conCity = conArtistCityArray[1];
 							conSpot = row.getElementsByTag("a").get(1).text().split(",")[0];
 						}
-						addConcert(conName, conCity, conSpot, conDay, conMonth, conYear, "KAYAX", conUrl);
+						addConcert(conName, conCity, conSpot, conDay, conMonth, conYear, Agency.KAYAX, conUrl);
 					} else if (!conArtistCityArray[1].toLowerCase().contains("impreza")) {
 						conName = conArtistCityArray[0];
 						conCity = conArtistCityArray[1];
 						conSpot = row.getElementsByTag("a").get(1).text().split(",")[0];
-						addConcert(conName, conCity, conSpot, conDay, conMonth, conYear, "KAYAX", conUrl);
+						addConcert(conName, conCity, conSpot, conDay, conMonth, conYear, Agency.KAYAX, conUrl);
 					}
 				}
 

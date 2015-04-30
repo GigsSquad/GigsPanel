@@ -50,4 +50,10 @@ public class ArtistService implements IArtistService {
 		artistRepository.save(artist);
 	}
 
+	//TODO wyszukiwanie artystów po nazwie z LIKE 
+	@Override
+	public List<Artist> findArtistsByArtistLike(Artists artists) {
+		return artistRepository.findAll().merge(artists).list();
+	}
+
 }

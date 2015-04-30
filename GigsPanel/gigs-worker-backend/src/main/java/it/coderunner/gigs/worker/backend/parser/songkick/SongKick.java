@@ -1,5 +1,6 @@
 package it.coderunner.gigs.worker.backend.parser.songkick;
 
+import it.coderunner.gigs.model.gig.Agency;
 import it.coderunner.gigs.worker.backend.parser.ParserWorker;
 
 import java.io.IOException;
@@ -64,7 +65,7 @@ public class SongKick extends ParserWorker {
 			String places = el.getElementsByClass("subject").first().text();
 			String artist = el.getElementsByClass("subject").first().select("a").select("strong").text();
 			String spot = spotCity(places)[0], city = spotCity(places)[1];
-			addConcert(artist, city, spot, day, month, year, "SONGKICK", url);
+			addConcert(artist, city, spot, day, month, year, Agency.SONGKICK, url);
 		}
 	}
 

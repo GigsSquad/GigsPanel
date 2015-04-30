@@ -1,5 +1,6 @@
 package it.coderunner.gigs.worker.backend.parser.prestige;
 
+import it.coderunner.gigs.model.gig.Agency;
 import it.coderunner.gigs.worker.backend.parser.ParserWorker;
 
 import java.io.IOException;
@@ -50,7 +51,7 @@ public class Prestige extends ParserWorker {
 
 			// System.out.println(conDay+"\n"+ conMonth+"\n"+conYear+"\n");
 			// System.out.println(conCity+"$$$"+conSpot);
-			addConcert(conName, conCity, conSpot, conDay, conMonth, conYear, "PRESTIGE", conUrl);
+			addConcert(conName, conCity, conSpot, conDay, conMonth, conYear, Agency.PRESTIGE, conUrl);
 			// agencyName, conUrl);
 		}
 	}
