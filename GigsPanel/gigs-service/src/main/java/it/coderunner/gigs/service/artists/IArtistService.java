@@ -16,6 +16,8 @@ public interface IArtistService extends IService {
 
 	List<Artist> list(Artists artists);
 
+	List<Artist> findArtistsByArtistLike(Artists artists); //TODO
+
 	long count(Artists artists);
 
 	Artist uniqueObject(Artists artists);

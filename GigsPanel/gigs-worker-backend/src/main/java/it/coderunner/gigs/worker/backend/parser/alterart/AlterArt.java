@@ -1,5 +1,6 @@
 package it.coderunner.gigs.worker.backend.parser.alterart;
 
+import it.coderunner.gigs.model.gig.Agency;
 import it.coderunner.gigs.worker.backend.parser.ParserWorker;
 
 import java.io.IOException;
@@ -45,7 +46,7 @@ public class AlterArt extends ParserWorker {
 			int day = Integer.valueOf(dateStrArr[0]);
 			int month = Integer.valueOf(dateStrArr[1]);
 			int year = Integer.valueOf(dateStrArr[2]);
-			addConcert(names.get(i).text(), cities.get(i).text(), spots.get(i).text(), day, month, year, "ALTERART", urls.get(i));
+			addConcert(names.get(i).text(), cities.get(i).text(), spots.get(i).text(), day, month, year, Agency.ALTERART, urls.get(i));
 		}
 	}
 

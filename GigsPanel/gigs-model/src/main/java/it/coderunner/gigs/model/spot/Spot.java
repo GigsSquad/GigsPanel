@@ -22,39 +22,48 @@ import lombok.Setter;
  * Created by Jakub on 2015-04-14.
  */
 @Entity
-@Table(name="spots")
+@Table(name = "spots")
 public class Spot extends BaseEntity<Long> {
 
-    private static final long serialVersionUID = 5447213465791330498L;
+	private static final long serialVersionUID = 5447213465791330498L;
 
-    @Id
-    @GeneratedValue
-    @Getter
-    @Column(name = "id_spot")
-    private Long id;
-    
-    
-    @Getter @Setter
-    @OneToMany(mappedBy = "spot", targetEntity = Gig.class, cascade = CascadeType.ALL)
-    private Set<Gig> gigs = new HashSet<Gig>();
-    
-    @Getter
-    @Setter
-    private String city;
+	@Id
+	@GeneratedValue
+	@Getter
+	@Column(name = "id_spot")
+	private Long id;
 
-    @Getter
-    @Setter
-    private String spot;
+	@Getter
+	@Setter
+	@OneToMany(mappedBy = "spot", targetEntity = Gig.class, cascade = CascadeType.ALL)
+	private Set<Gig> gigs = new HashSet<Gig>();
 
-    @Getter
-    @Setter
-    private double lat;
+	@Getter
+	@Setter
+	private String city;
 
-    @Getter
-    @Setter
-    private double lon;
+	@Getter
+	@Setter
+	private String spot;
 
-    @Getter
-    @Setter
-    private Country country;
+	@Getter
+	@Setter
+	private double lat;
+
+	@Getter
+	@Setter
+	private double lon;
+
+	@Getter
+	@Setter
+	private Country country;
+
+	public Spot() {
+	};
+
+	public Spot(String city, String spot, Country country) {
+		this.city = city;
+		this.spot = spot;
+		this.country = country;
+	}
 }

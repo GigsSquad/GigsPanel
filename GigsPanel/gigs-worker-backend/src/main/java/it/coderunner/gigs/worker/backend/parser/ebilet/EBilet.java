@@ -1,5 +1,6 @@
 package it.coderunner.gigs.worker.backend.parser.ebilet;
 
+import it.coderunner.gigs.model.gig.Agency;
 import it.coderunner.gigs.worker.backend.parser.ParserWorker;
 
 import java.io.IOException;
@@ -64,9 +65,9 @@ public class EBilet extends ParserWorker {
 							}
 
 						} catch (StringIndexOutOfBoundsException e) {
-							log.info("conDate: " + conDate, e);
+							//parseError("conDate: " + conDate);
 						} catch (NullPointerException npe) {
-							log.info("conDate = null", npe);
+							//parseError("conDate = null");
 							//TODO coś z tym trzeba zrobić, bo nie może być tak że nie ma daty albo wpisuje nie wiadomo co ;)
 						}
 
@@ -75,26 +76,21 @@ public class EBilet extends ParserWorker {
 						String[] ci = kod.split(" ");
 						club = cl[0];
 						city = ci[ci.length - 1];
-						addConcert(conArtist, city, club, day, month, year, "EBILET", conUrl);
+						addConcert(conArtist, city, club, day, month, year, Agency.EBILET, conUrl);
 
 					}
 				}
 			}
 			poddoc = null;
 		}
-		
 	}
 
 	@Override
 	@Scheduled(fixedDelay = 600000)
 	public void process() {
-		try {
-			log.info("Uruchamiam EBilet");
-			workerActivityLogEntry(EBilet.class.getSimpleName(), "Every hour of every day");
-			getData();
-			log.info("Skończyłem");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//			log.info("Uruchamiam EBilet");
+//			workerActivityLogEntry(EBilet.class.getSimpleName(), "Every hour of every day");
+//			getData();
+//			log.info("Skończyłem");
 	}
 }

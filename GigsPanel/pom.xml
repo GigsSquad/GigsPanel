@@ -33,7 +33,7 @@
 				<jdbc.password>GIG$$$finder112!</jdbc.password>
 				<jdbc.hibernate.dialect>org.hibernate.dialect.MySQLDialect</jdbc.hibernate.dialect>
 				<jdbc.hibernate.hbm2ddl.auto>create</jdbc.hibernate.hbm2ddl.auto>
-				
+
 				<log4j.filepath.basedir></log4j.filepath.basedir>
 				<log4j.console.treshold>OFF</log4j.console.treshold>
 				<log4j.i18n.treshold>DEBUG</log4j.i18n.treshold>
@@ -185,6 +185,9 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
 		</dependency>
+
+
+
 	</dependencies>
 
 	<dependencyManagement>
@@ -294,12 +297,22 @@
 				<artifactId>jackson-core</artifactId>
 				<version>${jackson.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.10</version>
+				<scope>test</scope>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
 	<build>
 		<pluginManagement>
 			<plugins>
+
+
+
+
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>

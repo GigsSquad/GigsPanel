@@ -1,6 +1,8 @@
 package it.coderunner.gigs.worker.backend.parser.livenation;
 
+import it.coderunner.gigs.model.gig.Agency;
 import it.coderunner.gigs.worker.backend.parser.ParserWorker;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -94,7 +96,7 @@ public class LiveNation extends ParserWorker {
 				String place = concert.getElementsByClass("venueName").text();
 				String city = concert.getElementsByClass("venueCity").text();
 
-				addConcert(artist, city, place, day, month, year, "LIVENATION", url);
+				addConcert(artist, city, place, day, month, year, Agency.LIVENATION, url);
 			}
 			Elements next = doc.getElementsByClass("next");
 			String conUrl = next.select("a[href]").attr("href");
