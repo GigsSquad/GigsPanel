@@ -1,47 +1,52 @@
 package it.coderunner.gigs.service.spots.impl;
 
-import java.util.List;
-
-import it.coderunner.gigs.model.gig.Gig;
-import it.coderunner.gigs.repository.gigs.Gigs;
+import it.coderunner.gigs.model.spot.Spot;
+import it.coderunner.gigs.repository.spots.SpotRepository;
+import it.coderunner.gigs.repository.spots.Spots;
 import it.coderunner.gigs.service.spots.ISpotService;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class SpotService implements ISpotService {
+	
+	@Autowired
+	SpotRepository spotRepository;
 
 	@Override
-	public void delete(Gig gig) {
-		// TODO Auto-generated method stub
+	public void delete(Spot spot) {
+		spotRepository.delete(spot);
 		
 	}
 
 	@Override
-	public void saveOrUpdate(Gig gig) {
-		// TODO Auto-generated method stub
+	public void saveOrUpdate(Spot spot) {
+		spotRepository.saveOrUpdate(spot);
 		
 	}
 
 	@Override
-	public void save(Gig gig) {
-		// TODO Auto-generated method stub
+	public void save(Spot spot) {
+			spotRepository.save(spot);
 		
 	}
 
 	@Override
-	public List<Gig> list(Gigs gigs) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Spot> list(Spots spots) {
+		return spotRepository.findAll().merge(spots).list();
 	}
 
 	@Override
-	public long count(Gigs gigs) {
-		// TODO Auto-generated method stub
-		return 0;
+	public long count(Spots spots) {
+		return spotRepository.findAll().merge(spots).count();
 	}
 
 	@Override
-	public Gig uniqueObject(Gigs gigs) {
-		// TODO Auto-generated method stub
-		return null;
+	public Spot uniqueObject(Spots spots) {
+		return spots.findAll().merge(spots).uniqueObject();
 	}
+	
+
 
 }
