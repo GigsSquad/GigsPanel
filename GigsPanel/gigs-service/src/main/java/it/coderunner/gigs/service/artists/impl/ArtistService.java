@@ -46,10 +46,8 @@ public class ArtistService implements IArtistService {
 	}
 
 	@Override
-	public boolean save(Artist artist) {
-		boolean flag = uniqueObject(Artists.findAll().withName(artist.getArtist())) == null;
+	public void save(Artist artist) {
 		artistRepository.save(artist);
-		return flag;
 	}
 
 }

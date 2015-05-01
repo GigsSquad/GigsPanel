@@ -14,13 +14,11 @@ public interface ISpotService {
 		void saveOrUpdate(Spot spot);
 		
 		void save(Spot spot);
-
-		List<Spot> list(Spots spots);
-
-		long count(Spots spots);
-		
-		Spot uniqueObject(Spots spots);
-
 	
+	List<Spot> list(Spots spots);
+
+	long count(Spots spots);
+
+	Spot uniqueObject(Spots spots);
 
 }
