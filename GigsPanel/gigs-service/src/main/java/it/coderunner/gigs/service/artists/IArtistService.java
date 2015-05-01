@@ -12,7 +12,7 @@ public interface IArtistService extends IService {
 
 	void saveOrUpdate(Artist artist);
 
-	boolean save(Artist artist);
+	void save(Artist artist);
 
 	List<Artist> list(Artists artists);
 

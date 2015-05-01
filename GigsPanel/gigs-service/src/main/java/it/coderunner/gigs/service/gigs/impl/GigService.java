@@ -5,6 +5,7 @@ import it.coderunner.gigs.repository.gigs.GigRepository;
 import it.coderunner.gigs.repository.gigs.Gigs;
 import it.coderunner.gigs.service.gigs.IGigService;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,6 +48,7 @@ public class GigService implements IGigService{
 
 	@Override
 	public void save(Gig gig) {
+		gig.setUpdated(new Date());
 		gigRepository.save(gig);
 	}
 

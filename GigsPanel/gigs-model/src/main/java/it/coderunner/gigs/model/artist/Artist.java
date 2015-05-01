@@ -31,8 +31,6 @@ public class Artist extends BaseEntity<Long> {
 
 	private static final long serialVersionUID = 562030051334550950L;
 
-	
-	
 	@Id
 	@GeneratedValue
 	@Getter
@@ -41,17 +39,16 @@ public class Artist extends BaseEntity<Long> {
 
 	@Getter
 	@Setter
-	private String artist;
+	private String name;
 
 	@Getter
 	@Setter
 	@OneToMany(mappedBy = "artist", targetEntity = Gig.class, cascade = CascadeType.ALL)
-	private Set<Gig> gig = new HashSet<Gig>();	
-	
+	private Set<Gig> gig = new HashSet<Gig>();
+
 	@Getter
 	@Setter
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "tag")
 	private Tag tag;
-
 }

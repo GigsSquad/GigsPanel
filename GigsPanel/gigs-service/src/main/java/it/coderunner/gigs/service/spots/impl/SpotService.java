@@ -17,13 +17,14 @@ public class SpotService implements ISpotService {
 	@Override
 	public void delete(Spot spot) {
 		spotRepository.delete(spot);
-		
 	}
 
 	@Override
 	public void saveOrUpdate(Spot spot) {
+
 		spotRepository.saveOrUpdate(spot);
-		
+	
+
 	}
 
 	@Override
