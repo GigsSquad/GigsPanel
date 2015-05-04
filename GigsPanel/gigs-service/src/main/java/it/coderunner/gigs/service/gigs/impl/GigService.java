@@ -28,6 +28,8 @@ public class GigService implements IGigService{
 
 	@Override
 	public void saveOrUpdate(Gig gig) {
+		//dodajemy aktualną datę jako aktualizację
+		gig.setUpdated(new Date());
 		gigRepository.saveOrUpdate(gig);
 	}
 
@@ -48,6 +50,7 @@ public class GigService implements IGigService{
 
 	@Override
 	public void save(Gig gig) {
+		//dodajemy aktualną datę jako aktualizację
 		gig.setUpdated(new Date());
 		gigRepository.save(gig);
 	}

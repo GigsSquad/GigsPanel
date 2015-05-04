@@ -6,6 +6,7 @@ import it.coderunner.gigs.model.gig.Gig;
 import it.coderunner.gigs.model.spot.Spot;
 import it.coderunner.gigs.model.user.Country;
 import it.coderunner.gigs.repository.artists.Artists;
+import it.coderunner.gigs.repository.gigs.Gigs;
 import it.coderunner.gigs.repository.spots.Spots;
 import it.coderunner.gigs.service.artists.IArtistService;
 import it.coderunner.gigs.service.gigs.IGigService;
@@ -19,6 +20,7 @@ import java.util.Date;
 
 import lombok.extern.log4j.Log4j;
 
+import org.apache.commons.lang3.text.WordUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @Log4j
@@ -48,22 +50,29 @@ public abstract class ParserWorker extends Worker {
 			e.printStackTrace();
 		}
 
-		spotString = Normalizer.normalizeSpot(spotString);
-		cityString = Normalizer.normalizeSpot(cityString);
+		artistString = WordUtils.capitalizeFully(artistString).trim();
+		spotString = Normalizer.normalizeSpot(spotString).trim();
+		cityString = Normalizer.normalizeSpot(cityString).trim();
 
+		//tight and elegant możecie się masturbować do tych linijek <3
 		Artist artist = artistService.uniqueObject(Artists.findAll().withName(artistString));
 		if (artist == null) {
 			artist = new Artist(artistString);
 			artistService.saveOrUpdate(artist);
 		}
 
-		Spot spot = spotService.uniqueObject(Spots.findAll().withCity(cityString));
+		Spot spot = spotService.uniqueObject(Spots.findAll().withCity(cityString).withSpot(spotString));
 		if (spot == null) {
 			spot = new Spot(cityString, spotString, Country.POLAND);
 			spotService.saveOrUpdate(spot);
 		}
-
-		gigService.save(new Gig(artist, spot, date, agency, url));
+		
+		Gig gig = gigService.uniqueObject(Gigs.findAll().withArtist(artist).withDate(date));
+		if(gig == null)
+		{
+			gig = new Gig(artist, spot, date, agency, url);
+			gigService.saveOrUpdate(gig);
+		}
 
 		log.info(String.format("DODAJE %-4.4s %-12.12s %-20.20s %-40.40s", agency, cityString, spotString, artistString));
 	}
