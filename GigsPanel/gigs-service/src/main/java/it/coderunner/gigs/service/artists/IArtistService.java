@@ -10,16 +10,15 @@ public interface IArtistService extends IService {
 
 	void delete(Artist artist);
 
-	void saveOrUpdate(Artist artist);
-
 	void save(Artist artist);
 
+	void saveOrUpdate(Artist artist);
+	
 	List<Artist> list(Artists artists);
-
-	List<Artist> findArtistsByArtistLike(Artists artists); //TODO
 
 	long count(Artists artists);
 
 	Artist uniqueObject(Artists artists);
+
 
 }

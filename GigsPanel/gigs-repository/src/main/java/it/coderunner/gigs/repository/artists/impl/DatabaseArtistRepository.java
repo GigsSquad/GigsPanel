@@ -23,4 +23,9 @@ public class DatabaseArtistRepository extends StandardDatabaseRepository<Artist,
 		return Artist.class;
 	}
 
+	@Override
+	public Artists findByNameLike(String name) {
+		return new CriteriaArtists(createCriteria(), createCriteria());
+	}
+
 }

@@ -5,6 +5,8 @@ import it.coderunner.gigs.model.gig.Agency;
 import it.coderunner.gigs.model.gig.Gig;
 import it.coderunner.gigs.model.spot.Spot;
 import it.coderunner.gigs.model.user.Country;
+import it.coderunner.gigs.repository.artists.Artists;
+import it.coderunner.gigs.repository.spots.Spots;
 import it.coderunner.gigs.service.artists.IArtistService;
 import it.coderunner.gigs.service.gigs.IGigService;
 import it.coderunner.gigs.service.spots.ISpotService;
@@ -49,11 +51,17 @@ public abstract class ParserWorker extends Worker {
 		spotString = Normalizer.normalizeSpot(spotString);
 		cityString = Normalizer.normalizeSpot(cityString);
 
-		Artist artist = new Artist(artistString);
-		artistService.saveOrUpdate(artist);
+		Artist artist = artistService.uniqueObject(Artists.findAll().withName(artistString));
+		if (artist == null) {
+			artist = new Artist(artistString);
+			artistService.saveOrUpdate(artist);
+		}
 
-		Spot spot = new Spot(cityString, spotString, Country.POLAND);
-		spotService.saveOrUpdate(spot);
+		Spot spot = spotService.uniqueObject(Spots.findAll().withCity(cityString));
+		if (spot == null) {
+			spot = new Spot(cityString, spotString, Country.POLAND);
+			spotService.saveOrUpdate(spot);
+		}
 
 		gigService.save(new Gig(artist, spot, date, agency, url));
 

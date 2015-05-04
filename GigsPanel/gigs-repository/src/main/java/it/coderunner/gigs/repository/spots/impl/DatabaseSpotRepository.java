@@ -18,14 +18,12 @@ public class DatabaseSpotRepository extends StandardDatabaseRepository<Spot, Lon
 
 	@Override
 	public Spots findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return new CriteriaSpots(createCriteria(), createCriteria());
 	}
 
 	@Override
 	public Class<? extends BaseEntity<Long>> getEntityClass() {
-		// TODO Auto-generated method stub
-		return null;
+		return Spot.class;
 	}
 	
 

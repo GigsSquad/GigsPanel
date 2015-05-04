@@ -24,7 +24,7 @@ public class CriteriaArtists extends Artists {
 
 	public Criteria modifyCriteria(Criteria criteria) {
 		if (StringUtils.isNotBlank(name)) {
-			criteria.add(Restrictions.eq("artist", name));
+			criteria.add(Restrictions.eq("name", name));
 		}
 
 		if (gig != null) {
