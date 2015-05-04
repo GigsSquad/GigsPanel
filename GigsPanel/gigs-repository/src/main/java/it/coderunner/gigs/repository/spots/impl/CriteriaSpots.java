@@ -26,8 +26,8 @@ public class CriteriaSpots extends Spots {
 		if (StringUtils.isNotBlank(city)) {
 			criteria.add(Restrictions.eq("city", city));
 		}
-		if (StringUtils.isNotBlank(spot)) {
-			criteria.add(Restrictions.eq("spot", spot));
+		if (StringUtils.isNotBlank(club)) {
+			criteria.add(Restrictions.eq("club", club));
 		}
 		if (StringUtils.isNotBlank(country)) {
 			criteria.add(Restrictions.eq("country", country));

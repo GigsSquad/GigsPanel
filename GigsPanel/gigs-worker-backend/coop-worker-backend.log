@@ -1568,3 +1568,133 @@ br warsz Manowar Torwar
 2015-05-04 18:56:21 INFO  ParserWorker:77 - DODAJE KAYA Węgorzewo    Seven Fest           Skubas                                  
 2015-05-04 18:56:23 INFO  ParserWorker:77 - DODAJE KAYA Czarnków                          Zakopower                               
 2015-05-04 18:56:24 INFO  ParserWorker:77 - DODAJE KAYA Olesno       Amfiteatr            Kayah                                   
+2015-05-04 18:56:25 INFO  ParserWorker:77 - DODAJE KAYA Olesno       Olesno               Kayah                                   
+2015-05-04 18:56:28 INFO  ParserWorker:77 - DODAJE KAYA Pruszcz Gd   Faktoria Kultury     Skubas                                  
+2015-05-04 18:56:32 INFO  ParserWorker:77 - DODAJE KAYA Kępno        Na Terenie Kosir     Kayah                                   
+2015-05-04 18:56:34 INFO  ParserWorker:77 - DODAJE KAYA Koszalin                          Zakopower                               
+2015-05-04 18:56:35 INFO  ParserWorker:77 - DODAJE KAYA Grębocice    Grębocice            Zakopower                               
+2015-05-04 18:56:36 INFO  Kayax:100 - Skończyłem
+2015-05-04 18:56:36 INFO  LiveNation:116 - Uruchamiam LiveNation
+2015-05-04 18:56:39 INFO  ParserWorker:77 - DODAJE LIVE Warsaw       Torwar               Def Leppard Lessdress, Exlibris         
+2015-05-04 19:13:16 INFO  AlterArt:57 - Uruchamiam AlterArt
+2015-05-04 19:13:16 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-05-04 19:13:18 INFO  ParserWorker:75 - (+) ALTE Warszawa     Marii Konopnickiej 6 The Afghan Whigs                        
+2015-05-04 19:13:19 INFO  ParserWorker:75 - (+) ALTE Kraków       Zabłocie 23          The Afghan Whigs                        
+2015-05-04 19:13:20 INFO  ParserWorker:75 - (+) ALTE Warszawa     Złota 9              Royal Blood                             
+2015-05-04 19:13:22 INFO  ParserWorker:75 - (+) ALTE Warszawa     Mkonopnickiej 6      Warpaint - Selector - Odwołany          
+2015-05-04 19:13:23 INFO  ParserWorker:75 - (+) ALTE Warszawa     Marii Konopnickiej 6 Sbtrkt - Selector                       
+2015-05-04 19:13:25 INFO  ParserWorker:75 - (+) ALTE Kraków       Wawrzyńca 12         Jack White                              
+2015-05-04 19:13:26 INFO  ParserWorker:75 - (+) ALTE Katowice     Spodek               Nine Inch Nails                         
+2015-05-04 19:13:28 INFO  ParserWorker:75 - (+) ALTE Warszawa     Nowy Teatr           Savages                                 
+2015-05-04 19:13:29 INFO  ParserWorker:75 - (+) ALTE Warszawa     Stodoła              Foals                                   
+2015-05-04 19:13:31 INFO  ParserWorker:75 - (+) ALTE Gdynia       Lotnisko Gdyniakosak Rihanna                                 
+2015-05-04 19:13:32 INFO  ParserWorker:75 - (+) ALTE Warszawa     Amfiteatr W Parku So Sigur Rós                               
+2015-05-04 19:13:39 INFO  ParserWorker:75 - (+) ALTE Łódź         Atlas Arena          Green Day                               
+2015-05-04 19:13:41 INFO  ParserWorker:75 - (+) ALTE Warszawa     Hala Torwar          The Xx                                  
+2015-05-04 19:13:42 INFO  ParserWorker:75 - (+) ALTE Warszawa     Konopnickiej 6       Yeasayer                                
+2015-05-04 19:13:43 INFO  ParserWorker:75 - (+) ALTE Warszawa     Stadion Narodowy     Coldplay                                
+2015-05-04 19:13:44 INFO  AlterArt:60 - Skończyłem
+2015-05-04 19:13:44 INFO  GoAhead:57 - Uruchamiam Go Ahead
+2015-05-04 19:13:45 INFO  ParserWorker:75 - (+) GOAH Poznań       Pod Minogą           The Real Mckenzies                      
+2015-05-04 19:13:46 INFO  ParserWorker:75 - (+) GOAH Poznań       Pod Minogą           Man Without Country                     
+2015-05-04 19:13:48 INFO  ParserWorker:75 - (+) GOAH Warszawa     Proxima              Beatsteaks                              
+2015-05-04 19:13:49 INFO  ParserWorker:75 - (+) GOAH Kraków       Hala Wisły           Rock In Summer: Limp Bizkit             
+2015-05-04 19:13:50 INFO  ParserWorker:75 - (+) GOAH Warszawa     Hydrozagadka         La Dispute                              
+2015-05-04 19:13:52 INFO  ParserWorker:75 - (+) GOAH Warszawa     Amfiteatr W Parku So Rock In Summer: Body Count Feat. Ice-t /
+2015-05-04 19:13:53 INFO  ParserWorker:75 - (+) GOAH Warszawa     Proxima              The Gaslight Anthem                     
+2015-05-04 19:15:56 INFO  AlterArt:57 - Uruchamiam AlterArt
+2015-05-04 19:15:56 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-05-04 19:15:59 INFO  ParserWorker:75 - (+) ALTE Warszawa     Marii Konopnickiej 6 The Afghan Whigs                        
+2015-05-04 19:16:00 INFO  ParserWorker:75 - (+) ALTE Kraków       Zabłocie 23          The Afghan Whigs                        
+2015-05-04 19:16:02 INFO  ParserWorker:75 - (+) ALTE Warszawa     Złota 9              Royal Blood                             
+2015-05-04 19:16:04 INFO  ParserWorker:75 - (+) ALTE Warszawa     Mkonopnickiej 6      Warpaint - Selector - Odwołany          
+2015-05-04 19:21:06 INFO  AlterArt:57 - Uruchamiam AlterArt
+2015-05-04 19:21:06 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-05-04 19:21:09 INFO  ParserWorker:75 - (+) ALTE Warszawa     Marii Konopnickiej 6 The Afghan Whigs                        
+2015-05-04 19:21:10 INFO  ParserWorker:75 - (+) ALTE Kraków       Zabłocie 23          The Afghan Whigs                        
+2015-05-04 19:21:12 INFO  ParserWorker:75 - (+) ALTE Warszawa     Złota 9              Royal Blood                             
+2015-05-04 19:21:13 INFO  ParserWorker:75 - (+) ALTE Warszawa     Mkonopnickiej 6      Warpaint - Selector - Odwołany          
+2015-05-04 19:21:14 INFO  ParserWorker:75 - (+) ALTE Warszawa     Marii Konopnickiej 6 Sbtrkt - Selector                       
+2015-05-04 19:21:16 INFO  ParserWorker:75 - (+) ALTE Kraków       Wawrzyńca 12         Jack White                              
+2015-05-04 19:21:17 INFO  ParserWorker:75 - (+) ALTE Katowice     Spodek               Nine Inch Nails                         
+2015-05-04 19:21:22 INFO  ParserWorker:75 - (+) ALTE Warszawa     Nowy Teatr           Savages                                 
+2015-05-04 19:21:23 INFO  ParserWorker:75 - (+) ALTE Warszawa     Stodoła              Foals                                   
+2015-05-04 19:21:24 INFO  ParserWorker:75 - (+) ALTE Gdynia       Lotnisko Gdyniakosak Rihanna                                 
+2015-05-04 19:21:26 INFO  ParserWorker:75 - (+) ALTE Warszawa     Amfiteatr W Parku So Sigur Rós                               
+2015-05-04 19:21:30 INFO  ParserWorker:75 - (+) ALTE Łódź         Atlas Arena          Green Day                               
+2015-05-04 19:21:32 INFO  ParserWorker:75 - (+) ALTE Warszawa     Hala Torwar          The Xx                                  
+2015-05-04 19:23:13 INFO  AlterArt:57 - Uruchamiam AlterArt
+2015-05-04 19:23:13 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-05-04 19:23:15 INFO  ParserWorker:75 - (+) ALTE Warszawa     Marii Konopnickiej 6 The Afghan Whigs                        
+2015-05-04 19:23:17 INFO  ParserWorker:75 - (+) ALTE Kraków       Zabłocie 23          The Afghan Whigs                        
+2015-05-04 19:23:18 INFO  ParserWorker:75 - (+) ALTE Warszawa     Złota 9              Royal Blood                             
+2015-05-04 19:23:19 INFO  ParserWorker:75 - (+) ALTE Warszawa     Mkonopnickiej 6      Warpaint - Selector - Odwołany          
+2015-05-04 19:23:20 INFO  ParserWorker:75 - (+) ALTE Warszawa     Marii Konopnickiej 6 Sbtrkt - Selector                       
+2015-05-04 19:23:22 INFO  ParserWorker:75 - (+) ALTE Kraków       Wawrzyńca 12         Jack White                              
+2015-05-04 19:23:23 INFO  ParserWorker:75 - (+) ALTE Katowice     Spodek               Nine Inch Nails                         
+2015-05-04 19:23:24 INFO  ParserWorker:75 - (+) ALTE Warszawa     Nowy Teatr           Savages                                 
+2015-05-04 19:23:26 INFO  ParserWorker:75 - (+) ALTE Warszawa     Stodoła              Foals                                   
+2015-05-04 19:23:28 INFO  ParserWorker:75 - (+) ALTE Gdynia       Lotnisko Gdyniakosak Rihanna                                 
+2015-05-04 19:23:29 INFO  ParserWorker:75 - (+) ALTE Warszawa     Amfiteatr W Parku So Sigur Rós                               
+2015-05-04 19:23:31 INFO  ParserWorker:75 - (+) ALTE Łódź         Atlas Arena          Green Day                               
+2015-05-04 19:24:15 INFO  AlterArt:57 - Uruchamiam AlterArt
+2015-05-04 19:24:15 INFO  PortalWorker:13 - Backend Workers' has started!
+2015-05-04 19:24:18 INFO  ParserWorker:75 - (+) ALTE Warszawa     Marii Konopnickiej 6 The Afghan Whigs                        
+2015-05-04 19:24:19 INFO  ParserWorker:75 - (+) ALTE Kraków       Zabłocie 23          The Afghan Whigs                        
+2015-05-04 19:24:21 INFO  ParserWorker:75 - (+) ALTE Warszawa     Złota 9              Royal Blood                             
+2015-05-04 19:24:22 INFO  ParserWorker:75 - (+) ALTE Warszawa     Mkonopnickiej 6      Warpaint - Selector - Odwołany          
+2015-05-04 19:24:26 INFO  ParserWorker:75 - (+) ALTE Warszawa     Marii Konopnickiej 6 Sbtrkt - Selector                       
+2015-05-04 19:24:27 INFO  ParserWorker:75 - (+) ALTE Kraków       Wawrzyńca 12         Jack White                              
+2015-05-04 19:24:29 INFO  ParserWorker:75 - (+) ALTE Katowice     Spodek               Nine Inch Nails                         
+2015-05-04 19:24:30 INFO  ParserWorker:75 - (+) ALTE Warszawa     Nowy Teatr           Savages                                 
+2015-05-04 19:24:31 INFO  ParserWorker:75 - (+) ALTE Warszawa     Stodoła              Foals                                   
+2015-05-04 19:24:33 INFO  ParserWorker:75 - (+) ALTE Gdynia       Lotnisko Gdyniakosak Rihanna                                 
+2015-05-04 19:24:34 INFO  ParserWorker:75 - (+) ALTE Warszawa     Amfiteatr W Parku So Sigur Rós                               
+2015-05-04 19:24:35 INFO  ParserWorker:75 - (+) ALTE Łódź         Atlas Arena          Green Day                               
+2015-05-04 19:24:36 INFO  ParserWorker:75 - (+) ALTE Warszawa     Hala Torwar          The Xx                                  
+2015-05-04 19:24:38 INFO  ParserWorker:75 - (+) ALTE Warszawa     Konopnickiej 6       Yeasayer                                
+2015-05-04 19:24:39 INFO  ParserWorker:75 - (+) ALTE Warszawa     Stadion Narodowy     Coldplay                                
+2015-05-04 19:24:40 INFO  AlterArt:60 - Skończyłem
+2015-05-04 19:24:40 INFO  GoAhead:57 - Uruchamiam Go Ahead
+2015-05-04 19:24:41 INFO  ParserWorker:75 - (+) GOAH Poznań       Pod Minogą           The Real Mckenzies                      
+2015-05-04 19:24:42 INFO  ParserWorker:75 - (+) GOAH Poznań       Pod Minogą           Man Without Country                     
+2015-05-04 19:24:47 INFO  ParserWorker:75 - (+) GOAH Warszawa     Proxima              Beatsteaks                              
+2015-05-04 19:24:48 INFO  ParserWorker:75 - (+) GOAH Kraków       Hala Wisły           Rock In Summer: Limp Bizkit             
+2015-05-04 19:24:49 INFO  ParserWorker:75 - (+) GOAH Warszawa     Hydrozagadka         La Dispute                              
+2015-05-04 19:24:50 INFO  ParserWorker:75 - (+) GOAH Warszawa     Amfiteatr W Parku So Rock In Summer: Body Count Feat. Ice-t /
+2015-05-04 19:24:51 INFO  ParserWorker:75 - (+) GOAH Warszawa     Proxima              The Gaslight Anthem                     
+2015-05-04 19:24:53 INFO  ParserWorker:75 - (+) GOAH Warszawa     Hydrozagadka         The Black Dahlia Murder                 
+2015-05-04 19:24:54 INFO  ParserWorker:75 - (+) GOAH Wrocław      Liverpool            The Black Dahlia Murder                 
+2015-05-04 19:24:55 INFO  ParserWorker:75 - (+) GOAH Wrocław      Liverpool            Suicide Silence                         
+2015-05-04 19:24:56 INFO  ParserWorker:75 - (+) GOAH Poznań       Pod Minogą           Suicide Silence                         
+2015-05-04 19:24:57 INFO  ParserWorker:75 - (+) GOAH Warszawa     Palladium            Passenger                               
+2015-05-04 19:24:58 INFO  ParserWorker:75 - (+) GOAH Warszawa     Hydrozagadka         The Smith Street Band                   
+2015-05-04 19:24:59 INFO  ParserWorker:75 - (+) GOAH Poznań       Pod Minogą           The Smith Street Band                   
+2015-05-04 19:25:00 INFO  ParserWorker:75 - (+) GOAH Warszawa     Hydrozagadka         The Menzingers                          
+2015-05-04 19:25:01 INFO  ParserWorker:75 - (+) GOAH Poznań       Sala Wielka Ck Zamek Mark Lanegan Band                       
+2015-05-04 19:25:03 INFO  ParserWorker:75 - (+) GOAH Gdańsk       B90                  Matisyahu                               
+2015-05-04 19:25:04 INFO  ParserWorker:75 - (+) GOAH Wrocław      Eter                 Matisyahu                               
+2015-05-04 19:25:05 INFO  ParserWorker:75 - (+) GOAH Gdańsk       B90                  Machine Head                            
+2015-05-04 19:25:06 INFO  ParserWorker:75 - (+) GOAH Warszawa     Progresja            Machine Head                            
+2015-05-04 19:25:10 INFO  ParserWorker:75 - (+) GOAH Kraków       Fabryka              Machine Head                            
+2015-05-04 19:25:12 INFO  ParserWorker:75 - (+) GOAH Warszawa     Torwar               Apocalyptica                            
+2015-05-04 19:25:13 INFO  ParserWorker:75 - (+) GOAH Kraków       Teatr Łaźnia Nowa    Apocalyptica                            
+2015-05-04 19:25:14 INFO  ParserWorker:75 - (+) GOAH Warszawa     Torwar               Joe Satriani                            
+2015-05-04 19:25:15 INFO  ParserWorker:75 - (+) GOAH Poznań       Eskulap              Snarky Puppy                            
+2015-05-04 19:25:19 INFO  ParserWorker:75 - (+) GOAH Warszawa     Palladium            Snarky Puppy                            
+2015-05-04 19:25:20 INFO  ParserWorker:75 - (+) GOAH Warszawa     Progresja            Editors                                 
+2015-05-04 19:25:24 INFO  ParserWorker:75 - (+) GOAH Poznań       Hala Nr 2 Mtp        Editors                                 
+2015-05-04 19:25:25 INFO  GoAhead:60 - Skończyłem
+2015-05-04 19:25:25 INFO  Kayax:97 - Uruchamiam Kayax
+2015-05-04 19:25:29 INFO  ParserWorker:75 - (+) KAYA Kraków       Off Plus Camera      Skubas                                  
+2015-05-04 19:25:33 INFO  ParserWorker:75 - (+) KAYA Lublin                            Skubas                                  
+2015-05-04 19:25:34 INFO  ParserWorker:75 - (+) KAYA Kraków       Czyżynalia           Maria Peszek                            
+2015-05-04 19:25:36 INFO  ParserWorker:75 - (+) KAYA Goleniów     Plac Planty          Zakopower                               
+2015-05-04 19:25:37 INFO  ParserWorker:75 - (+) KAYA Konstancin   Park Zdrojowy        Skubas                                  
+2015-05-04 19:25:38 INFO  ParserWorker:75 - (+) KAYA Rzeszów      Festiwal Przestrzeni Skubas                                  
+2015-05-04 19:25:39 INFO  ParserWorker:75 - (+) KAYA Katowice     Juwenalia Śląskie 20 Maria Peszek                            
+2015-05-04 19:25:40 INFO  ParserWorker:75 - (+) KAYA Poznań       Juwenalia  Ptasia    Maria Peszek                            
+2015-05-04 19:25:42 INFO  ParserWorker:75 - (+) KAYA Kielce       Bohomass Lab         Maria Peszek                            
+2015-05-04 19:25:43 INFO  ParserWorker:75 - (+) KAYA Warszawa     Orange Warsaw Festiv Maria Peszek                            
+2015-05-04 19:25:45 INFO  ParserWorker:75 - (+) KAYA Transorienta Lfo Oświęcim         Kayah                                   
+2015-05-04 19:25:46 INFO  ParserWorker:75 - (+) KAYA Koszalin                          Skubas                                  

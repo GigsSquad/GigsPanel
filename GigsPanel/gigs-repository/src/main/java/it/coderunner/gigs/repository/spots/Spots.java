@@ -13,7 +13,7 @@ public abstract class Spots extends Queryable<Spot, Long> {
 
 	private static final long serialVersionUID = 80164152842863393L;
 	protected String city;
-	protected String spot;
+	protected String club;
 	protected String country;
 
 	protected Gig gis;
@@ -27,8 +27,8 @@ public abstract class Spots extends Queryable<Spot, Long> {
 		return this;
 	}
 
-	public Spots withSpot(String spot) {
-		this.spot = spot;
+	public Spots withClub(String club) {
+		this.club = club;
 		return this;
 	}
 
@@ -59,8 +59,8 @@ public abstract class Spots extends Queryable<Spot, Long> {
 		if (StringUtils.isNotBlank(other.city)) {
 			this.city = other.city;
 		}
-		if (StringUtils.isNotBlank(other.spot)) {
-			this.spot = other.spot;
+		if (StringUtils.isNotBlank(other.club)) {
+			this.club = other.club;
 		}
 		if (StringUtils.isNotBlank(other.country)) {
 			this.country = other.country;

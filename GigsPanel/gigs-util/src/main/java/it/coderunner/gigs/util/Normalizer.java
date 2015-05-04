@@ -59,7 +59,7 @@ public class Normalizer {
 			}
 			br.close();
 		} catch (FileNotFoundException e) {
-			log.info("Brak pliku miasta.txt, chuj nie wiem jak to", e);
+			log.info("Brak pliku miasta.txt", e);
 		} catch (IOException e) {
 			log.info("Uszkodzony plik miasta.txt", e);
 		}

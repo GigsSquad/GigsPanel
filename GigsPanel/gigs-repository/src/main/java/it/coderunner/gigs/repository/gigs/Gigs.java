@@ -2,6 +2,7 @@ package it.coderunner.gigs.repository.gigs;
 
 import it.coderunner.gigs.model.artist.Artist;
 import it.coderunner.gigs.model.gig.Gig;
+import it.coderunner.gigs.model.spot.Spot;
 import it.coderunner.gigs.repository.OrderType;
 import it.coderunner.gigs.repository.Queryable;
 
@@ -13,6 +14,7 @@ public abstract class Gigs extends Queryable<Gig, Long>{
 	private static final long serialVersionUID = 512865023606696265L;
 	
 	protected Artist artist;
+	protected Spot spot;
 	protected Date date;
 	protected Date fromDate;
 	protected Date tillDate;
@@ -26,6 +28,12 @@ public abstract class Gigs extends Queryable<Gig, Long>{
 	
 	public Gigs withDate(Date date){
 		this.date = date;
+		return this;
+	}
+	
+	public Gigs withSpot(Spot spot)
+	{
+		this.spot = spot;
 		return this;
 	}
 	

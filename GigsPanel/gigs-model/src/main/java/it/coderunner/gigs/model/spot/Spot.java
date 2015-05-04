@@ -44,7 +44,7 @@ public class Spot extends BaseEntity<Long> {
 
 	@Getter
 	@Setter
-	private String spot;
+	private String club;
 
 	@Getter
 	@Setter
@@ -61,9 +61,9 @@ public class Spot extends BaseEntity<Long> {
 	public Spot() {
 	};
 
-	public Spot(String city, String spot, Country country) {
+	public Spot(String city, String club, Country country) {
 		this.city = city;
-		this.spot = spot;
+		this.club = club;
 		this.country = country;
 	}
 }

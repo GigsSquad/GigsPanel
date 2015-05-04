@@ -39,7 +39,7 @@ public abstract class ParserWorker extends Worker {
 
 	public abstract void getData() throws IOException;
 
-	public void addConcert(String artistString, String cityString, String spotString, int day, int month, int year, Agency agency, String url) {
+	public void addConcert(String artistString, String cityString, String clubString, int day, int month, int year, Agency agency, String url) {
 
 		SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
 		Date date = new Date();
@@ -51,29 +51,31 @@ public abstract class ParserWorker extends Worker {
 		}
 
 		artistString = WordUtils.capitalizeFully(artistString).trim();
-		spotString = Normalizer.normalizeSpot(spotString).trim();
+		clubString = Normalizer.normalizeSpot(clubString).trim();
 		cityString = Normalizer.normalizeSpot(cityString).trim();
 
-		//tight and elegant możecie się masturbować do tych linijek <3
+		// tight and elegant możecie się masturbować do tych linijek <3
 		Artist artist = artistService.uniqueObject(Artists.findAll().withName(artistString));
 		if (artist == null) {
 			artist = new Artist(artistString);
 			artistService.saveOrUpdate(artist);
 		}
 
-		Spot spot = spotService.uniqueObject(Spots.findAll().withCity(cityString).withSpot(spotString));
+		Spot spot = spotService.uniqueObject(Spots.findAll().withCity(cityString).withClub(clubString));
 		if (spot == null) {
-			spot = new Spot(cityString, spotString, Country.POLAND);
+			spot = new Spot(cityString, clubString, Country.POLAND);
 			spotService.saveOrUpdate(spot);
 		}
-		
-		Gig gig = gigService.uniqueObject(Gigs.findAll().withArtist(artist).withDate(date));
-		if(gig == null)
-		{
-			gig = new Gig(artist, spot, date, agency, url);
-			gigService.saveOrUpdate(gig);
-		}
 
-		log.info(String.format("DODAJE %-4.4s %-12.12s %-20.20s %-40.40s", agency, cityString, spotString, artistString));
+		// porównywanie na poziomie artysty, daty i miasta, a nie spotu, szansa,
+		// że spot będzie się różnić kilkoma literkami jest dość duża
+		Gig gig = gigService.uniqueObject(Gigs.findAll().withArtist(artist).withDate(date).withSpot(spot));
+		if (gig == null) {
+			gig = new Gig(artist, spot, date, agency, url);
+			log.info(String.format("(+) %-4.4s %-12.12s %-20.20s %-40.40s", agency, cityString, clubString, artistString));
+			gigService.saveOrUpdate(gig);
+		} else {
+			log.info(String.format("(*) %-4.4s %-12.12s %-20.20s %-40.40s", agency, cityString, clubString, artistString));
+		}
 	}
 }
