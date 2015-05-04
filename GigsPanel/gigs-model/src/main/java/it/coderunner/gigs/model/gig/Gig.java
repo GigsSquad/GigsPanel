@@ -11,6 +11,7 @@ import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -54,6 +55,7 @@ public class Gig extends BaseEntity<Long> {
 
     @Getter
     @Setter
+    @Enumerated
     private Agency agency;
 
     @Getter

@@ -10,33 +10,33 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
 
-public class CriteriaGigs extends Gigs{
-	
+public class CriteriaGigs extends Gigs {
+
 	private static final long serialVersionUID = -5034137658126893764L;
 
 	protected Criteria criteria;
 	protected Criteria criteria2;
-	
-	public CriteriaGigs(Criteria criteria, Criteria criteria2){
+
+	public CriteriaGigs(Criteria criteria, Criteria criteria2) {
 		this.criteria = criteria;
 		this.criteria2 = criteria2;
 	}
-	
-	public Criteria modifyCriteria(Criteria criteria){
-		if (artist != null){
+
+	public Criteria modifyCriteria(Criteria criteria) {
+		if (artist != null) {
 			criteria.add(Restrictions.eq("artist", artist));
 		}
-		if (date != null){
+		if (date != null) {
 			criteria.add(Restrictions.eq("date", date));
 		}
-		if (fromDate != null && tillDate != null){
+		if (fromDate != null && tillDate != null) {
 			criteria.add(Restrictions.between("date", fromDate, tillDate));
-		} else if (fromDate != null){
+		} else if (fromDate != null) {
 			criteria.add(Restrictions.ge("date", fromDate));
-		} else if (tillDate != null){
+		} else if (tillDate != null) {
 			criteria.add(Restrictions.le("date", tillDate));
 		}
-		
+
 		return criteria;
 	}
 

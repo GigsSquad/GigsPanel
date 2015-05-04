@@ -1,12 +1,15 @@
 package it.coderunner.gigs.repository.spots.impl;
 
+import it.coderunner.gigs.model.spot.Spot;
+import it.coderunner.gigs.repository.CommonCriteriaQueryable;
+import it.coderunner.gigs.repository.spots.Spots;
+import it.coderunner.gigs.util.ClassUtils;
+
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
-
-import it.coderunner.gigs.model.spot.Spot;
-import it.coderunner.gigs.repository.spots.Spots;
 
 public class CriteriaSpots extends Spots {
 
@@ -20,13 +23,13 @@ public class CriteriaSpots extends Spots {
 	}
 
 	public Criteria modifyCriteria(Criteria criteria) {
-		if (city != null) {
+		if (StringUtils.isNotBlank(city)) {
 			criteria.add(Restrictions.eq("city", city));
 		}
-		if (spot != null) {
+		if (StringUtils.isNotBlank(spot)) {
 			criteria.add(Restrictions.eq("spot", spot));
 		}
-		if (country != null) {
+		if (StringUtils.isNotBlank(country)) {
 			criteria.add(Restrictions.eq("country", country));
 		}
 
@@ -35,20 +38,17 @@ public class CriteriaSpots extends Spots {
 
 	@Override
 	public long count() {
-		// TODO Auto-generated method stub
-		return 0;
+		return CommonCriteriaQueryable.count(this, modifyCriteria(criteria));
 	}
 
 	@Override
 	public List<Spot> list() {
-		// TODO Auto-generated method stub
-		return null;
+		return CommonCriteriaQueryable.list(this, modifyCriteria(criteria), criteria2, ClassUtils.getMapAndCollectionsFrom(Spot.class));
 	}
 
 	@Override
 	public Spot uniqueObject() {
-		// TODO Auto-generated method stub
-		return null;
+		return CommonCriteriaQueryable.uniqueObject(this, modifyCriteria(criteria));
 	}
 
 }

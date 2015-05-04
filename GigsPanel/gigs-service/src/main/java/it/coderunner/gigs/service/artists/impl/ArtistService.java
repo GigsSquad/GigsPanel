@@ -49,11 +49,4 @@ public class ArtistService implements IArtistService {
 	public void save(Artist artist) {
 		artistRepository.save(artist);
 	}
-
-	//TODO wyszukiwanie artystów po nazwie z LIKE 
-	@Override
-	public List<Artist> findArtistsByArtistLike(Artists artists) {
-		return artistRepository.findAll().merge(artists).list();
-	}
-
 }
