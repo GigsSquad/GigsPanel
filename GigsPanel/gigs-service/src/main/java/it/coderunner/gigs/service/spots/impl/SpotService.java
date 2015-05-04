@@ -29,7 +29,7 @@ public class SpotService implements ISpotService {
 	}
 
 	@Override
-	public void save(Spot spot) {
+	public void save(Spot spot) { 
 		spotRepository.save(spot);
 	}
 
