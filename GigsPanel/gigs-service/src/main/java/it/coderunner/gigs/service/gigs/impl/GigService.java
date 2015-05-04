@@ -1,7 +1,7 @@
 package it.coderunner.gigs.service.gigs.impl;
 
 import it.coderunner.gigs.model.gig.Gig;
-import it.coderunner.gigs.repository.gigs.GigRepository;
+import it.coderunner.gigs.repository.gigs.IGigRepository;
 import it.coderunner.gigs.repository.gigs.Gigs;
 import it.coderunner.gigs.service.gigs.IGigService;
 
@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class GigService implements IGigService {
 
 	@Autowired
-	private GigRepository gigRepository;
+	private IGigRepository gigRepository;
 
 	private static final long serialVersionUID = 6003016139844887099L;
 
