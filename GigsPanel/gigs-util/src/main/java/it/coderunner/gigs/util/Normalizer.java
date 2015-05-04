@@ -2,14 +2,18 @@ package it.coderunner.gigs.util;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.regex.Pattern;
+
+import lombok.extern.log4j.Log4j;
 
 /**
  * Created by Kuba on 10/02/2015. Normalizuje stringi
  */
+@Log4j
 public class Normalizer {
 
 	private static String[] PL = { "Warszawa", "Kraków" };
@@ -17,8 +21,7 @@ public class Normalizer {
 	private static HashMap<String, String> dict = new HashMap<>();
 	private static HashMap<Character, Character> lettersPL = new HashMap<>();
 	private static HashMap<String, String> cities = new HashMap<>();
-	private static String[] spotBlacklist = new String[] { "Klub", "Club",
-			"św.", "ŚW.", "ul.", "UL.", "Ul." };
+	private static String[] spotBlacklist = new String[] { "Klub", "Club", "św.", "ŚW.", "ul.", "UL.", "Ul." };
 
 	static {
 		// wypełnianie słownika
@@ -47,8 +50,8 @@ public class Normalizer {
 
 		// słownik: polskie znaki - brak polskich znaków
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(
-					"src/main/resources/miasta.txt"));
+			InputStream mInputStream = Normalizer.class.getResourceAsStream("/miasta.txt");
+			BufferedReader br = new BufferedReader(new InputStreamReader(mInputStream));
 			String currentLine;
 			while ((currentLine = br.readLine()) != null) {
 				currentLine = currentLine.split("\\(")[0].trim();
@@ -56,9 +59,9 @@ public class Normalizer {
 			}
 			br.close();
 		} catch (FileNotFoundException e) {
-			System.out.println("Nie znaleziono pliku miasta.txt");
+			log.info("Brak pliku miasta.txt, chuj nie wiem jak to", e);
 		} catch (IOException e) {
-			System.out.println("Uszkodzony plik miasta.txt");
+			log.info("Uszkodzony plik miasta.txt", e);
 		}
 	}
 
@@ -105,8 +108,7 @@ public class Normalizer {
 			String case2 = ".*\\d{2}";
 			String case3 = ".*\\d{3}";
 			String tmp = res.split(",")[1];
-			if (Pattern.matches(case1, tmp) || Pattern.matches(case2, tmp)
-					|| Pattern.matches(case3, tmp)) {
+			if (Pattern.matches(case1, tmp) || Pattern.matches(case2, tmp) || Pattern.matches(case3, tmp)) {
 				// System.out.println("if");
 				res = tmp;
 			}
