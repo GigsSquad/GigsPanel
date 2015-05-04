@@ -30,6 +30,20 @@ public class ArtistService implements IArtistService {
 		artistRepository.saveOrUpdate(artist);
 	}
 
+	/**
+	 * Jeśli nie ma danego artysty w bazie do go doda i nada mu id, 
+	 * jeśli jest to zwróci tego artystę który już jest w bazie
+	 */
+	@Override
+	public Artist saveIfNew(String name) {
+		Artist artist = uniqueObject(Artists.findAll().withName(name));
+		if (artist == null) {
+			artist = new Artist(name);
+			saveOrUpdate(artist);
+		}
+		return artist;
+	}
+
 	@Override
 	public List<Artist> list(Artists artists) {
 		return artistRepository.findAll().merge(artists).list();

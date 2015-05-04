@@ -13,12 +13,13 @@ public interface IArtistService extends IService {
 	void save(Artist artist);
 
 	void saveOrUpdate(Artist artist);
-	
+
+	Artist saveIfNew(String name);
+
 	List<Artist> list(Artists artists);
 
 	long count(Artists artists);
 
 	Artist uniqueObject(Artists artists);
-
 
 }
