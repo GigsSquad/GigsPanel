@@ -37,8 +37,6 @@ public abstract class Gigs extends Queryable<Gig, Long>{
 		return this;
 	}
 	
-	
-	
 	public Gigs fromDate(Date fromDate){
 		this.fromDate = fromDate;
 		return this;
