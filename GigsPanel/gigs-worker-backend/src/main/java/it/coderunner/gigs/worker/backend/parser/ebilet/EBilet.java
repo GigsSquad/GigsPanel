@@ -12,7 +12,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Log4j
@@ -86,11 +85,15 @@ public class EBilet extends ParserWorker {
 	}
 
 	@Override
-	@Scheduled(fixedDelay = 600000)
+//	@Scheduled(fixedDelay = 600000)
 	public void process() {
-//			log.info("Uruchamiam EBilet");
-//			workerActivityLogEntry(EBilet.class.getSimpleName(), "Every hour of every day");
-//			getData();
-//			log.info("Skończyłem");
+			log.info("Uruchamiam EBilet");
+			workerActivityLogEntry(EBilet.class.getSimpleName(), "Every hour of every day");
+			try {
+				getData();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			log.info("Skończyłem");
 	}
 }
