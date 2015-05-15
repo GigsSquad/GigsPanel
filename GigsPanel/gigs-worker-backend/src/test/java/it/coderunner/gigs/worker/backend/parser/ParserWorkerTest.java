@@ -46,13 +46,16 @@ public class ParserWorkerTest {
 	}
 
 	@Test
-	public void testAddIfNew() {
+	public void testAddConcert() {
 		artist = new Artist("Artysta1");
 		artistService.save(artist);
+		
 		Spot spot = new Spot("Warszawa", "Klub", Country.AFGHANISTAN);
 		spotService.save(spot);
+		
 		gig = new Gig(artist, spot, new Date(), Agency.ALTERART, "http://www.www.pl");
 		gigService.save(gig);
+		
 		assertNotNull(gigService.uniqueObject(Gigs.findAll().withArtist(artist)));
 		assertEquals(artistService.uniqueObject(Artists.findAll().withName(artist.getName())), artist);
 	}
