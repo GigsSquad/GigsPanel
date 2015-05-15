@@ -81,5 +81,4 @@ public class Gig extends BaseEntity<Long> {
     	this.agency = agency;
     	this.url = url;
     }
-
 }

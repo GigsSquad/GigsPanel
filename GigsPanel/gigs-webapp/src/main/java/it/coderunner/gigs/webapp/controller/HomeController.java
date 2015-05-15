@@ -17,6 +17,13 @@ public class HomeController {
 	public String home(Model model, HttpServletRequest request) {
 		
 		log.info("Żyję!!!");
-		return null;
+		return "index";
 	}
+	
+	@RequestMapping(value={"dupa", "dupa/"}, method = RequestMethod.GET)
+	public String dupa(Model model, HttpServletRequest request) {
+		
+		log.info("Żyję!!!");
+		return "dupa";
+	}	
 }

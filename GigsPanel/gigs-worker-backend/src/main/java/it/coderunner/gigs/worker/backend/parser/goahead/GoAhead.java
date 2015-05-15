@@ -22,10 +22,6 @@ public class GoAhead extends ParserWorker {
 
 	private final static String URL_GOAHEAD = new String("http://www.go-ahead.pl/pl/koncerty.html");
 
-	public GoAhead() {
-		super();
-	}
-
 	@Override
 	public void getData() throws IOException {
 		Document doc = Jsoup.connect(URL_GOAHEAD).get();
