@@ -28,34 +28,35 @@ public class GigController {
 
 	@Autowired
 	private IGigService gigService;
-	
+
 	@Autowired
 	private IArtistService artistService;
-	
+
 	@Autowired
 	private ISpotService spotService;
-	
+
 	@ModelAttribute("gigForm")
 	public GigsForm form() {
 		return new GigsForm();
 	}
-	
-	@RequestMapping(value={"/gig/new", "/gig/new/"})
-	public String getConcert(Model model){
+
+	@RequestMapping(value = { "/gig/new", "/gig/new/" })
+	public String getConcert(Model model) {
 		return "gig_edit";
 	}
-	
-	@RequestMapping(value={"/gig/new/save"}, method=RequestMethod.POST)
-	public String saveConcert(GigsForm gigsForm, BindingResult result, Model model, RedirectAttributes redirectAttributes, HttpServletRequest request){
+
+	@RequestMapping(value = { "/gig/new/save" }, method = RequestMethod.POST)
+	public String saveConcert(GigsForm gigsForm, BindingResult result, Model model, RedirectAttributes redirectAttributes, HttpServletRequest request) {
 		GigsValidator validator = new GigsValidator();
 		FlashMessages flashMessages = new FlashMessages(model);
 		validator.validate(gigsForm, result);
-		if (!validator.hasErrors()){
-			try{
+		if (!validator.hasErrors()) {
+			try {
 				artistService.list(Artists.findAll().loadWith("gig", "gig.comment"));
 				artistService.saveIfNew(gigsForm.getGig().getArtist().getName());
-				//spotService.saveIfNew(gigsForm.getGig().getSpot().getCity(), gigsForm.getGig().getSpot().getClub());
-				//gigService.saveIfNew(gigsForm.getGig());
+				// spotService.save(gigsForm.getGig().getSpot().getCity(),
+				// gigsForm.getGig().getSpot().getClub());
+				// gigService.save(gigsForm.getGig());
 				flashMessages.addMessage("success.gig.save", Severity.SUCCESS);
 				return "gig_edit";
 			} catch (Exception e) {
