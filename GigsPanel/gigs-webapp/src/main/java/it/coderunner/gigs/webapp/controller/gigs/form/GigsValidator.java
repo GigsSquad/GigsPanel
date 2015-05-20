@@ -25,9 +25,9 @@ public class GigsValidator extends CommonValidator {
 		if (StringUtils.isBlank(form.getGig().getArtist().getName())){
 			errors.rejectValue("gig.artist.name", "gig.artist.cannot.be.null");
 		}
-		if (StringUtils.isBlank(form.getAuthor())){
-			errors.rejectValue("author", "author.cannot.be.null");
-		}
+//		if (StringUtils.isBlank(form.getAuthor())){
+//			errors.rejectValue("author", "author.cannot.be.null");
+//		}
 		
 	}
 
