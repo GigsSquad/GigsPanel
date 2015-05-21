@@ -1,6 +1,5 @@
 package it.coderunner.gigs.webapp.controller.gigs;
 
-import it.coderunner.gigs.model.gig.Gig;
 import it.coderunner.gigs.repository.artists.Artists;
 import it.coderunner.gigs.service.artists.IArtistService;
 import it.coderunner.gigs.service.gigs.IGigService;
