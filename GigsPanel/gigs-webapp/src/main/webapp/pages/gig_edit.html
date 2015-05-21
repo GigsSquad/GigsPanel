@@ -25,6 +25,8 @@
 		<form id="box-login" th:action="@{/gig/new/save}"
 			th:object="${gigForm}" method="post">
 			<div th:include="message_box :: alert"></div>
+
+			<!-- NAZWA ARTYSTY -->
 			<div
 				th:class="${#fields.hasErrors('gig.artist.name')}? 'form-group has-error' : 'form-group'">
 				<label class="col-md-3 control-label"> <span
@@ -35,6 +37,78 @@
 					th:each="err : ${#fields.errors('gig.artist.name')}"
 					th:utext="${err}"></p>
 			</div>
+			<!--  NAZWA MIASTA -->
+			<div
+				th:class="${#fields.hasErrors('gig.spot.city')}? 'form-group has-error' : 'form-group'">
+				<label class="col-md-3 control-label"> <span
+					th:text="#{gig.spot.city}"></span></label> <input type="text"
+					th:field="*{gig.spot.city}" class="form-control" name="gig"
+					th:placeholder="#{gig.spot.city}" />
+				<p class="control-label"
+					th:each="err : ${#fields.errors('gig.spot.city')}"
+					th:utext="${err}"></p>
+			</div>
+
+
+			<!--  NAZWA KLUB  -->
+			<div
+				th:class="${#fields.hasErrors('gig.spot.club')}? 'form-group has-error' : 'form-group'">
+				<label class="col-md-3 control-label"> <span
+					th:text="#{gig.spot.club}"></span></label> <input type="text"
+					th:field="*{gig.spot.club}" class="form-control" name="gig"
+					th:placeholder="#{gig.spot.club}" />
+				<p class="control-label"
+					th:each="err : ${#fields.errors('gig.spot.club')}"
+					th:utext="${err}"></p>
+			</div>
+
+
+			<!--  NAZWA AGEnCJI  -->
+			<div
+				th:class="${#fields.hasErrors('gig.agency')}? 'form-group has-error' : 'form-group'">
+				<label class="col-md-3 control-label"> <span
+					th:text="#{gig.agency}"></span></label> <input type="text"
+					th:field="*{gig.agency}" class="form-control" name="gig"
+					th:placeholder="#{gig.agency}" />
+				<p class="control-label"
+					th:each="err : ${#fields.errors('gig.agency')}" th:utext="${err}"></p>
+			</div>
+
+			<!--  DATA -->
+			<div
+				th:class="${#fields.hasErrors('gig.date')}? 'form-group has-error' : 'form-group'">
+				<label class="col-md-3 control-label"> <span
+					th:text="#{gig.date}"></span></label> <input type="text"
+					th:field="*{gig.date}" class="form-control" name="gig"
+					th:placeholder="#{gig.date}" />
+				<p class="control-label"
+					th:each="err : ${#fields.errors('gig.date')}" th:utext="${err}"></p>
+			</div>
+
+			<!--  URL -->
+			<div
+				th:class="${#fields.hasErrors('gig.url')}? 'form-group has-error' : 'form-group'">
+				<label class="col-md-3 control-label"> <span
+					th:text="#{gig.url}"></span></label> <input type="text"
+					th:field="*{gig.url}" class="form-control" name="gig"
+					th:placeholder="#{gig.url}" />
+				<p class="control-label"
+					th:each="err : ${#fields.errors('gig.url')}" th:utext="${err}"></p>
+			</div>
+
+			<!-- AUTHOR -->
+			<div
+				th:class="${#fields.hasErrors('author')}? 'form-group has-error' : 'form-group'">
+				<label class="col-md-3 control-label"> <span
+					th:text="#{author}"></span></label> <input type="text"
+					th:field="*{author}" class="form-control" name="gig"
+					th:placeholder="#{author}" />
+				<p class="control-label"
+					th:each="err : ${#fields.errors('author')}" th:utext="${err}"></p>
+			</div>
+
+
+
 			<!-- PRZYCISK  -->
 			<div class="some-SHITTY-batton" align="right">
 				<input class="btn-primary" type="submit"></input>
