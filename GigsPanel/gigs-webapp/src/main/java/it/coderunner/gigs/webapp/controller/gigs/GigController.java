@@ -1,5 +1,6 @@
 package it.coderunner.gigs.webapp.controller.gigs;
 
+import it.coderunner.gigs.model.gig.Gig;
 import it.coderunner.gigs.repository.artists.Artists;
 import it.coderunner.gigs.service.artists.IArtistService;
 import it.coderunner.gigs.service.gigs.IGigService;
@@ -50,13 +51,15 @@ public class GigController {
 		GigsValidator validator = new GigsValidator();
 		FlashMessages flashMessages = new FlashMessages(model);
 		validator.validate(gigsForm, result);
+
 		if (!validator.hasErrors()) {
 			try {
 				artistService.list(Artists.findAll().loadWith("gig", "gig.comment"));
 				artistService.saveIfNew(gigsForm.getGig().getArtist().getName());
-				// spotService.save(gigsForm.getGig().getSpot().getCity(),
-				// gigsForm.getGig().getSpot().getClub());
-				// gigService.save(gigsForm.getGig());
+
+				spotService.saveIfNew(gigsForm.getGig().getSpot().getCity(), gigsForm.getGig().getSpot().getClub());
+				gigService.saveIfNew(gigsForm.getGig());
+
 				flashMessages.addMessage("success.gig.save", Severity.SUCCESS);
 				return "gig_edit";
 			} catch (Exception e) {

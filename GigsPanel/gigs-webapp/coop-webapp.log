@@ -1,1 +1,10 @@
 2015-05-21 00:54:03 INFO  HomeController:19 - Żyję!!!
+2015-05-21 02:01:26 WARN  GigController:65 - Warn
+2015-05-21 02:02:03 WARN  GigController:65 - Warn
+2015-05-21 02:12:02 WARN  GigController:65 - Warn
+2015-05-21 02:17:35 INFO  HomeController:19 - Żyję!!!
+2015-05-21 02:21:46 WARN  GigController:65 - Warn
+2015-05-21 02:21:46 WARN  GigController:65 - Warn
+2015-05-21 02:22:41 WARN  GigController:65 - Warn
+2015-05-21 02:32:44 WARN  GigController:66 - Warn
+2015-05-21 02:38:58 WARN  GigController:66 - Warn

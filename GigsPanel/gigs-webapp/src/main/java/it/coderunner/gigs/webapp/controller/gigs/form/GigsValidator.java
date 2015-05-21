@@ -8,7 +8,7 @@ import it.coderunner.gigs.service.gigs.IGigService;
 import it.coderunner.gigs.webapp.validator.CommonValidator;
 
 public class GigsValidator extends CommonValidator {
-	
+
 	@Autowired
 	private IGigService gigService;
 
@@ -19,16 +19,35 @@ public class GigsValidator extends CommonValidator {
 
 	@Override
 	public void validateForm(Object target, Errors errors) {
-		
+
 		GigsForm form = (GigsForm) target;
-		
-		if (StringUtils.isBlank(form.getGig().getArtist().getName())){
+
+		if (StringUtils.isBlank(form.getGig().getArtist().getName())) {
 			errors.rejectValue("gig.artist.name", "gig.artist.cannot.be.null");
 		}
-//		if (StringUtils.isBlank(form.getAuthor())){
-//			errors.rejectValue("author", "author.cannot.be.null");
-//		}
-		
-	}
 
+		if (StringUtils.isBlank(form.getGig().getSpot().getCity())) {
+			errors.rejectValue("gig.spot.city", "gig.city.cannot.be.null");
+		}
+
+		if (StringUtils.isBlank(form.getGig().getSpot().getClub())) {
+			errors.rejectValue("gig.spot.club", "gig.club.cannot.be.null");
+		}
+
+		// if (StringUtils.isBlank(form.getGig().getUrl())) {
+		// errors.rejectValue("gig.url", "gig.url.cannot.be.null");
+		// }
+		//
+		// if (form.getGig().getAgency() == null) {
+		// errors.rejectValue("gig.agency", "gig.agency.cannot.be.null");
+		// }
+		//
+		// if (form.getGig().getDate() == null) {
+		// errors.rejectValue("gig.date", "gig.date.cannot.be.null");
+		// }
+		//
+		// if (StringUtils.isBlank(form.getAuthor())) {
+		// errors.rejectValue("author", "author.cannot.be.null");
+		// }
+	}
 }
