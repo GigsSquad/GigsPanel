@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="utf-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<meta name="description" content=""></meta>
+<meta name="author" content=""></meta>
+
+<title>Add new place</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="/css/bootstrap.min.css" rel="stylesheet"></link>
+
+<!-- Custom CSS -->
+<link href="/css/shop-homepage.css" rel="stylesheet"></link>
+
+</head>
+
+<body>
+	<div class="container">
+		<form id="box-login-spot" th:action="@{/spot/new/save}"
+			th:object="${spotForm}" method="post">
+			<div th:include="message_box :: alert"></div>
+			<div
+				th:class="${#fields.hasErrors('spot.city')}? 'form-group has-error' : 'form-group'">
+				<label class="col-md-3 control-label"> <span
+					th:text="#{spot.city}"></span></label> <input type="text"
+					th:field="*{spot.city}" class="form-control" name="spot"
+					th:placeholder="#{spot.city}" />
+				<p class="control-label"
+					th:each="err : ${#fields.errors('spot.city')}"
+					th:utext="${err}"></p>
+			</div>
+			<!-- PRZYCISK  -->
+			<div class="some-SHITTY-batton" align="right">
+				<input class="btn-primary" type="submit"></input>
+			</div>
+		</form>
+	</div>
+	<!-- jQuery -->
+	<script src="/js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>
