@@ -33,10 +33,7 @@ public class CriteriaUsers extends Users{
 			criteria.add(Restrictions.eq("lastName", lastName));
 		}
 		if (StringUtils.isNotBlank(location)) {
-			criteria.add(Restrictions.eq("lastName", lastName));
-		}
-		if (StringUtils.isNotBlank(location)) {
-			criteria.add(Restrictions.eq("lastName", lastName));
+			criteria.add(Restrictions.eq("location", location));
 		}
 		if (dateRegister!= null ) {
 			criteria.add(Restrictions.eq("dateRegister", dateRegister));

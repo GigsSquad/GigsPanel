@@ -20,10 +20,10 @@
 		<remember-me key="....:::gigsmap123:::....."/>
 	</http>
 	
-<!-- 	<authentication-manager alias="authenticationManager">
+	<authentication-manager alias="authenticationManager">
 		<authentication-provider user-service-ref="userService">
 			<password-encoder ref="bCryptPasswordEncoder" />
 		</authentication-provider>
-	</authentication-manager> -->
+	</authentication-manager>
 	
 </beans:beans>

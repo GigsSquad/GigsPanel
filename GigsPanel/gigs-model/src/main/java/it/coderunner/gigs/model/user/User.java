@@ -27,12 +27,22 @@ import javax.persistence.UniqueConstraint;
 import lombok.Getter;
 import lombok.Setter;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "users")
 public class User extends BaseEntity<Long> {
 
 	private static final long serialVersionUID = -758076802868616147L;
 
+	public User(){};
+	
+	public User(String username, String email, String password){
+		this.username=username;
+		this.email=email;
+		this.password=password;
+	}
+	
 	@Id
 	@Getter
 	@GeneratedValue
@@ -59,8 +69,29 @@ public class User extends BaseEntity<Long> {
 
 	@Getter
 	@Setter
+	@Column(nullable=false, unique=true)
 	private String email;
-
+	
+	/**
+	 * Hasło użytkownika - minimum 6 znaków
+	 */
+	@JsonIgnore
+	@Column(nullable=false)
+	@Getter	@Setter
+	private String password;
+	
+	/**
+	 * Hash wykorzystywany podczas zmiany hasła
+	 */
+	@JsonIgnore
+	@Column(name = "remind_password_hash")
+	@Getter	@Setter
+	private String remindPasswordHash;
+	
+	@Getter @Setter
+	@Column(nullable=false, unique = true)
+	private String username;
+	
 	@Getter
 	@Setter
 	private String birthday;
@@ -68,6 +99,16 @@ public class User extends BaseEntity<Long> {
 	@Getter
 	@Setter
 	private String location;
+	
+	/**
+	 * Państwo, z którego loguje się użytkownik (powiązane ze strefą czasową)
+	 */
+	@Enumerated(EnumType.STRING)
+	@Getter	@Setter
+	private Country country;
+	
+	@Getter @Setter
+	private String activationHash;
 
 	@Getter
 	@Setter
@@ -87,6 +128,7 @@ public class User extends BaseEntity<Long> {
 
 	@Getter
 	@Setter
+	@Enumerated(EnumType.STRING)
 	private UserLocale locale = UserLocale.pl;
 
 	/**
