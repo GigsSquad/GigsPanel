@@ -10,6 +10,8 @@ import it.coderunner.gigs.webapp.mvc.AbstractForm;
 
 public class SpotForm extends AbstractForm{
 
+	private static final long serialVersionUID = -6515290656274287041L;
+
 	@Getter @Setter
 	private Spot spot;
 	

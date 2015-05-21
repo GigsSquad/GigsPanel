@@ -15,7 +15,7 @@ public class SpotValidator extends CommonValidator {
 	
 	@Override
 	public boolean supports(Class<?> clazz) {
-		return clazz.equals(GigsForm.class);
+		return clazz.equals(SpotForm.class);
 	}
 
 	@Override
@@ -26,10 +26,10 @@ public class SpotValidator extends CommonValidator {
 		if (StringUtils.isBlank(form.getSpot().getCity())){
 			errors.rejectValue("spot.city", "spot.city.cannot.be.null");
 		}
-		
-		if (StringUtils.isBlank(form.getSpot().getClub())){
-			errors.rejectValue("spot.club", "spot.club.cannot.be.null");
-		}
+//		
+//		if (StringUtils.isBlank(form.getSpot().getClub())){
+//			errors.rejectValue("spot.club", "spot.club.cannot.be.null");
+//		}
 	}
 
 }

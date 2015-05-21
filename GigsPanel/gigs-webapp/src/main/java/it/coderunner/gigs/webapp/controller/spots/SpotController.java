@@ -45,7 +45,7 @@ public class SpotController {
 		if (!validator.hasErrors()) {
 			try {
 				spotService.list(Spots.findAll());
-				spotService.saveIfNew(spotForm.getSpot().getCity(),spotForm.getSpot().getClub());
+				spotService.saveIfNew(spotForm.getSpot().getCity());//,spotForm.getSpot().getClub());
 				flashMessages.addMessage("success.spot.save", Severity.SUCCESS);
 				return "add_spot";
 			} catch (Exception e) {
