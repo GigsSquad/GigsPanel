@@ -54,10 +54,10 @@ public class GigController {
 		if (!validator.hasErrors()) {
 			try {
 				artistService.list(Artists.findAll().loadWith("gig", "gig.comment"));
-				artistService.saveIfNew(gigsForm.getGig().getArtist().getName());
+				artistService.save(gigsForm.getGig().getArtist().getName());
 
-				spotService.saveIfNew(gigsForm.getGig().getSpot().getCity(), gigsForm.getGig().getSpot().getClub());
-				gigService.saveIfNew(gigsForm.getGig());
+				spotService.save(gigsForm.getGig().getSpot().getCity(), gigsForm.getGig().getSpot().getClub());
+				gigService.save(gigsForm.getGig());
 
 				flashMessages.addMessage("success.gig.save", Severity.SUCCESS);
 				return "gig_edit";

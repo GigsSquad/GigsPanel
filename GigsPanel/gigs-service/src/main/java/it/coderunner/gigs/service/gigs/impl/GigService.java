@@ -52,20 +52,14 @@ public class GigService implements IGigService {
 	}
 
 	@Override
-	public void save(Gig gig) {
-		// dodajemy aktualną datę jako aktualizację
-		gig.setUpdated(new Date());
-		gigRepository.save(gig);
-	}
-
-	@Override
-	public boolean saveIfNew(Gig gig) {
+	public boolean save(Gig gig) {
 		// zwróci tego z bazy, lub nulla jak nie ma
 		Gig gigFromDB = uniqueObject(Gigs.findAll().withArtist(gig.getArtist()).withDate(gig.getDate()).withSpot(gig.getSpot()));
 
 		// jak null to dodaj
 		if (gigFromDB == null) {
-			saveOrUpdate(gig);
+			gig.setUpdated(new Date());
+			gigRepository.save(gig);
 			log.info(String.format("DODAJE %-4.4s %-12.12s %-20.20s %-40.40s", gig.getAgency(), gig.getSpot().getCity(), gig.getSpot().getClub(), gig.getArtist().getName()));
 			return true;
 		}

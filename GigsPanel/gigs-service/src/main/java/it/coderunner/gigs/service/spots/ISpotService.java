@@ -13,9 +13,9 @@ public interface ISpotService {
 
 	void save(Spot spot);
 	
-	Spot saveIfNew(String city, String club);
+	Spot save(String city, String club);
 	
-	Spot saveIfNew(String city);
+	Spot save(String city);
 
 	List<Spot> list(Spots spots);
 

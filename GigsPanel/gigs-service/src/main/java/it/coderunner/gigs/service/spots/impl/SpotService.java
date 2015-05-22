@@ -54,7 +54,7 @@ public class SpotService implements ISpotService {
 	 * jeśli jest to zwróci tego spot który już jest w bazie
 	 */
 	@Override
-	public Spot saveIfNew(String city, String club) {
+	public Spot save(String city, String club) {
 		Spot spot = uniqueObject(Spots.findAll().withCity(city).withClub(club));
 		if (spot == null) {
 			spot = new Spot(city, club, Country.POLAND);
@@ -64,7 +64,7 @@ public class SpotService implements ISpotService {
 	}
 	
 	@Override
-	public Spot saveIfNew(String city) {
+	public Spot save(String city) {
 		Spot spot = uniqueObject(Spots.findAll().withCity(city));
 		if (spot == null) {
 			spot = new Spot(city, "", Country.POLAND);
