@@ -35,7 +35,7 @@ public class ArtistService implements IArtistService {
 	 * jeśli jest to zwróci tego artystę który już jest w bazie
 	 */
 	@Override
-	public Artist saveIfNew(String name) {
+	public Artist save(String name) {
 		Artist artist = uniqueObject(Artists.findAll().withName(name));
 		if (artist == null) {
 			artist = new Artist(name);

@@ -14,8 +14,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Set;
 
-import lombok.extern.log4j.Log4j;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -26,7 +24,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-@Log4j
 @Transactional(rollbackFor = Exception.class)
 public class UserService implements IUserService {
 
@@ -80,7 +77,6 @@ public class UserService implements IUserService {
 	@Override
 	public boolean isEmailExists(String email) {
 		User user = userRepository.findAll().withEmail(email).uniqueObject();
-		// TODO Criteria dla Usera do poprawki
 		userRepository.evict(user);
 		return user != null;
 	}
@@ -112,7 +108,6 @@ public class UserService implements IUserService {
 	}
 
 	private User getByUsername(String username) {
-		//TODO Criteria
 		return userRepository.findAll().withUsername(username).uniqueObject();
 	}
 
@@ -156,15 +151,15 @@ public class UserService implements IUserService {
 	public User afterAuthentication(String username) {
 		User user = userRepository.findAll().withUsername(username).loadWith("coopProfile").uniqueObject();
 		user.setRemindPasswordHash(null);
-		//powinno updateować automatycznie, bez konieczności wywołania update z repozytorium
+		// powinno updateować automatycznie, bez konieczności wywołania update z
+		// repozytorium
 		return user;
 	}
 
 	@Override
 	public User activateUser(String activationHash) {
 		User user = userRepository.findAll().withActivationHash(activationHash).withStatus(UserStatus.PENDING).uniqueObject();
-		//TODO User Criteria
-		if (user!=null) {
+		if (user != null) {
 			user.setStatus(UserStatus.ACTIVE);
 			userRepository.update(user);
 			return user;
@@ -176,7 +171,7 @@ public class UserService implements IUserService {
 	public boolean exists(Users users) {
 		User user = userRepository.findAll().merge(users).uniqueObject();
 		userRepository.evict(user);
-		return user!=null;
+		return user != null;
 	}
 
 }

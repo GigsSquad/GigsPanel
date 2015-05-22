@@ -14,12 +14,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import lombok.extern.log4j.Log4j;
-
 import org.apache.commons.lang3.text.WordUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@Log4j
 public abstract class ParserWorker extends Worker {
 
 	private static final long serialVersionUID = -4249995395205955518L;
@@ -51,9 +48,9 @@ public abstract class ParserWorker extends Worker {
 		city = Normalizer.normalizeSpot(city).trim();
 
 		// tight and elegant możecie się masturbować do tych linijek <3
-		Artist artist = artistService.saveIfNew(artistString);
-		Spot spot = spotService.saveIfNew(city, club);
+		Artist artist = artistService.save(artistString);
+		Spot spot = spotService.save(city, club);
 		
-		gigService.saveIfNew(new Gig(artist, spot, date, agency, url));
+		gigService.save(new Gig(artist, spot, date, agency, url));
 	}
 }

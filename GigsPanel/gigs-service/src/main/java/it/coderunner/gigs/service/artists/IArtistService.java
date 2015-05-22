@@ -14,7 +14,7 @@ public interface IArtistService extends IService {
 
 	void saveOrUpdate(Artist artist);
 
-	Artist saveIfNew(String name);
+	Artist save(String name);
 
 	List<Artist> list(Artists artists);
 

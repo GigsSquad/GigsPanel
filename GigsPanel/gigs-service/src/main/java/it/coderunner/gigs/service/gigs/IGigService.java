@@ -12,10 +12,8 @@ public interface IGigService extends IService {
 	
 	void saveOrUpdate(Gig gig);
 	
-	void save(Gig gig);
+	boolean save(Gig gig);
 	
-	boolean saveIfNew(Gig gig);
-
 	List<Gig> list(Gigs gigs);
 
 	long count(Gigs gigs);
