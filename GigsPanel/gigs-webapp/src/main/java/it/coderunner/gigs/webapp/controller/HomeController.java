@@ -19,11 +19,5 @@ public class HomeController {
 		log.info("Żyję!!!");
 		return "index";
 	}
-	
-	@RequestMapping(value={"dupa", "dupa/"}, method = RequestMethod.GET)
-	public String dupa(Model model, HttpServletRequest request) {
-		
-		log.info("Żyję!!!");
-		return "dupa";
-	}	
+
 }
