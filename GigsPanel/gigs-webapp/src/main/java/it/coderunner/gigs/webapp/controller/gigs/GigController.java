@@ -39,7 +39,7 @@ public class GigController {
 	public GigsForm form() {
 		return new GigsForm();
 	}
-
+	
 	@RequestMapping(value = { "/gig/new", "/gig/new/" })
 	public String getConcert(Model model) {
 		return "gig_edit";

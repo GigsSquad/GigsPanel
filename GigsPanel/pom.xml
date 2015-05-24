@@ -32,7 +32,7 @@
 				<jdbc.username>musicart_1</jdbc.username>
 				<jdbc.password>GIG$$$finder112!</jdbc.password>
 				<jdbc.hibernate.dialect>org.hibernate.dialect.MySQLDialect</jdbc.hibernate.dialect>
-				<jdbc.hibernate.hbm2ddl.auto>create</jdbc.hibernate.hbm2ddl.auto>
+				<jdbc.hibernate.hbm2ddl.auto>update</jdbc.hibernate.hbm2ddl.auto>
 
 				<log4j.filepath.basedir></log4j.filepath.basedir>
 				<log4j.console.treshold>OFF</log4j.console.treshold>
