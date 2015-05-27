@@ -43,45 +43,60 @@
 				<!-- Header end -->
 				<div class="login-container">
 					<div class="login-wrapper animated flipInY">
-						<div id="login" class="show">
+						<div id="register" class="form-action hide">
 							<div class="login-header">
-								<h4>Sign In To Your Account</h4>
+								<h4>Sign Up for Everest</h4>
 							</div>
-							<form action="login.html" th:action="@{/login}"
-								th:object="${loginForm}" method="post">
-								<div th:include="message_box :: alert"></div>
-								<!-- NAZWA UŻYTKOWNIKA -->
-								<div class="form-group has-feedback">
-									<label class="control-label" for="userName">Username</label> <input
-										type="text" class="form-control" id="userName"
-										placeholder="username" th:field="*{user.username}" name="user"></input>
 
+							<!-- REJESTRACJA  -->
+							<form action="register.html" th:action="@{/register}"
+								th:object="${registerForm}" method="post">
+								<div th:include="message_box :: alert"></div>
+
+								<!--  NAZWA UZYTWKONIKA  -->
+								<div class="form-group has-feedback"
+									th:class="${#fields.hasErrors('user.username')}? 'form-group has-error' : 'form-group'">
+
+									<label class="control-label" for="userName1">Username</label> <input
+										type="text" class="form-control" id="userName1"
+										th:field="*{user.username}" /> <i
+										class="fa fa-user form-control-feedback"></i>
 									<p class="control-label"
 										th:each="err : ${#fields.errors('user.username')}"
 										th:utext="${err}"></p>
-
-
-									<i class="fa fa-user text-info form-control-feedback"></i>
 								</div>
-								<!-- HASEŁO UŻYTKOWNIKA -->
-								<div class="form-group has-feedback">
-									<label class="control-label" for="passWord">Password</label> <input
-										type="password" class="form-control" id="passWord"
-										placeholder="password"  th:field="*{user.password}" /> <i
-										class="fa fa-key text-danger form-control-feedback"></i>
+
+								<!-- IMEJL -->
+								<div class="form-group has-feedback"
+									th:class="${#fields.hasErrors('user.email')}? 'form-group has-error' : 'form-group'">
+									<label class="control-label" for="email"
+										th:field="*{user.email}">Email</label> <input type="text"
+										class="form-control" id="email" /> <i
+										class="fa fa-user form-control-feedback"></i>
 									<p class="control-label"
-										th:each="err : ${#fields.errors('user.password')}"
+										th:each="err : ${#fields.errors('user.email')}"
 										th:utext="${err}"></p>
-
 								</div>
-								<input type="submit" value="Login"
+
+								<!-- HASLO  -->
+								<div class="form-group has-feedback">
+									<label class="control-label" for="password1">Password</label> <input
+										type="password" class="form-control" id="password1" /> <i
+										class="fa fa-key form-control-feedback"></i>
+								</div>
+
+								<!--  HASLO DRUGI RAZ -->
+								<div class="form-group has-feedback">
+									<label class="control-label" for="password2">Confirm
+										password</label> <input type="password" class="form-control"
+										id="password2" /> <i class="fa fa-key form-control-feedback"></i>
+								</div>
+								<input type="submit" value="Sign Up"
 									class="btn btn-danger btn-lg btn-block" />
 							</form>
-							<a href="#forgot-pwd" class="underline text-info">Forgot
-								Password?</a> <a href="#register">Don't have an account? <span
-								class="text-danger">Sign Up</span></a>
+							<a href="#login">Already have an account? <span
+								class="text-danger">Sign In</span></a>
 						</div>
-
 					</div>
 				</div>
 			</div>
