@@ -1,5 +1,6 @@
 package it.coderunner.gigs.webapp.controller.login;
 
+import it.coderunner.gigs.model.user.User;
 import it.coderunner.gigs.repository.users.Users;
 import it.coderunner.gigs.service.users.IUserService;
 import it.coderunner.gigs.webapp.controller.login.form.LoginForm;
@@ -32,18 +33,19 @@ public class LoginController {
 		return new LoginForm();
 	}
 
-	@RequestMapping(value = { "login", "/login" })
+	@RequestMapping(value = { "/login", "/login/" })
 	public String login(Model model) {
 		return "login";
 	}
 
 	
 	//TODO
-	@RequestMapping(value = { "login/ok", "/login/ok" }, method = RequestMethod.POST)
+	@RequestMapping(value = { "/login", "/login/" }, method = RequestMethod.POST)
 	public String login(LoginForm loginForm, BindingResult result, Model model, RedirectAttributes redirectAttributes, HttpServletRequest request) {
 
 		LoginValidator validator = new LoginValidator();
 		FlashMessages flashMessages = new FlashMessages(model);
+		//TODO wywala jak sie uzyje validateForm
 		validator.validate(loginForm, result);
 
 		if (!validator.hasErrors()) {
@@ -56,15 +58,17 @@ public class LoginController {
 				log.info("Username: " + usr);
 				log.info("Password: " + pwd);
 
-				flashMessages.addMessage("success.user.login", Severity.SUCCESS);
-				return "index";
+				flashMessages.addMessage("Login success", Severity.SUCCESS);
+				return "gig_edit";
 			} catch (Exception e) {
 				log.warn("Warn");
-				flashMessages.addMessage("error.user.login", Severity.ERROR);
+				//TODO czemu to nie bierze z i18l?
+				//flashMessages.addMessage("error.user.login", Severity.ERROR);
+				flashMessages.addMessage("Login error", Severity.ERROR);
 				return "login";
 			}
 		}
-		flashMessages.addMessage("error.user.login", Severity.ERROR);
+		flashMessages.addMessage("Login error", Severity.ERROR);
 		return "login";
 	}
 }
