@@ -14,7 +14,10 @@ public class RegisterForm extends AbstractForm {
 	@Getter
 	@Setter
 	private User user;
-
+	
+	@Getter
+	@Setter
+	private String secondPassword;
 	@Override
 	public String getID() {
 		return new Md5PasswordEncoder().encodePassword(user.getId() + "", "sdfNOghELOjklkjuhLOGINygtfrLOLrtgyhjk");

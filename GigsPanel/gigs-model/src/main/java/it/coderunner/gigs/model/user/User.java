@@ -51,7 +51,6 @@ public class User extends BaseEntity<Long> {
 	@Getter
 	@Setter
 	@OneToMany(mappedBy = "user", targetEntity = Comment.class, cascade = CascadeType.ALL)
-	//TODO brakuje joincolumn? bo skąd ma wiedzieć jak to połączyc
 	private Set<Comment> comments = new HashSet<>();
 	
 	@Getter

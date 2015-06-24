@@ -1,6 +1,6 @@
 package it.coderunner.gigs.webapp.controller.login;
 
-import it.coderunner.gigs.model.user.User;
+import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
 import it.coderunner.gigs.repository.users.Users;
 import it.coderunner.gigs.service.users.IUserService;
 import it.coderunner.gigs.webapp.controller.login.form.LoginForm;
@@ -19,6 +19,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -27,7 +28,10 @@ public class LoginController {
 
 	@Autowired
 	private IUserService userService;
-
+	
+	@Autowired
+	private LocaleResolver localeResolver;
+	
 	@ModelAttribute("loginForm")
 	public LoginForm form() {
 		return new LoginForm();
@@ -39,36 +43,34 @@ public class LoginController {
 	}
 
 	
-	//TODO
 	@RequestMapping(value = { "/login", "/login/" }, method = RequestMethod.POST)
 	public String login(LoginForm loginForm, BindingResult result, Model model, RedirectAttributes redirectAttributes, HttpServletRequest request) {
 
 		LoginValidator validator = new LoginValidator();
-		FlashMessages flashMessages = new FlashMessages(model);
-		//TODO wywala jak sie uzyje validateForm
+		FlashMessages flashMessages = new FlashMessages(model, new LocalePropertiesMessageResolver(localeResolver.resolveLocale(request)));
+		System.out.println(localeResolver.resolveLocale(request));
+
 		validator.validate(loginForm, result);
 
 		if (!validator.hasErrors()) {
 			try {
-				userService.list(Users.findAll().loadWith("user"));
-
 				String usr = loginForm.getUser().getUsername();
 				String pwd = loginForm.getUser().getPassword();
 
 				log.info("Username: " + usr);
 				log.info("Password: " + pwd);
+				if (userService.list(Users.findAll().withUsername(usr))!=null){
+					flashMessages.addMessage("login.success", Severity.SUCCESS);
+					return "login";
+				}
 
-				flashMessages.addMessage("Login success", Severity.SUCCESS);
-				return "gig_edit";
 			} catch (Exception e) {
 				log.warn("Warn");
-				//TODO czemu to nie bierze z i18l?
-				//flashMessages.addMessage("error.user.login", Severity.ERROR);
-				flashMessages.addMessage("Login error", Severity.ERROR);
+				flashMessages.addMessage("error.user.login", Severity.ERROR);
 				return "login";
 			}
 		}
-		flashMessages.addMessage("Login error", Severity.ERROR);
+		flashMessages.addMessage("login.error", Severity.ERROR);
 		return "login";
 	}
 }

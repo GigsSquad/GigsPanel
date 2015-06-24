@@ -52,9 +52,11 @@
 								<div th:include="message_box :: alert"></div>
 								<!-- NAZWA UŻYTKOWNIKA -->
 								<div class="form-group has-feedback">
-									<label class="control-label" for="userName">Username</label> <input
-										type="text" class="form-control" id="userName"
-										placeholder="username" th:field="*{user.username}" name="user"></input>
+									<label class="control-label" for="userName"
+										th:text="#{user.username}"></label> <input type="text"
+										class="form-control" id="userName"
+										th:placeholder="#{user.username}" th:field="*{user.username}"
+										name="user"></input>
 
 									<p class="control-label"
 										th:each="err : ${#fields.errors('user.username')}"
@@ -65,10 +67,11 @@
 								</div>
 								<!-- HASEŁO UŻYTKOWNIKA -->
 								<div class="form-group has-feedback">
-									<label class="control-label" for="passWord">Password</label> <input
-										type="password" class="form-control" id="passWord"
-										placeholder="password"  th:field="*{user.password}" /> <i
-										class="fa fa-key text-danger form-control-feedback"></i>
+									<label class="control-label" for="passWord"
+										th:text="#{user.password}"></label> <input type="password"
+										class="form-control" id="passWord"
+										th:placeholder="#{user.password}" th:field="*{user.password}" />
+									<i class="fa fa-key text-danger form-control-feedback"></i>
 									<p class="control-label"
 										th:each="err : ${#fields.errors('user.password')}"
 										th:utext="${err}"></p>
@@ -78,7 +81,7 @@
 									class="btn btn-danger btn-lg btn-block" />
 							</form>
 							<a href="#forgot-pwd" class="underline text-info">Forgot
-								Password?</a> <a href="#register">Don't have an account? <span
+								Password?</a> <a href="/register">Don't have an account? <span
 								class="text-danger">Sign Up</span></a>
 						</div>
 
@@ -88,33 +91,5 @@
 		</div>
 	</div>
 	<!-- Container Fluid ends -->
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="js/jquery.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap.min.js"></script>
-
-	<script type="text/javascript">
-		(function($) {
-			// constants
-			var SHOW_CLASS = 'show', HIDE_CLASS = 'hide', ACTIVE_CLASS = 'active';
-
-			$('a').on(
-					'click',
-					function(e) {
-						e.preventDefault();
-						var a = $(this), href = a.attr('href');
-
-						$('.active').removeClass(ACTIVE_CLASS);
-						a.addClass(ACTIVE_CLASS);
-
-						$('.show').removeClass(SHOW_CLASS).addClass(HIDE_CLASS)
-								.hide();
-
-						$(href).removeClass(HIDE_CLASS).addClass(SHOW_CLASS)
-								.hide().fadeIn(550);
-					});
-		})(jQuery);
-	</script>
 </body>
 </html>

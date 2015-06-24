@@ -43,7 +43,7 @@
 				<!-- Header end -->
 				<div class="login-container">
 					<div class="login-wrapper animated flipInY">
-						<div id="register" class="form-action hide">
+						<div id="register" class="form-action show">
 							<div class="login-header">
 								<h4>Sign Up for Everest</h4>
 							</div>
@@ -57,9 +57,14 @@
 								<div class="form-group has-feedback"
 									th:class="${#fields.hasErrors('user.username')}? 'form-group has-error' : 'form-group'">
 
-									<label class="control-label" for="userName1">Username</label> <input
+									<label class="control-label" for="userName1"
+										th:text="#{user.username}"></label> 
+										<input
 										type="text" class="form-control" id="userName1"
-										th:field="*{user.username}" /> <i
+										th:field="*{user.username}"
+										th:placeholder="#{user.username}" />
+										
+										 <i
 										class="fa fa-user form-control-feedback"></i>
 									<p class="control-label"
 										th:each="err : ${#fields.errors('user.username')}"
@@ -70,7 +75,11 @@
 								<div class="form-group has-feedback"
 									th:class="${#fields.hasErrors('user.email')}? 'form-group has-error' : 'form-group'">
 									<label class="control-label" for="email"
-										th:field="*{user.email}">Email</label> <input type="text"
+										th:text="#{user.email}"></label>
+										
+									 <input type="text"
+									 th:field="*{user.email}"
+									 th:placeholder="#{user.email}"
 										class="form-control" id="email" /> <i
 										class="fa fa-user form-control-feedback"></i>
 									<p class="control-label"
@@ -79,22 +88,43 @@
 								</div>
 
 								<!-- HASLO  -->
-								<div class="form-group has-feedback">
-									<label class="control-label" for="password1">Password</label> <input
+								<div class="form-group has-feedback"
+								th:class="${#fields.hasErrors('user.password')}? 'form-group has-error' : 'form-group'">
+								
+									<label class="control-label" for="password1"
+									th:text="#{user.password}"></label> 
+									
+									<input
+										th:field="*{user.password}"
+										th:placeholder="#{user.password}"
 										type="password" class="form-control" id="password1" /> <i
 										class="fa fa-key form-control-feedback"></i>
+										
+										<p class="control-label"
+										th:each="err : ${#fields.errors('user.password')}"
+										th:utext="${err}"></p>
 								</div>
 
 								<!--  HASLO DRUGI RAZ -->
-								<div class="form-group has-feedback">
-									<label class="control-label" for="password2">Confirm
-										password</label> <input type="password" class="form-control"
+								<div class="form-group has-feedback"
+								th:class="${#fields.hasErrors('user.password')}? 'form-group has-error' : 'form-group'">
+						
+									<label class="control-label" for="password2"
+											th:text="#{user.password}"></label> 
+																	
+									<input	
+										th:field="*{secondPassword}"
+										th:placeholder="#{user.password}"
+										type="password" class="form-control"
 										id="password2" /> <i class="fa fa-key form-control-feedback"></i>
+								<p class="control-label"
+										th:each="err : ${#fields.errors('secondPassword')}"
+										th:utext="${err}"></p>
 								</div>
 								<input type="submit" value="Sign Up"
 									class="btn btn-danger btn-lg btn-block" />
 							</form>
-							<a href="#login">Already have an account? <span
+							<a href="/login">Already have an account? <span
 								class="text-danger">Sign In</span></a>
 						</div>
 					</div>
@@ -108,28 +138,5 @@
 	<script src="js/jquery.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
-
-	<script type="text/javascript">
-		(function($) {
-			// constants
-			var SHOW_CLASS = 'show', HIDE_CLASS = 'hide', ACTIVE_CLASS = 'active';
-
-			$('a').on(
-					'click',
-					function(e) {
-						e.preventDefault();
-						var a = $(this), href = a.attr('href');
-
-						$('.active').removeClass(ACTIVE_CLASS);
-						a.addClass(ACTIVE_CLASS);
-
-						$('.show').removeClass(SHOW_CLASS).addClass(HIDE_CLASS)
-								.hide();
-
-						$(href).removeClass(HIDE_CLASS).addClass(SHOW_CLASS)
-								.hide().fadeIn(550);
-					});
-		})(jQuery);
-	</script>
 </body>
 </html>

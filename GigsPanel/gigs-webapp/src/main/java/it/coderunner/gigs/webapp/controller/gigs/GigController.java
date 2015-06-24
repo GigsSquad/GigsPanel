@@ -1,5 +1,7 @@
 package it.coderunner.gigs.webapp.controller.gigs;
 
+import it.coderunner.gigs.i18n.resolver.MessageResolver;
+import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
 import it.coderunner.gigs.repository.artists.Artists;
 import it.coderunner.gigs.service.artists.IArtistService;
 import it.coderunner.gigs.service.gigs.IGigService;
@@ -20,6 +22,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -31,7 +34,7 @@ public class GigController {
 
 	@Autowired
 	private IArtistService artistService;
-
+	
 	@Autowired
 	private ISpotService spotService;
 
@@ -48,7 +51,7 @@ public class GigController {
 	@RequestMapping(value = { "/gig/new/save" }, method = RequestMethod.POST)
 	public String saveConcert(GigsForm gigsForm, BindingResult result, Model model, RedirectAttributes redirectAttributes, HttpServletRequest request) {
 		GigsValidator validator = new GigsValidator();
-		FlashMessages flashMessages = new FlashMessages(model);
+		FlashMessages flashMessages = new FlashMessages(model, new LocalePropertiesMessageResolver(request.getLocale()));
 		validator.validate(gigsForm, result);
 
 		if (!validator.hasErrors()) {

@@ -1,6 +1,7 @@
 package it.coderunner.gigs.webapp.controller.register.form;
 
 import it.coderunner.gigs.service.users.IUserService;
+import it.coderunner.gigs.util.SequenceUtils;
 import it.coderunner.gigs.webapp.validator.CommonValidator;
 
 import org.apache.commons.lang3.StringUtils;
@@ -25,8 +26,21 @@ public class RegisterValidator extends CommonValidator {
 		if (StringUtils.isBlank(form.getUser().getUsername())) {
 			errors.rejectValue("user.username", "user.username.cannot.be.null");
 		}
-
+		if (StringUtils.isBlank(form.getUser().getEmail())) {
+			errors.rejectValue("user.email", "user.email.cannot.be.null");
+		}else if (!SequenceUtils.isEmailValid((form.getUser().getEmail()))) {
+			errors.rejectValue("user.email", "user.email.not.valid");
+		}
+				
 		if (StringUtils.isBlank(form.getUser().getPassword())) {
+			errors.rejectValue("user.password", "user.password.cannot.be.null");
+		}
+		if (StringUtils.isBlank(form.getSecondPassword())) {
+			errors.rejectValue("secondPassword", "user.password.cannot.be.null");
+		}
+		
+		
+		if (!form.getUser().getPassword().equals(form.getSecondPassword())) {
 			errors.rejectValue("user.password", "user.password.cannot.be.null");
 		}
 	}
