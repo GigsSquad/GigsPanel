@@ -1,5 +1,9 @@
 package it.coderunner.gigs.webapp.controller.register;
 
+import java.util.Locale;
+
+import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
+import it.coderunner.gigs.model.user.User;
 import it.coderunner.gigs.repository.users.Users;
 import it.coderunner.gigs.service.users.IUserService;
 import it.coderunner.gigs.webapp.controller.register.form.RegisterForm;
@@ -12,12 +16,14 @@ import javax.servlet.http.HttpServletRequest;
 import lombok.extern.log4j.Log4j;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -26,6 +32,9 @@ public class RegisterController {
 
 	@Autowired
 	private IUserService userService;
+	
+	@Autowired
+	private LocaleResolver localeResolver;
 
 	@ModelAttribute("registerForm")
 	public RegisterForm form() {
@@ -43,20 +52,20 @@ public class RegisterController {
 	public String register(RegisterForm registerForm, BindingResult result, Model model, RedirectAttributes redirectAttributes, HttpServletRequest request) {
 
 		RegisterValidator validator = new RegisterValidator();
-		FlashMessages flashMessages = new FlashMessages(model);
+		FlashMessages flashMessages = new FlashMessages(model, new LocalePropertiesMessageResolver(localeResolver.resolveLocale(request)));
 		validator.validate(registerForm, result);
 
 		if (!validator.hasErrors()) {
 			try {
 				userService.list(Users.findAll().loadWith("user"));
-
-				String usr = registerForm.getUser().getUsername();
-				String pwd = registerForm.getUser().getPassword();
-
-				log.info("Username: " + usr);
-				log.info("Password: " + pwd);
-
+//
+//				String usr = registerForm.getUser().getUsername();
+//				String pwd = registerForm.getUser().getPassword();
+//				log.info("Username: " + usr);
+//				log.info("Password: " + pwd);
+//				
 				flashMessages.addMessage("success.user.register", Severity.SUCCESS);
+				userService.register(registerForm.getUser(), localeResolver.resolveLocale(request));
 				return "index";
 			} catch (Exception e) {
 				log.warn("Warn");

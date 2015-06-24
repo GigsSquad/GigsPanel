@@ -1,13 +1,17 @@
 package it.coderunner.gigs.webapp.mvc;
 
+import it.coderunner.gigs.i18n.resolver.MessageResolver;
+
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
 import lombok.Getter;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.thymeleaf.messageresolver.IMessageResolver;
 
 /**
  * Klasa przechowująca komunikaty wyświetlane na warstwie widoku dla użytkownika
@@ -20,14 +24,15 @@ public class FlashMessages implements Serializable {
 
 	@Getter
 	private Set<FlashNotice> messages;
-
+	private MessageResolver messageResolver;
 	private Model model;
 
 	public final static String MESSAGES_NAME = "flash_messages";
 
-	public FlashMessages(Model model) {
+	public FlashMessages(Model model, MessageResolver messageResolver) {
 		this.model = model;
 		this.messages = new HashSet<FlashNotice>();
+		this.messageResolver = messageResolver;
 	}
 
 	public boolean hasMessages() {
@@ -38,8 +43,9 @@ public class FlashMessages implements Serializable {
 		this.messages.clear();
 	}
 
-	public void addMessage(String message, Severity severity) {
-		addText(message, severity);
+	public void addMessage(String messageKey, Severity severity) {
+		String messageValue = messageResolver.resolveMessage(messageKey);
+		addText(messageValue, severity);
 	}
 
 	private void addText(String plainText, Severity severity) {
