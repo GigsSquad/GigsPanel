@@ -44,7 +44,7 @@ http://www.springframework.org/schema/lang http://www.springframework.org/schema
 	<bean id="templateResolver"
 		class="org.thymeleaf.templateresolver.ServletContextTemplateResolver">
 		<property name="prefix" value="/pages/" />
-		<property name="suffix" value=".html" />
+		<property name="suffix" value=".html" />	
 		<property name="templateMode" value="HTML5" />
 		<property name="characterEncoding" value="UTF-8" />
 		<property name="cacheable" value="false" />

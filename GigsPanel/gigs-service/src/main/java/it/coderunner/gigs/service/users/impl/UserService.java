@@ -83,6 +83,7 @@ public class UserService implements IUserService {
 
 	@Override
 	public void register(User user, Locale locale) {
+		encryptPasswords(user);
 		user.add(UserRole.ROLE_ADMIN, UserRole.ROLE_USER);
 		String activationHash = saltComponentService.generateActivationHash(user);
 		user.setActivationHash(activationHash);
@@ -172,6 +173,12 @@ public class UserService implements IUserService {
 		User user = userRepository.findAll().merge(users).uniqueObject();
 		userRepository.evict(user);
 		return user != null;
+	}
+	
+	@Override
+	public void encryptPasswords(User user){
+		String encodedPass = passwordEncoder.encode(user.getPassword());
+		user.setPassword(encodedPass);
 	}
 
 }
