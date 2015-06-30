@@ -1,9 +1,6 @@
 package it.coderunner.gigs.webapp.controller.register;
 
-import java.util.Locale;
-
 import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
-import it.coderunner.gigs.model.user.User;
 import it.coderunner.gigs.repository.users.Users;
 import it.coderunner.gigs.service.users.IUserService;
 import it.coderunner.gigs.webapp.controller.register.form.RegisterForm;
@@ -16,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import lombok.extern.log4j.Log4j;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -58,22 +54,16 @@ public class RegisterController {
 		if (!validator.hasErrors()) {
 			try {
 				userService.list(Users.findAll().loadWith("user"));
-//
-//				String usr = registerForm.getUser().getUsername();
-//				String pwd = registerForm.getUser().getPassword();
-//				log.info("Username: " + usr);
-//				log.info("Password: " + pwd);
-//				
-				flashMessages.addMessage("success.user.register", Severity.SUCCESS);
+				flashMessages.addMessage("user.register.success", Severity.SUCCESS);
 				userService.register(registerForm.getUser(), localeResolver.resolveLocale(request));
 				return "index";
 			} catch (Exception e) {
 				log.warn("Warn");
-				flashMessages.addMessage("error.user.register", Severity.ERROR);
+				flashMessages.addMessage("user.register.error", Severity.ERROR);
 				return "register";
 			}
 		}
-		flashMessages.addMessage("error.user.register", Severity.ERROR);
+		flashMessages.addMessage("user.register.error", Severity.ERROR);
 		return "register";
 	}
 }
