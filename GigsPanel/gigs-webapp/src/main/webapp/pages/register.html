@@ -80,8 +80,7 @@
 									 <input type="text"
 									 th:field="*{user.email}"
 									 th:placeholder="#{user.email}"
-										class="form-control" id="email" /> <i
-										class="fa fa-user form-control-feedback"></i>
+										class="form-control" id="email" />
 									<p class="control-label"
 										th:each="err : ${#fields.errors('user.email')}"
 										th:utext="${err}"></p>

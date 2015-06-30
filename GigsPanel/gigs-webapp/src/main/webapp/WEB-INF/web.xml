@@ -62,7 +62,7 @@
 		<param-value>
 			/WEB-INF/context-service.xml
 			/WEB-INF/context-repository.xml
-			<!-- /WEB-INF/applicationContext-security.xml -->
+			/WEB-INF/applicationContext-security.xml
 			/WEB-INF/context-properties.xml
 		</param-value>
 	</context-param>

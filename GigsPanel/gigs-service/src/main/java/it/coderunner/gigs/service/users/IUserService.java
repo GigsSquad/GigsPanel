@@ -68,6 +68,8 @@ public interface IUserService extends UserDetailsService, IService{
 	 */
 	User activateUser(String activationHash);
 	
+	void encryptPasswords(User user);
+	
 	boolean exists(Users users);
 	
 	void saveOrUpdate(User user);
