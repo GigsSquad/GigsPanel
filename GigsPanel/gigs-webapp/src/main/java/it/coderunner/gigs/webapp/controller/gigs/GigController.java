@@ -62,16 +62,16 @@ public class GigController {
 				spotService.save(gigsForm.getGig().getSpot().getCity(), gigsForm.getGig().getSpot().getClub());
 				gigService.save(gigsForm.getGig());
 
-				flashMessages.addMessage("success.gig.save", Severity.SUCCESS);
+				flashMessages.addMessage("gig.save.success", Severity.SUCCESS);
 				return "gig_edit";
 			} catch (Exception e) {
 				log.warn("Warn");
-				flashMessages.addMessage("error.gig.save", Severity.ERROR);
+				flashMessages.addMessage("gig.save.error", Severity.ERROR);
 				return "gig_edit";
 			}
 
 		}
-		flashMessages.addMessage("error.gig.save", Severity.ERROR);
+		flashMessages.addMessage("gig.save.error", Severity.ERROR);
 		return "gig_edit";
 	}
 }

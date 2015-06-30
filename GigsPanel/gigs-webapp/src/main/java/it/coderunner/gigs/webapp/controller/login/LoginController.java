@@ -60,17 +60,17 @@ public class LoginController {
 				log.info("Username: " + usr);
 				log.info("Password: " + pwd);
 				if (userService.list(Users.findAll().withUsername(usr))!=null){
-					flashMessages.addMessage("login.success", Severity.SUCCESS);
+					flashMessages.addMessage("user.login.success", Severity.SUCCESS);
 					return "login";
 				}
 
 			} catch (Exception e) {
 				log.warn("Warn");
-				flashMessages.addMessage("error.user.login", Severity.ERROR);
+				flashMessages.addMessage("user.login.error", Severity.ERROR);
 				return "login";
 			}
 		}
-		flashMessages.addMessage("login.error", Severity.ERROR);
+		flashMessages.addMessage("user.login.error", Severity.ERROR);
 		return "login";
 	}
 }
