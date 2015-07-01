@@ -1,27 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	xmlns:th="http://www.thymeleaf.org">
+	xmlns:th="http://www.thymeleaf.org" layout:decorator="template">
 
 <head>
-
-<meta charset="utf-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
-<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-<meta name="description" content=""></meta>
-<meta name="author" content=""></meta>
-
-<title>Gigs Map Homepage</title>
-
-<!-- Bootstrap Core CSS -->
-<link href="/css/bootstrap.min.css" rel="stylesheet"></link>
-
-<!-- Custom CSS -->
-<link href="/css/shop-homepage.css" rel="stylesheet"></link>
-
+	<title>GigsMap - Dodawanie koncertu</title>
 </head>
 
 <body>
-	<div class="container">
+
+	<div class="main-containter" layout:fragment="main_content">
 		<form id="box-login" th:action="@{/gig/new/save}"
 			th:object="${gigForm}" method="post">
 			<div th:include="message_box :: alert"></div>
