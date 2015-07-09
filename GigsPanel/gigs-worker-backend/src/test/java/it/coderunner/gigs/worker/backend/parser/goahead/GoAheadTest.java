@@ -38,34 +38,42 @@ public class GoAheadTest {
 
 	@Autowired
 	private ISpotService spotService;
-	
+
 	GoAhead mGoAhead = new GoAhead();
 
 	@Test
 	public void testProcess() {
 		testGetData();
-		
-		assertEquals(true, true);//deal with it XD
+
+		assertEquals(true, true);// deal with it XD
 	}
 
 	@Test
 	public void testGetData() {
-		
+
 		Artist artist = new Artist("artysta");
-		//artistService.saveIfNew(artist.getName()); 
+		// artistService.saveIfNew(artist.getName());
 		artistService.save(artist);
 
-		Spot spot = new Spot("Szczecin", "Pierwsze miejsce", Country.POLAND);
+		Spot spot = new Spot("Szczecin", "Rozwalki 7", "Pierwsze miejsce",
+				Country.POLAND);
 		spotService.save(spot);
 
-		Gig gig = new Gig(artist, spot, new Date(), Agency.GOAHEAD, "http://www.wypok.pl");
+		Gig gig = new Gig(artist, spot, new Date(), Agency.GOAHEAD,
+				"http://www.wypok.pl");
 		gigService.save(gig);
 
-		assertNotNull(gigService.uniqueObject(Gigs.findAll().withArtist(artist)));
+		assertNotNull(gigService
+				.uniqueObject(Gigs.findAll().withArtist(artist)));
 		assertNotNull(artist);
 		assertNotNull(spot);
-		
-		assertEquals(artistService.uniqueObject(Artists.findAll().withName(artist.getName())), artist);
-		assertEquals(spotService.uniqueObject(Spots.findAll().withCity(spot.getCity()).withClub(spot.getClub())), spot);
+
+		assertEquals(
+				artistService.uniqueObject(Artists.findAll().withName(
+						artist.getName())), artist);
+		assertEquals(
+				spotService.uniqueObject(Spots.findAll()
+						.withCity(spot.getCity()).withClub(spot.getClub())),
+				spot);
 	}
 }

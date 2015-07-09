@@ -50,26 +50,39 @@ public class SpotService implements ISpotService {
 	}
 
 	/**
-	 * Jeśli nie ma danego spotu w bazie do go doda i nada mu id, 
-	 * jeśli jest to zwróci tego spot który już jest w bazie
+	 * Jeśli nie ma danego spotu w bazie do go doda i nada mu id, jeśli jest to
+	 * zwróci tego spot który już jest w bazie
 	 */
 	@Override
-	public Spot save(String city, String club) {
-		Spot spot = uniqueObject(Spots.findAll().withCity(city).withClub(club));
+	public Spot save(String city, String address, String club) {
+		Spot spot = uniqueObject(Spots.findAll().withCity(city)
+				.withAddress(address).withClub(club));
 		if (spot == null) {
-			spot = new Spot(city, club, Country.POLAND);
+			spot = new Spot(city, address, club, Country.POLAND);
 			saveOrUpdate(spot);
 		}
 		return spot;
 	}
-	
+
+	@Override
+	public Spot save(String city, String address) {
+		Spot spot = uniqueObject(Spots.findAll().withCity(city)
+				.withAddress(address));
+		if (spot == null) {
+			spot = new Spot(city, address, "", Country.POLAND);
+			saveOrUpdate(spot);
+		}
+		return spot;
+	}
+
 	@Override
 	public Spot save(String city) {
 		Spot spot = uniqueObject(Spots.findAll().withCity(city));
 		if (spot == null) {
-			spot = new Spot(city, "", Country.POLAND);
+			spot = new Spot(city, "", "", Country.POLAND);
 			saveOrUpdate(spot);
 		}
 		return spot;
 	}
+
 }

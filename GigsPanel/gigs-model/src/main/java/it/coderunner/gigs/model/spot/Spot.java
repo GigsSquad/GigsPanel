@@ -1,10 +1,12 @@
 package it.coderunner.gigs.model.spot;
 
+import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
 import it.coderunner.gigs.model.BaseEntity;
 import it.coderunner.gigs.model.gig.Gig;
 import it.coderunner.gigs.model.user.Country;
 
 import java.util.HashSet;
+import java.util.Locale;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -44,6 +46,10 @@ public class Spot extends BaseEntity<Long> {
 
 	@Getter
 	@Setter
+	private String address;
+
+	@Getter
+	@Setter
 	private String club;
 
 	@Getter
@@ -58,11 +64,20 @@ public class Spot extends BaseEntity<Long> {
 	@Setter
 	private Country country;
 
+	//TODO: Locale jest wstawione na sztywno, poprawić
+	public Country[] getCountryList() {
+		System.out.println("LOCALE: " + Locale.ENGLISH + " - "
+				+ Locale.ENGLISH.getLanguage().toLowerCase());
+		return Country.sortedByName(new LocalePropertiesMessageResolver(
+				Locale.ENGLISH));
+	}
+
 	public Spot() {
 	};
 
-	public Spot(String city, String club, Country country) {
+	public Spot(String city, String address, String club, Country country) {
 		this.city = city;
+		this.address = address;
 		this.club = club;
 		this.country = country;
 	}
