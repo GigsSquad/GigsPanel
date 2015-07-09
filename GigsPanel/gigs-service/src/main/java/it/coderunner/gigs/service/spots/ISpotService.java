@@ -12,9 +12,11 @@ public interface ISpotService {
 	void saveOrUpdate(Spot spot);
 
 	void save(Spot spot);
+
+	Spot save(String city, String address, String club);
 	
-	Spot save(String city, String club);
-	
+	Spot save(String city, String address);
+
 	Spot save(String city);
 
 	List<Spot> list(Spots spots);

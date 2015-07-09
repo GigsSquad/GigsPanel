@@ -36,28 +36,33 @@ public class ParserWorkerTest {
 
 	@Autowired
 	private ISpotService spotService;
-	
+
 	private Gig gig;
-	
+
 	private Artist artist;
-	
-	public void init(){
-		
+
+	public void init() {
+
 	}
 
 	@Test
 	public void testAddConcert() {
 		artist = new Artist("Artysta1");
 		artistService.save(artist);
-		
-		Spot spot = new Spot("Warszawa", "Klub", Country.AFGHANISTAN);
+
+		Spot spot = new Spot("Warszawa", "Liczydlo 7", "Klub",
+				Country.AFGHANISTAN);
 		spotService.save(spot);
-		
-		gig = new Gig(artist, spot, new Date(), Agency.ALTERART, "http://www.www.pl");
+
+		gig = new Gig(artist, spot, new Date(), Agency.ALTERART,
+				"http://www.www.pl");
 		gigService.save(gig);
-		
-		assertNotNull(gigService.uniqueObject(Gigs.findAll().withArtist(artist)));
-		assertEquals(artistService.uniqueObject(Artists.findAll().withName(artist.getName())), artist);
+
+		assertNotNull(gigService
+				.uniqueObject(Gigs.findAll().withArtist(artist)));
+		assertEquals(
+				artistService.uniqueObject(Artists.findAll().withName(
+						artist.getName())), artist);
 	}
 
 	@Test
