@@ -10,23 +10,23 @@
     <title>Everest Admin Panel</title>
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen"></link>
+    <link th:href="@{~/css/bootstrap.css}" rel="stylesheet" media="screen"></link>
 
     <!-- Animate CSS -->
-    <link href="css/animate.css" rel="stylesheet" media="screen"></link>
+    <link th:href="@{~/css/animate.css}" rel="stylesheet" media="screen"></link>
 
     <!-- Alertify CSS -->
-    <link href="css/alertify/alertify.core.css" rel="stylesheet"></link>
-    <link href="css/alertify/alertify.default.css" rel="stylesheet"></link>
+    <link th:href="@{~/css/alertify/alertify.core.css}" rel="stylesheet"></link>
+    <link th:href="@{~/css/alertify/alertify.default.css}" rel="stylesheet"></link>
 
     <!-- Main CSS -->
-    <link href="css/main.css" rel="stylesheet" media="screen"></link>
+    <link th:href="@{~/css/main.css}" rel="stylesheet" media="screen"></link>
 
     <!-- Datepicker CSS -->
-    <link rel="stylesheet" type="text/css" href="css/datepicker.css"></link>
+    <link rel="stylesheet" type="text/css" th:href="@{~/css/datepicker.css}"></link>
 
     <!-- Font Awesome -->
-    <link href="fonts/font-awesome.min.css" rel="stylesheet"></link>
+    <link th:href="@{~/fonts/font-awesome.min.css}" rel="stylesheet"></link>
 
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -42,7 +42,7 @@
 
         <!-- Logo starts -->
         <div class="logo">
-            <a href="#"> <img src="img/logo.png" alt="logo" /> <span class="menu-toggle hidden-xs"> <i class="fa fa-bars"></i>
+            <a href="#"> <img th:src="@{~/img/logo.png}" alt="logo" /> <span class="menu-toggle hidden-xs"> <i class="fa fa-bars"></i>
 			</span>
             </a>
         </div>
@@ -66,25 +66,25 @@
                     <a id="drop7" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-image"></i>
                     </a> <span class="info-label info-bg animated rubberBand">7+</span>
                     <ul class="blog-gallery dropdown-menu fadeInDown animated clearfix recent-tweets">
-                        <li><img src="img/user1.jpg" alt="User" />
+                        <li><img th:src="@{~/img/user1.jpg}" alt="User" />
                         </li>
-                        <li><img src="img/user2.jpg" alt="User" />
+                        <li><img th:src="@{~/img/user2.jpg}" alt="User" />
                         </li>
-                        <li><img src="img/user3.jpg" alt="User" />
+                        <li><img th:src="@{~/img/user3.jpg}" alt="User" />
                         </li>
-                        <li><img src="img/user4.jpg" alt="User" />
+                        <li><img th:src="@{~/img/user4.jpg}" alt="User" />
                         </li>
-                        <li><img src="img/user5.jpg" alt="User" />
+                        <li><img th:src="@{~/img/user5.jpg}" alt="User" />
                         </li>
-                        <li><img src="img/user6.jpg" alt="User" />
+                        <li><img th:src="@{~/img/user6.jpg}" alt="User" />
                         </li>
-                        <li><img src="img/user7.jpg" alt="User" />
+                        <li><img th:src="@{~/img/user7.jpg}" alt="User" />
                         </li>
-                        <li><img src="img/user8.jpg" alt="User" />
+                        <li><img th:src="@{~/img/user8.jpg}" alt="User" />
                         </li>
-                        <li><img src="img/user9.jpg" alt="User" />
+                        <li><img th:src="@{~/img/user9.jpg}" alt="User" />
                         </li>
-                        <li><img src="img/user3.jpg" alt="User" />
+                        <li><img th:src="@{~/img/user3.jpg}" alt="User" />
                         </li>
                     </ul>
                 </li>
@@ -132,7 +132,7 @@
                         <li class="plain">Messages</li>
                         <li>
                             <div class="user-pic">
-                                <img src="img/user4.jpg" alt="User" />
+                                <img th:src="@{~/img/user4.jpg}" alt="User" />
                             </div>
                             <div class="details">
                                 <strong class="text-danger">Wilson</strong> <span>Uploaded
@@ -144,7 +144,7 @@
                         </li>
                         <li>
                             <div class="user-pic">
-                                <img src="img/user1.jpg" alt="User" />
+                                <img th:src="@{~/img/user1.jpg}" alt="User" />
                             </div>
                             <div class="details">
                                 <strong class="text-danger">Adams</strong> <span>Got 12
@@ -156,7 +156,7 @@
                         </li>
                         <li>
                             <div class="user-pic">
-                                <img src="img/user3.jpg" alt="User" />
+                                <img th:src="@{~/img/user3.jpg}" alt="User" />
                             </div>
                             <div class="details">
                                 <strong class="text-info">Sam</strong> <span>Uploaded new
@@ -168,7 +168,7 @@
                         </li>
                         <li>
                             <div class="user-pic">
-                                <img src="img/user5.jpg" alt="User" />
+                                <img th:src="@{~/img/user5.jpg}" alt="User" />
                             </div>
                             <div class="details">
                                 <strong class="text-info">Jennifer</strong> <span>128 new
@@ -181,7 +181,7 @@
                     </ul>
                 </li>
                 <li class="list-box user-profile hidden-xs">
-                    <a href="login.html" class="user-avtar animated rubberBand"> <img src="img/user4.jpg" alt="user avatar" />
+                    <a href="login.html" class="user-avtar animated rubberBand"> <img th:src="@{~/img/user4.jpg}" alt="user avatar" />
                     </a>
                 </li>
             </ul>
@@ -197,7 +197,7 @@
         <!-- Current User Starts -->
         <div class="current-user">
             <div class="user-avatar animated rubberBand">
-                <img src="img/user4.jpg" alt="Current User" /> <span class="busy"></span>
+                <img th:src="@{~/img/user4.jpg}" alt="Current User" /> <span class="busy"></span>
             </div>
             <div class="user-name">Welcome Mr. James</div>
             <ul class="user-links">
@@ -225,20 +225,20 @@
         <div id='menu'>
             <ul>
                 <li class="highlight">
-                    <a href='index.html'> <i class="fa fa-desktop"></i> <span>Dashboard</span> <span class="current-page"></span>
+                    <a th:href="@{/index}"> <i class="fa fa-desktop"></i> <span>Dashboard</span> <span class="current-page"></span>
                     </a>
                 </li>
                 <li>
-                    <a href='timeline.html'> <i class="fa fa-sliders"></i>
-                        <span>Timeline</span>
+                    <a th:href="@{/gig/new}"> <i class="fa fa-sliders"></i>
+                        <span>Dodaj koncert</span>
                     </a>
                 </li>
                 <li>
-                    <a href='blog.html'> <i class="fa fa-pencil"></i> <span>Blog</span>
+                    <a th:href="@{/artist/new}"> <i class="fa fa-pencil"></i> <span>Dodaj artystę</span>
                     </a>
                 </li>
                 <li>
-                    <a href='graphs.html'> <i class="fa fa-flask"></i> <span>Graphs</span>
+                    <a th:href="@{/spot/new}"> <i class="fa fa-flask"></i> <span>Dodaj spot</span>
                     </a>
                 </li>
                 <li>
@@ -367,39 +367,39 @@
         <footer> Copyright Everest Admin Panel 2015 </footer>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.js"></script>
+    <script th:src="@{~/js/jquery.js}"></script>
 
     <!-- jQuery UI JS -->
-    <script src="js/jquery-ui-v1.10.3.js"></script>
+    <script th:src="@{~/js/jquery-ui-v1.10.3.js}"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script th:src="@{~/js/bootstrap.min.js}"></script>
 
     <!-- Sparkline graphs -->
-    <script src="js/sparkline.js"></script>
+    <script th:src="@{~/js/sparkline.js}"></script>
 
     <!-- jquery ScrollUp JS -->
-    <script src="js/scrollup//jquery.scrollUp.js"></script>
+    <script th:src="@{~/js/scrollup//jquery.scrollUp.js}"></script>
 
     <!-- Notifications JS -->
-    <script src="js/alertify/alertify.js"></script>
-    <script src="js/alertify/alertify-custom.js"></script>
+    <script th:src="@{~/js/alertify/alertify.js}"></script>
+    <script th:src="@{~/js/alertify/alertify-custom.js}"></script>
 
     <!-- Flot Charts -->
-    <script src="js/flot/jquery.flot.js"></script>
-    <script src="js/flot/jquery.flot.tooltip.min.js"></script>
-    <script src="js/flot/jquery.flot.resize.min.js"></script>
-    <script src="js/flot/jquery.flot.stack.min.js"></script>
-    <script src="js/flot/jquery.flot.orderBar.min.js"></script>
-    <script src="js/flot/jquery.flot.pie.min.js"></script>
+    <script th:src="@{~/js/flot/jquery.flot.js}"></script>
+    <script th:src="@{~/js/flot/jquery.flot.tooltip.min.js}"></script>
+    <script th:src="@{~/js/flot/jquery.flot.resize.min.js}"></script>
+    <script th:src="@{~/js/flot/jquery.flot.stack.min.js}"></script>
+    <script th:src="@{~/js/flot/jquery.flot.orderBar.min.js}"></script>
+    <script th:src="@{~/js/flot/jquery.flot.pie.min.js}"></script>
 
     <!-- JVector Map -->
-    <script src="js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="js/jvectormap/jquery-jvectormap-usa.js"></script>
+    <script th:src="@{~/js/jvectormap/jquery-jvectormap-1.2.2.min.js}"></script>
+    <script th:src="@{~/js/jvectormap/jquery-jvectormap-usa.js}"></script>
 
     <!-- Custom Index -->
-    <script src="js/custom.js"></script>
-    <script src="js/custom-index.js"></script>
+    <script th:src="@{~/js/custom.js}"></script>
+    <script th:src="@{~/js/custom-index.js}"></script>
 
 </body>
 
