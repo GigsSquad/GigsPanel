@@ -1,127 +1,104 @@
 <!DOCTYPE html>
-<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	xmlns:th="http://www.thymeleaf.org" layout:decorator="template">
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.thymeleaf.org" layout:decorator="template">
 
 <head>
-	<title>GigsMap - Dodawanie koncertu</title>
+    <title>GigsMap - Dodawanie koncertu</title>
 </head>
 
 <body>
 
-	<div class="main-containter" layout:fragment="main_content">
-		<form id="box-login" th:action="@{/gig/new/save}"
-			th:object="${gigForm}" method="post">
-			<div th:include="message_box :: alert"></div>
+    <!-- Main Container starts -->
+    <div class="main-container" layout:fragment="content">
+        <form id="box-login" th:action="@{/gig/new/save}" th:object="${gigForm}" method="post">
+            <div th:include="message_box :: alert"></div>
 
-			<!-- NAZWA ARTYSTY -->
-			<div
-				th:class="${#fields.hasErrors('gig.artist.name')}? 'form-group has-error' : 'form-group'">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{gig.artist.name}"></span></label> 
-					
-					
-					<select th:field="*{gig.artist.name}" class="form-control">
-					
-					<option th:each="artist : ${artists}" th:value="${artist}"
-						th:text="${artist.name}">Wireframe
-					</option>
-					</select> 
-				
-				
-				<p class="control-label"
-					th:each="err : ${#fields.errors('gig.artist.name')}"
-					th:utext="${err}"></p>
-			</div>
-			<!--  NAZWA MIASTA -->
-			<div
-				th:class="${#fields.hasErrors('gig.spot.city')}? 'form-group has-error' : 'form-group'">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{gig.spot.city}"></span></label> 
-					
-					<select th:field="*{gig.spot.city}" class="form-control"> <!--  Jak zrobic zeby stringi polaczyc? -->
-					
-					<option th:each="spot : ${spots}" th:value="${spots}"
-						th:text="${spot.city}+' ' +${spot.club}">Wireframe
-					</option>
-					</select> 
-					
-										
-					
-				<p class="control-label"
-					th:each="err : ${#fields.errors('gig.spot.city')}"
-					th:utext="${err}"></p>
-			</div>
+            <!-- NAZWA ARTYSTY -->
+            <div th:class="${#fields.hasErrors('gig.artist.name')}? 'form-group has-error' : 'form-group'">
+                <label class="col-md-3 control-label"> <span th:text="#{gig.artist.name}"></span>
+                </label>
 
 
-			<!--  NAZWA KLUB  -->
-			<div
-				th:class="${#fields.hasErrors('gig.spot.club')}? 'form-group has-error' : 'form-group'">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{gig.spot.club}"></span></label> <input type="text"
-					th:field="*{gig.spot.club}" class="form-control" name="gig"
-					th:placeholder="#{gig.spot.club}" />
-				<p class="control-label"
-					th:each="err : ${#fields.errors('gig.spot.club')}"
-					th:utext="${err}"></p>
-			</div>
+                <select th:field="*{gig.artist.name}" class="form-control">
+
+                    <option th:each="artist : ${artists}" th:value="${artist}" th:text="${artist.name}">Wireframe
+                    </option>
+                </select>
 
 
-			<!--  NAZWA AGEnCJI  -->
-			<div
-				th:class="${#fields.hasErrors('gig.agency')}? 'form-group has-error' : 'form-group'">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{gig.agency}"></span></label> <input type="text"
-					th:field="*{gig.agency}" class="form-control" name="gig"
-					th:placeholder="#{gig.agency}" />
-				<p class="control-label"
-					th:each="err : ${#fields.errors('gig.agency')}" th:utext="${err}"></p>
-			</div>
+                <p class="control-label" th:each="err : ${#fields.errors('gig.artist.name')}" th:utext="${err}"></p>
+            </div>
+            <!--  NAZWA MIASTA -->
+            <div th:class="${#fields.hasErrors('gig.spot.city')}? 'form-group has-error' : 'form-group'">
+                <label class="col-md-3 control-label"> <span th:text="#{gig.spot.city}"></span>
+                </label>
 
-			<!--  DATA -->
-			<div
-				th:class="${#fields.hasErrors('gig.date')}? 'form-group has-error' : 'form-group'">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{gig.date}"></span></label> <input type="text"
-					th:field="*{gig.date}" class="form-control" name="gig"
-					th:placeholder="#{gig.date}" />
-				<p class="control-label"
-					th:each="err : ${#fields.errors('gig.date')}" th:utext="${err}"></p>
-			</div>
+                <select th:field="*{gig.spot.city}" class="form-control">
+                    <!--  Jak zrobic zeby stringi polaczyc? -->
 
-			<!--  URL -->
-			<div
-				th:class="${#fields.hasErrors('gig.url')}? 'form-group has-error' : 'form-group'">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{gig.url}"></span></label> <input type="text"
-					th:field="*{gig.url}" class="form-control" name="gig"
-					th:placeholder="#{gig.url}" />
-				<p class="control-label"
-					th:each="err : ${#fields.errors('gig.url')}" th:utext="${err}"></p>
-			</div>
-
-			<!-- AUTHOR -->
-			<div
-				th:class="${#fields.hasErrors('author')}? 'form-group has-error' : 'form-group'">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{author}"></span></label> <input type="text" th:field="*{author}"
-					class="form-control" name="gig" th:placeholder="#{author}" />
-				<p class="control-label" th:each="err : ${#fields.errors('author')}"
-					th:utext="${err}"></p>
-			</div>
+                    <option th:each="spot : ${spots}" th:value="${spots}" th:text="${spot.city}+' ' +${spot.club}">Wireframe
+                    </option>
+                </select>
 
 
 
-			<!-- PRZYCISK  -->
-			<div class="some-SHITTY-batton" align="right">
-				<input class="btn-primary" type="submit"></input>
-			</div>
-		</form>
-	</div>
-	<!-- jQuery -->
-	<script src="/js/jquery.js"></script>
+                <p class="control-label" th:each="err : ${#fields.errors('gig.spot.city')}" th:utext="${err}"></p>
+            </div>
 
-	<!-- Bootstrap Core JavaScript -->
-	<script src="/js/bootstrap.min.js"></script>
+
+            <!--  NAZWA KLUB  -->
+            <div th:class="${#fields.hasErrors('gig.spot.club')}? 'form-group has-error' : 'form-group'">
+                <label class="col-md-3 control-label"> <span th:text="#{gig.spot.club}"></span>
+                </label>
+                <input type="text" th:field="*{gig.spot.club}" class="form-control" name="gig" th:placeholder="#{gig.spot.club}" />
+                <p class="control-label" th:each="err : ${#fields.errors('gig.spot.club')}" th:utext="${err}"></p>
+            </div>
+
+
+            <!--  NAZWA AGEnCJI  -->
+            <div th:class="${#fields.hasErrors('gig.agency')}? 'form-group has-error' : 'form-group'">
+                <label class="col-md-3 control-label"> <span th:text="#{gig.agency}"></span>
+                </label>
+                <input type="text" th:field="*{gig.agency}" class="form-control" name="gig" th:placeholder="#{gig.agency}" />
+                <p class="control-label" th:each="err : ${#fields.errors('gig.agency')}" th:utext="${err}"></p>
+            </div>
+
+            <!--  DATA -->
+            <div th:class="${#fields.hasErrors('gig.date')}? 'form-group has-error' : 'form-group'">
+                <label class="col-md-3 control-label"> <span th:text="#{gig.date}"></span>
+                </label>
+                <input type="text" th:field="*{gig.date}" class="form-control" name="gig" th:placeholder="#{gig.date}" />
+                <p class="control-label" th:each="err : ${#fields.errors('gig.date')}" th:utext="${err}"></p>
+            </div>
+
+            <!--  URL -->
+            <div th:class="${#fields.hasErrors('gig.url')}? 'form-group has-error' : 'form-group'">
+                <label class="col-md-3 control-label"> <span th:text="#{gig.url}"></span>
+                </label>
+                <input type="text" th:field="*{gig.url}" class="form-control" name="gig" th:placeholder="#{gig.url}" />
+                <p class="control-label" th:each="err : ${#fields.errors('gig.url')}" th:utext="${err}"></p>
+            </div>
+
+            <!-- AUTHOR -->
+            <div th:class="${#fields.hasErrors('author')}? 'form-group has-error' : 'form-group'">
+                <label class="col-md-3 control-label"> <span th:text="#{author}"></span>
+                </label>
+                <input type="text" th:field="*{author}" class="form-control" name="gig" th:placeholder="#{author}" />
+                <p class="control-label" th:each="err : ${#fields.errors('author')}" th:utext="${err}"></p>
+            </div>
+
+
+
+            <!-- PRZYCISK  -->
+            <div class="some-SHITTY-batton" align="right">
+                <input class="btn-primary" type="submit"></input>
+            </div>
+        </form>
+    </div>
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
 
 </body>
 
