@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Log4j
 public class HomeController {
 	
-	@RequestMapping(value={"", "/"}, method = RequestMethod.GET)
+	@RequestMapping(value={"", "/", "index", "/index/"}, method = RequestMethod.GET)
 	public String home(Model model, HttpServletRequest request) {
 		
 		log.info("Żyję!!!");

@@ -42,7 +42,7 @@
 
         <!-- Logo starts -->
         <div class="logo">
-            <a href="#"> <img th:src="@{~/img/logo.png}" alt="logo" /> <span class="menu-toggle hidden-xs"> <i class="fa fa-bars"></i>
+            <a th:href="@{/index}"> <img th:src="@{~/img/logo.png}" alt="logo" /> <span class="menu-toggle hidden-xs"> <i class="fa fa-bars"></i>
 			</span>
             </a>
         </div>
@@ -228,19 +228,41 @@
                     <a th:href="@{/index}"> <i class="fa fa-desktop"></i> <span>Dashboard</span> <span class="current-page"></span>
                     </a>
                 </li>
-                <li>
-                    <a th:href="@{/gig/new}"> <i class="fa fa-sliders"></i>
-                        <span>Dodaj koncert</span>
+
+
+
+
+                <li class='has-sub'>
+                    <a href='#'> <i class="fa fa-database"></i>
+                        <span>Baza danych</span>
                     </a>
+                    <ul>
+
+                        <li>
+                            <a th:href="@{/gig/new}"> <i class="fa fa-plus-square-o"></i>
+                                <span>Dodaj koncert</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a th:href="@{/artist/new}"> <i class="fa fa-plus-square-o"></i> <span>Dodaj artystę</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a th:href="@{/spot/new}"> <i class="fa fa-plus-square-o"></i> <span>Dodaj spot</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a th:href="@{/artist/new}"> <i class="fa fa-pencil"></i> <span>Dodaj artystę</span>
-                    </a>
-                </li>
-                <li>
-                    <a th:href="@{/spot/new}"> <i class="fa fa-flask"></i> <span>Dodaj spot</span>
-                    </a>
-                </li>
+
+
+
+
+
+
+
+
+
+
                 <li>
                     <a href='calendar.html'> <i class="fa fa-calendar"></i>
                         <span>Calendar</span>
@@ -363,7 +385,13 @@
     <!-- Left sidebar ends -->
 
     <div class="dashboard-wrapper">
-        <div layout:fragment="content"></div>
+        <div class="spacer">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div layout:fragment="content"></div>
+                </div>
+            </div>
+        </div>
         <footer> Copyright Everest Admin Panel 2015 </footer>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
