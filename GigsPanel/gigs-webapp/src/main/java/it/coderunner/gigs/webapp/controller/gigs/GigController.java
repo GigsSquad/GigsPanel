@@ -1,8 +1,13 @@
 package it.coderunner.gigs.webapp.controller.gigs;
 
+import java.util.List;
+
 import it.coderunner.gigs.i18n.resolver.MessageResolver;
 import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
+import it.coderunner.gigs.model.artist.Artist;
+import it.coderunner.gigs.model.spot.Spot;
 import it.coderunner.gigs.repository.artists.Artists;
+import it.coderunner.gigs.repository.spots.Spots;
 import it.coderunner.gigs.service.artists.IArtistService;
 import it.coderunner.gigs.service.gigs.IGigService;
 import it.coderunner.gigs.service.spots.ISpotService;
@@ -41,6 +46,18 @@ public class GigController {
 	@ModelAttribute("gigForm")
 	public GigsForm form() {
 		return new GigsForm();
+	}
+	
+	@ModelAttribute("artists")
+	public List<Artist> artists(){
+		
+		return artistService.list(Artists.findAll());
+	}
+	
+	@ModelAttribute("spots")
+	public List<Spot> getSpotsList(){
+		
+		return spotService.list(Spots.findAll());
 	}
 	
 	@RequestMapping(value = { "/gig/new", "/gig/new/" })

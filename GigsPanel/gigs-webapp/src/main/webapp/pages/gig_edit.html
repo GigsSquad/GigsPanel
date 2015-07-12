@@ -17,9 +17,17 @@
 			<div
 				th:class="${#fields.hasErrors('gig.artist.name')}? 'form-group has-error' : 'form-group'">
 				<label class="col-md-3 control-label"> <span
-					th:text="#{gig.artist.name}"></span></label> <input type="text"
-					th:field="*{gig.artist.name}" class="form-control" name="gig"
-					th:placeholder="#{gig.artist.name}" />
+					th:text="#{gig.artist.name}"></span></label> 
+					
+					
+					<select th:field="*{gig.artist.name}" class="form-control">
+					
+					<option th:each="artist : ${artists}" th:value="${artist}"
+						th:text="${artist.name}">Wireframe
+					</option>
+					</select> 
+				
+				
 				<p class="control-label"
 					th:each="err : ${#fields.errors('gig.artist.name')}"
 					th:utext="${err}"></p>
@@ -28,9 +36,17 @@
 			<div
 				th:class="${#fields.hasErrors('gig.spot.city')}? 'form-group has-error' : 'form-group'">
 				<label class="col-md-3 control-label"> <span
-					th:text="#{gig.spot.city}"></span></label> <input type="text"
-					th:field="*{gig.spot.city}" class="form-control" name="gig"
-					th:placeholder="#{gig.spot.city}" />
+					th:text="#{gig.spot.city}"></span></label> 
+					
+					<select th:field="*{gig.spot.city}" class="form-control"> <!--  Jak zrobic zeby stringi polaczyc? -->
+					
+					<option th:each="spot : ${spots}" th:value="${spots}"
+						th:text="${spot.city}+' ' +${spot.club}">Wireframe
+					</option>
+					</select> 
+					
+										
+					
 				<p class="control-label"
 					th:each="err : ${#fields.errors('gig.spot.city')}"
 					th:utext="${err}"></p>
