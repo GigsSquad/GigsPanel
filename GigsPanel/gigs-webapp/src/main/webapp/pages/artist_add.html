@@ -1,66 +1,38 @@
 <!DOCTYPE html>
-<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	xmlns:th="http://www.thymeleaf.org">
+
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.thymeleaf.org" layout:decorator="template">
 
 <head>
-
-<meta charset="utf-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
-<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-<meta name="description" content=""></meta>
-<meta name="author" content=""></meta>
-
-<title>Dodaj artystÄ™</title>
-
-<!-- Bootstrap Core CSS -->
-<link href="/css/bootstrap.min.css" rel="stylesheet"></link>
-
-<!-- Custom CSS -->
-<link href="/css/shop-homepage.css" rel="stylesheet"></link>
-
+    <title>Dodaj artystê</title>
 </head>
 
 <body>
-	<div class="container">
-		<form id="box-login" th:action="@{/artist/new/save}"
-			th:object="${artistForm}"  method="post">
-			<div th:include="message_box :: alert"></div>
+    <div class="main-container" layout:fragment="content">
+        <form id="box-login" th:action="@{/artist/new/save}" th:object="${artistForm}" method="post">
+            <div th:include="message_box :: alert"></div>
 
-			<!-- Nazwa artysty -->
-			<div
-				th:class="${#fields.hasErrors('artist.name')}? 'form-group has-error' : 'form-group'">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{artist.name}"></span></label> <input type="text"
-					th:field="*{artist.name}" class="form-control" name="artist"
-					th:placeholder="#{artist.name}" />
-				<p class="control-label"
-					th:each="err : ${#fields.errors('artist.name')}"
-					th:utext="${err}"></p>
-			</div>
-			
-			<!-- Tag -->
-			<div
-				th:class="${#fields.hasErrors('artist.tag')}? 'form-group has-error' : 'form-group'">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{artist.tag}"></span></label> <input type="text"
-					th:field="*{artist.tag.tag}" class="form-control" name="artist"
-					th:placeholder="#{artist.tag}" />
-				<p class="control-label"
-					th:each="err : ${#fields.errors('artist.tag')}"
-					th:utext="${err}"></p>
-			</div>
+            <!-- Nazwa artysty -->
+            <div th:class="${#fields.hasErrors('artist.name')}? 'form-group has-error' : 'form-group'">
+                <label class="col-md-3 control-label"> <span th:text="#{artist.name}"></span>
+                </label>
+                <input type="text" th:field="*{artist.name}" class="form-control" name="artist" th:placeholder="#{artist.name}" />
+                <p class="control-label" th:each="err : ${#fields.errors('artist.name')}" th:utext="${err}"></p>
+            </div>
 
-			<!-- PRZYCISK  -->
-			<div class="some-SHITTY-batton" align="right">
-				<input class="btn-primary" type="submit"></input>
-			</div>
-		</form>
-	</div>
-	<!-- jQuery -->
-	<script src="/js/jquery.js"></script>
+            <!-- Tag -->
+            <div th:class="${#fields.hasErrors('artist.tag')}? 'form-group has-error' : 'form-group'">
+                <label class="col-md-3 control-label"> <span th:text="#{artist.tag}"></span>
+                </label>
+                <input type="text" th:field="*{artist.tag.tag}" class="form-control" name="artist" th:placeholder="#{artist.tag}" />
+                <p class="control-label" th:each="err : ${#fields.errors('artist.tag')}" th:utext="${err}"></p>
+            </div>
 
-	<!-- Bootstrap Core JavaScript -->
-	<script src="/js/bootstrap.min.js"></script>
+            <!-- PRZYCISK  -->
+            <div class="some-SHITTY-batton" align="right">
+                <input class="btn btn-default" type="submit"></input>
+            </div>
+        </form>
+    </div>
 
 </body>
 

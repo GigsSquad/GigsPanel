@@ -1557,7 +1557,11 @@
                 var axis = axes[j], box = axis.box,
                     t = axis.tickLength, x, y, xoff, yoff;
                 if (!axis.show || axis.ticks.length == 0)
+<<<<<<< HEAD
                     continue
+=======
+                    continue;
+>>>>>>> 0fe5e8e9859b63c8cce0c8e49f579ca9702987c4
                 
                 ctx.strokeStyle = axis.options.tickColor || $.color.parse(axis.options.color).scale('a', 0.22).toString();
                 ctx.lineWidth = 1;

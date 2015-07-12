@@ -1,96 +1,58 @@
 <!DOCTYPE html>
-<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	xmlns:th="http://www.thymeleaf.org">
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.thymeleaf.org" layout:decorator="template">
 
 <head>
-
-<meta charset="utf-8"></meta>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
-<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-<meta name="description" content=""></meta>
-<meta name="author" content=""></meta>
-
-<title>Gigs Map Homepage</title>
-
-<!-- Bootstrap Core CSS -->
-<link href="/css/bootstrap.min.css" rel="stylesheet"></link>
-
-<!-- Custom CSS -->
-<link href="/css/shop-homepage.css" rel="stylesheet"></link>
-
+    <title>Dodaj spot</title>
 </head>
 
 <body>
-	<div class="container">
-		<form id="box-login" th:action="@{/spot/new/save}"
-			th:object="${spotForm}"  method="post">
-			<div th:include="message_box :: alert"></div>
+    <div class="main-container" layout:fragment="content">
+        <form id="box-login" th:action="@{/spot/new/save}" th:object="${spotForm}" method="post">
+            <div th:include="message_box :: alert"></div>
 
-			<!--  NAZWA MIASTA -->
-			<div
-				th:class="${#fields.hasErrors('spot.city')}? 'form-group has-error' : 'form-group'">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{spot.city}"></span></label> <input type="text"
-					th:field="*{spot.city}" class="form-control" name="spot"
-					th:placeholder="#{spot.city}" />
-				<p class="control-label"
-					th:each="err : ${#fields.errors('spot.city')}"
-					th:utext="${err}"></p>
-			</div>
-			
-			<!--  ADRES KLUBU -->
-			<div
-				th:class="${#fields.hasErrors('spot.address')}? 'form-group has-error' : 'form-group'">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{spot.address}"></span></label> <input type="text"
-					th:field="*{spot.address}" class="form-control" name="spot"
-					th:placeholder="#{spot.address}" />
-				<p class="control-label"
-					th:each="err : ${#fields.errors('spot.address')}"
-					th:utext="${err}"></p>
-			</div>
+            <!--  NAZWA MIASTA -->
+            <div th:class="${#fields.hasErrors('spot.city')}? 'form-group has-error' : 'form-group'">
+                <label class="col-md-3 control-label"> <span th:text="#{spot.city}"></span>
+                </label>
+                <input type="text" th:field="*{spot.city}" class="form-control" name="spot" th:placeholder="#{spot.city}" />
+                <p class="control-label" th:each="err : ${#fields.errors('spot.city')}" th:utext="${err}"></p>
+            </div>
 
-			<!--  NAZWA KLUBU  -->
-			<div
-				th:class="${#fields.hasErrors('spot.club')}? 'form-group has-error' : 'form-group'">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{spot.club}"></span></label> <input type="text"
-					th:field="*{spot.club}" class="form-control" name="spot"
-					th:placeholder="#{spot.club}" />
-				<p class="control-label"
-					th:each="err : ${#fields.errors('spot.club')}"
-					th:utext="${err}"></p>
-			</div>
-			
-			<!--  KRAJ  -->
-			<div
-				th:class="form-group">
-				<label class="col-md-3 control-label"> <span
-					th:text="#{spot.country}"></span></label> 
-					<select th:field="*{spot.country}" class="form-control" name="spot"
-					th:placeholder="#{spot.country}" >
-					<option th:each="country:*{spot.getCountryList()}"
-					th:value="${country.getNameLabel()}"
-					th:text="${country.getResolvedName()}"></option>
-					</select>
-				<!-- <p class="control-label"
+            <!--  ADRES KLUBU -->
+            <div th:class="${#fields.hasErrors('spot.address')}? 'form-group has-error' : 'form-group'">
+                <label class="col-md-3 control-label"> <span th:text="#{spot.address}"></span>
+                </label>
+                <input type="text" th:field="*{spot.address}" class="form-control" name="spot" th:placeholder="#{spot.address}" />
+                <p class="control-label" th:each="err : ${#fields.errors('spot.address')}" th:utext="${err}"></p>
+            </div>
+
+            <!--  NAZWA KLUBU  -->
+            <div th:class="${#fields.hasErrors('spot.club')}? 'form-group has-error' : 'form-group'">
+                <label class="col-md-3 control-label"> <span th:text="#{spot.club}"></span>
+                </label>
+                <input type="text" th:field="*{spot.club}" class="form-control" name="spot" th:placeholder="#{spot.club}" />
+                <p class="control-label" th:each="err : ${#fields.errors('spot.club')}" th:utext="${err}"></p>
+            </div>
+
+            <!--  KRAJ  -->
+            <div th:class="form-group">
+                <label class="col-md-3 control-label"> <span th:text="#{spot.country}"></span>
+                </label>
+                <select th:field="*{spot.country}" class="form-control" name="spot" th:placeholder="#{spot.country}">
+                    <option th:each="country:*{spot.getCountryList()}" th:value="${country.getNameLabel()}" th:text="${country.getResolvedName()}"></option>
+                </select>
+                <!-- <p class="control-label"
 					th:each="err : ${#fields.errors('spot.club')}"
 					th:utext="${err}"></p> -->
-			</div>
+            </div>
 
 
-			<!-- PRZYCISK  -->
-			<div class="some-SHITTY-batton" align="right">
-				<input class="btn-primary" type="submit"></input>
-			</div>
-		</form>
-	</div>
-	<!-- jQuery -->
-	<script src="/js/jquery.js"></script>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script src="/js/bootstrap.min.js"></script>
-
+            <!-- PRZYCISK  -->
+            <div class="some-SHITTY-batton" align="right">
+                <input class="btn btn-default" type="submit"></input>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
