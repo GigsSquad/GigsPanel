@@ -1,15 +1,11 @@
 package it.coderunner.gigs.model.gig;
 
-import it.coderunner.gigs.model.BaseEntity;
-import it.coderunner.gigs.model.artist.Artist;
-import it.coderunner.gigs.model.comment.Comment;
-import it.coderunner.gigs.model.spot.Spot;
-
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
@@ -20,6 +16,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import it.coderunner.gigs.model.BaseEntity;
+import it.coderunner.gigs.model.artist.Artist;
+import it.coderunner.gigs.model.comment.Comment;
+import it.coderunner.gigs.model.spot.Spot;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -28,6 +28,7 @@ import lombok.Setter;
  * @author Jakub
  *
  */
+
 @Entity
 @Table(name="gigs")
 public class Gig extends BaseEntity<Long> {
@@ -61,6 +62,11 @@ public class Gig extends BaseEntity<Long> {
     @Getter
     @Setter
     private String url;
+    
+    @Getter
+    @Setter
+    @Column(name = "entrance_fee")
+    private EntranceFee entranceFee;
 
     @Getter
     @Setter
