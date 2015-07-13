@@ -13,6 +13,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
 import it.coderunner.gigs.service.artists.IArtistService;
+import it.coderunner.gigs.webapp.controller.LoggedUserController;
 import it.coderunner.gigs.webapp.controller.artists.form.ArtistsForm;
 import it.coderunner.gigs.webapp.controller.artists.form.ArtistsValidator;
 import it.coderunner.gigs.webapp.mvc.FlashMessages;
@@ -21,7 +22,7 @@ import lombok.extern.log4j.Log4j;
 
 @Controller
 @Log4j
-public class ArtistController {
+public class ArtistController extends LoggedUserController{
 	
 	@Autowired
 	private IArtistService artistService;

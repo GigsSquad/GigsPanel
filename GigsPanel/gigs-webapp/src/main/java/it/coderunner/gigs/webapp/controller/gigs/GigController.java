@@ -1,8 +1,5 @@
 package it.coderunner.gigs.webapp.controller.gigs;
 
-import java.util.List;
-
-import it.coderunner.gigs.i18n.resolver.MessageResolver;
 import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
 import it.coderunner.gigs.model.artist.Artist;
 import it.coderunner.gigs.model.spot.Spot;
@@ -11,10 +8,13 @@ import it.coderunner.gigs.repository.spots.Spots;
 import it.coderunner.gigs.service.artists.IArtistService;
 import it.coderunner.gigs.service.gigs.IGigService;
 import it.coderunner.gigs.service.spots.ISpotService;
+import it.coderunner.gigs.webapp.controller.LoggedUserController;
 import it.coderunner.gigs.webapp.controller.gigs.form.GigsForm;
 import it.coderunner.gigs.webapp.controller.gigs.form.GigsValidator;
 import it.coderunner.gigs.webapp.mvc.FlashMessages;
 import it.coderunner.gigs.webapp.mvc.Severity;
+
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -27,16 +27,15 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @Log4j
-public class GigController {
+public class GigController extends LoggedUserController{
 
 	@Autowired
 	private IGigService gigService;
-
+	
 	@Autowired
 	private IArtistService artistService;
 	

@@ -2,6 +2,7 @@ package it.coderunner.gigs.webapp.controller.spots;
 
 import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
 import it.coderunner.gigs.service.spots.ISpotService;
+import it.coderunner.gigs.webapp.controller.LoggedUserController;
 import it.coderunner.gigs.webapp.controller.spots.form.SpotsForm;
 import it.coderunner.gigs.webapp.controller.spots.form.SpotsValidator;
 import it.coderunner.gigs.webapp.mvc.FlashMessages;
@@ -18,12 +19,11 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @Log4j
-public class SpotController {
+public class SpotController extends LoggedUserController{
 	
 	@Autowired
 	private ISpotService spotService;
