@@ -1,17 +1,17 @@
 package it.coderunner.gigs.webapp.controller.login.form;
 
-import it.coderunner.gigs.service.users.IUserService;
-import it.coderunner.gigs.webapp.validator.CommonValidator;
-
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.Errors;
 
+import it.coderunner.gigs.service.users.IUserService;
+import it.coderunner.gigs.webapp.validator.CommonValidator;
+
 public class LoginValidator extends CommonValidator {
 
 	@Autowired
-	private IUserService userService;
-
+	IUserService userService;
+	
 	@Override
 	public boolean supports(Class<?> clazz) {
 		return clazz.equals(LoginForm.class);

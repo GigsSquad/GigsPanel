@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Everest Admin Panel" />
-<meta name="keywords"
-	content="Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Wrapbootstrap, Bootstrap" />
-<meta name="author" content="Bootstrap Gallery" />
-<link rel="shortcut icon" href="img/favicon.ico" />
-<title>GigsMap Admin Panel</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Everest Admin Panel" />
+    <meta name="keywords" content="Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Wrapbootstrap, Bootstrap" />
+    <meta name="author" content="Bootstrap Gallery" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>GigsMap Admin Panel</title>
 
-<!-- Bootstrap CSS -->
-<link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
 
-<!-- Animate CSS -->
-<link href="css/animate.css" rel="stylesheet" media="screen" />
+    <!-- Animate CSS -->
+    <link href="css/animate.css" rel="stylesheet" media="screen" />
 
-<!-- Main CSS -->
-<link href="css/main.css" rel="stylesheet" media="screen" />
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet" media="screen" />
 
-<!-- Main CSS -->
-<link href="css/login.css" rel="stylesheet" />
+    <!-- Main CSS -->
+    <link href="css/login.css" rel="stylesheet" />
 
-<!-- Font Awesome -->
-<link href="fonts/font-awesome.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" />
 
-<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
 			<script src="js/html5shiv.js"></script>
 			<script src="js/respond.min.js"></script>
 		<![endif]-->
@@ -35,61 +34,48 @@
 </head>
 
 <body>
-	<!-- Container Fluid starts -->
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-push-4 col-md-4 col-sm-push-3 col-sm-6 col-sx-12">
+    <!-- Container Fluid starts -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-push-4 col-md-4 col-sm-push-3 col-sm-6 col-sx-12">
+                <!-- Header end -->
+                <div class="login-container">
+                    <div class="login-wrapper animated flipInY">
+                        <div id="login" class="show">
+                            <div class="login-header">
+                                <h4>Sign In To Your Account</h4>
+                            </div>
+                            <form th:action="@{/login}" th:object="${loginForm}" method="post">
+                                <div th:include="message_box :: alert"></div>
 
-				<!-- Header end -->
-				<div class="login-container">
-					<div class="login-wrapper animated flipInY">
-						<div id="login" class="show">
-							<div class="login-header">
-								<h4>Sign In To Your Account</h4>
-							</div>
-							<form action="login.html" th:action="@{/login}"
-								th:object="${loginForm}" method="post">
-								<div th:include="message_box :: alert"></div>
-								<!-- NAZWA UŻYTKOWNIKA -->
-								<div class="form-group has-feedback">
-									<label class="control-label" for="userName"
-										th:text="#{user.username}"></label> <input type="text"
-										class="form-control" id="userName"
-										th:placeholder="#{user.username}" th:field="*{user.username}"
-										name="user"></input>
+                                <!-- NAZWA UŻYTKOWNIKA -->
+                                <div class="form-group has-feedback">
+                                    <label class="control-label" th:text="#{user.username}"></label>
+                                    <input type="text" class="form-control" th:placeholder="#{user.username}" th:field="*{user.username}"></input>
+                                    <p class="control-label" th:each="err : ${#fields.errors('user.username')}" th:utext="${err}"></p>
+                                    <i class="fa fa-user text-info form-control-feedback"></i>
+                                </div>
 
-									<p class="control-label"
-										th:each="err : ${#fields.errors('user.username')}"
-										th:utext="${err}"></p>
-
-
-									<i class="fa fa-user text-info form-control-feedback"></i>
-								</div>
-								<!-- HASEŁO UŻYTKOWNIKA -->
-								<div class="form-group has-feedback">
-									<label class="control-label" for="passWord"
-										th:text="#{user.password}"></label> <input type="password"
-										class="form-control" id="passWord"
-										th:placeholder="#{user.password}" th:field="*{user.password}" />
-									<i class="fa fa-key text-danger form-control-feedback"></i>
-									<p class="control-label"
-										th:each="err : ${#fields.errors('user.password')}"
-										th:utext="${err}"></p>
-
-								</div>
-								<input type="submit" value="Login"
-									class="btn btn-danger btn-lg btn-block" />
-							</form>
-							<a href="#forgot-pwd" class="underline text-info">Forgot
-								Password?</a> <a href="/register">Don't have an account? <span
+                                <!-- HASEŁO UŻYTKOWNIKA -->
+                                <div class="form-group has-feedback">
+                                    <label class="control-label" th:text="#{user.password}"></label>
+                                    <input type="password" class="form-control" th:placeholder="#{user.password}" th:field="*{user.password}" />
+                                    <i class="fa fa-key text-danger form-control-feedback"></i>
+                                    <p class="control-label" th:each="err : ${#fields.errors('user.password')}" th:utext="${err}"></p>
+                                </div>
+                                <input type="submit" value="Login" class="btn btn-danger btn-lg btn-block" />
+                            </form>
+                            <a href="#forgot-pwd" class="underline text-info">Forgot
+								Password?</a> <a th:href="@{/register}">Don't have an account? <span
 								class="text-danger">Sign Up</span></a>
-						</div>
+                        </div>
 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Container Fluid ends -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container Fluid ends -->
 </body>
+
 </html>

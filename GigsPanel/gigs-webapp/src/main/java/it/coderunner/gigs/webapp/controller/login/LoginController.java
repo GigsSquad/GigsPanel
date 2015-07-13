@@ -2,20 +2,9 @@ package it.coderunner.gigs.webapp.controller.login;
 
 import java.io.Serializable;
 
-import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
-import it.coderunner.gigs.model.user.User;
-import it.coderunner.gigs.service.users.IUserService;
-import it.coderunner.gigs.webapp.controller.SessionPreferences;
-import it.coderunner.gigs.webapp.controller.login.form.LoginForm;
-import it.coderunner.gigs.webapp.controller.login.form.LoginValidator;
-import it.coderunner.gigs.webapp.mvc.FlashMessages;
-import it.coderunner.gigs.webapp.mvc.Severity;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-import lombok.extern.log4j.Log4j;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AccountExpiredException;
@@ -34,6 +23,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
+import it.coderunner.gigs.model.user.User;
+import it.coderunner.gigs.service.users.IUserService;
+import it.coderunner.gigs.webapp.controller.SessionPreferences;
+import it.coderunner.gigs.webapp.controller.login.form.LoginForm;
+import it.coderunner.gigs.webapp.controller.login.form.LoginValidator;
+import it.coderunner.gigs.webapp.mvc.FlashMessages;
+import it.coderunner.gigs.webapp.mvc.Severity;
+import lombok.extern.log4j.Log4j;
 
 @Controller
 @Log4j
@@ -93,25 +92,27 @@ public class LoginController implements Serializable{
 					session.setAttribute("SPRING_SECURITY_CONTEXT", SecurityContextHolder.getContext());
 					User user = userService.afterAuthentication(authenticate.getName());
 					sessionPreferences.setDisplayName(user.getUsername());
-					resultView = "redirect:/";
+					resultView = "redirect:/index";
 				}
-				
-
 			} catch (BadCredentialsException e) {
+				log.warn("credentials", e);
 				flashMessages.clearMessages();
 				flashMessages.addMessage("user.login.error.credentials", Severity.ERROR);
 				resultView = "login";
 				
 			} catch (AccountExpiredException e){
+				log.warn("expired", e);
 				flashMessages.clearMessages();
 				flashMessages.addMessage("user.login.error.expired", Severity.ERROR);
 				resultView = "login";
 				
 			} catch (LockedException e){
+				log.warn("locked", e);
 				flashMessages.clearMessages();
 				flashMessages.addMessage("user.login.error.locked", Severity.ERROR);
 				resultView = "login";
 			} catch (Exception e){
+				log.warn("error", e);
 				flashMessages.clearMessages();
 				flashMessages.addMessage("user.login.error", Severity.ERROR);
 				resultView = "login";

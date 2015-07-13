@@ -9,9 +9,6 @@ import it.coderunner.gigs.webapp.validator.CommonValidator;
 
 public class GigsValidator extends CommonValidator {
 
-	@Autowired
-	private IGigService gigService;
-
 	@Override
 	public boolean supports(Class<?> clazz) {
 		return clazz.equals(GigsForm.class);
