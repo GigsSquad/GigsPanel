@@ -3,6 +3,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-app_3_0.xsd"
 	version="3.0">
 	<display-name>Gigs Panel</display-name>
+	
 
 	<!-- Character Encoding filter -->
 	<filter>
@@ -54,7 +55,15 @@
 			org.springframework.web.context.request.RequestContextListener
 		</listener-class>
 	</listener>
-	
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy
+		</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 	<!-- Context params: -->
 	<!-- Spring config locations -->
 	<context-param>
@@ -87,4 +96,6 @@
 		<error-code>405</error-code>
 		<location>/404.html</location>
 	</error-page>
+	
+	
 </web-app>

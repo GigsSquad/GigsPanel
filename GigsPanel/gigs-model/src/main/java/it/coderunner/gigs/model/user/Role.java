@@ -2,7 +2,7 @@ package it.coderunner.gigs.model.user;
 
 import lombok.Getter;
 
-public enum UserRole {
+public enum Role {
 	
 	/**
 	 * zwykły użytkownik
@@ -11,7 +11,7 @@ public enum UserRole {
 	
 	ROLE_ADMIN("ROLE_ADMIN");
 	
-	private UserRole(String code){
+	private Role(String code){
 		this.code=code;
 	}
 

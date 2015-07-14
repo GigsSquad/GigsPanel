@@ -1,7 +1,7 @@
 package it.coderunner.gigs.service.users.impl;
 
 import it.coderunner.gigs.model.user.User;
-import it.coderunner.gigs.model.user.UserRole;
+import it.coderunner.gigs.model.user.Role;
 import it.coderunner.gigs.model.user.UserStatus;
 import it.coderunner.gigs.repository.users.IUserRepository;
 import it.coderunner.gigs.repository.users.Users;
@@ -84,7 +84,7 @@ public class UserService implements IUserService {
 	@Override
 	public void register(User user, Locale locale) {
 		encryptPasswords(user);
-		user.add(UserRole.ROLE_ADMIN, UserRole.ROLE_USER);
+		user.add(Role.ROLE_ADMIN, Role.ROLE_USER);
 		String activationHash = saltComponentService.generateActivationHash(user);
 		user.setActivationHash(activationHash);
 		user.setStatus(UserStatus.PENDING);
@@ -134,7 +134,7 @@ public class UserService implements IUserService {
 	 */
 	private Collection<? extends GrantedAuthority> getAuthorities(User user) {
 		Set<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();
-		for (UserRole role : user.getRoles()) {
+		for (Role role : user.getRoles()) {
 			authorities.add(new SimpleGrantedAuthority(role.getCode()));
 		}
 		return authorities;
@@ -150,7 +150,7 @@ public class UserService implements IUserService {
 
 	@Override
 	public User afterAuthentication(String username) {
-		User user = userRepository.findAll().withUsername(username).loadWith("coopProfile").uniqueObject();
+		User user = userRepository.findAll().withUsername(username).uniqueObject();
 		user.setRemindPasswordHash(null);
 		// powinno updateować automatycznie, bez konieczności wywołania update z
 		// repozytorium

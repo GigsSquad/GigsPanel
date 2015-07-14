@@ -23,6 +23,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @Log4j
+@RequestMapping(value = { "/user" })
 public class SpotController extends LoggedUserController{
 	
 	@Autowired
@@ -46,19 +47,19 @@ public class SpotController extends LoggedUserController{
 
 		if (!validator.hasErrors()) {
 			try {
-
-				spotService.save(spotsForm.getSpot().getCity(), spotsForm.getSpot().getAddress(), spotsForm.getSpot().getClub());
-
+				spotService.save(spotsForm.getSpot().getCity(), spotsForm.getSpot().getAddress(), spotsForm.getSpot().getClub(), spotsForm.getSpot().getCountry());
 				flashMessages.addMessage("spot.save.success", Severity.SUCCESS);
 				return "spot_add";
 			} catch (Exception e) {
 				log.warn("Warn");
 				flashMessages.addMessage("spot.save.error", Severity.ERROR);
+				System.out.println("Exception");
 				return "spot_add";
 			}
 
 		}
 		flashMessages.addMessage("spot.save.error", Severity.ERROR);
+		System.out.println("po ifie");
 		return "spot_add";
 	}
 }

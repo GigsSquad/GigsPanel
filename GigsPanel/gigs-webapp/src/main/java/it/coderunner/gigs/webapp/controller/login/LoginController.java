@@ -92,7 +92,7 @@ public class LoginController implements Serializable{
 					session.setAttribute("SPRING_SECURITY_CONTEXT", SecurityContextHolder.getContext());
 					User user = userService.afterAuthentication(authenticate.getName());
 					sessionPreferences.setDisplayName(user.getUsername());
-					resultView = "redirect:/index";
+					resultView = "redirect:/user/index";
 				}
 			} catch (BadCredentialsException e) {
 				log.warn("credentials", e);

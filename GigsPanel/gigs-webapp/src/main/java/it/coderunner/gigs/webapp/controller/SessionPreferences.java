@@ -1,7 +1,5 @@
 package it.coderunner.gigs.webapp.controller;
 
-import it.coderunner.gigs.model.user.User;
-import it.coderunner.gigs.repository.users.Users;
 import it.coderunner.gigs.service.users.IUserService;
 import it.coderunner.gigs.webapp.utils.SecurityUtils;
 
@@ -31,13 +29,9 @@ public class SessionPreferences implements Serializable {
 
 	public String getDisplayName() {
 		if (StringUtils.isBlank(displayName)) {
-			if (SecurityUtils.isUserLogged()) {
-				User user = userService.uniqueObject(Users.findAll()
-						.withUsername(SecurityUtils.getLoggedUsername()));
-				displayName = user.getUsername();
-			} else {
-				displayName = "Niezalogowany";
-			}
+//				User user = userService.uniqueObject(Users.findAll()
+//						.withUsername(SecurityUtils.getLoggedUsername()));
+				displayName = SecurityUtils.getLoggedUsername();
 		}
 		return displayName;
 	}

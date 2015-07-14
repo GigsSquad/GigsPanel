@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @Log4j
-public class HomeController {
+@RequestMapping(value = { "/user" })
+public class HomeController extends LoggedUserController{
 	
 
 	@RequestMapping(value={"", "/", "index", "/index/"}, method = RequestMethod.GET)

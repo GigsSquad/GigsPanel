@@ -29,6 +29,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @Log4j
+@RequestMapping(value = { "/user" })
 public class ArtistController extends LoggedUserController{
 	
 	@Autowired

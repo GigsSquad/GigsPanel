@@ -133,14 +133,14 @@ public class User extends BaseEntity<Long> {
 	/**
 	 * Rola użytkownika
 	 */
-	@ElementCollection(targetClass = UserRole.class, fetch = FetchType.LAZY)
+	@ElementCollection(targetClass = Role.class, fetch = FetchType.LAZY)
 	@CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"), uniqueConstraints = @UniqueConstraint(columnNames = {
 			"user_id", "role" }))
 	@Column(name = "role", columnDefinition = "TEXT")
 	@Enumerated(EnumType.STRING)
 	@Getter
 	@Setter
-	private Set<UserRole> roles = new HashSet<>();
+	private Set<Role> roles = new HashSet<>();
 
 	/**
 	 * Dodaje zbiór ról do zbioru ról posiadanych przez użytkownika
@@ -149,7 +149,7 @@ public class User extends BaseEntity<Long> {
 	 * @return zwraca true, jeżeli zbiór ról posiadanych przez użytkownika
 	 *         zmienił się po operacji dodawania.
 	 */
-	public boolean add(UserRole... roles) {
+	public boolean add(Role... roles) {
 		return this.roles.addAll(Arrays.asList(roles));
 	}
 
@@ -160,7 +160,7 @@ public class User extends BaseEntity<Long> {
 	 * @return zwraca true, jeżeli zbiór ról posiadanych przez użytkownika
 	 *         zmienił się po operacji usuwania.
 	 */
-	public boolean remove(UserRole... roles) {
+	public boolean remove(Role... roles) {
 		return this.roles.removeAll(Arrays.asList(roles));
 	}
 
@@ -171,8 +171,8 @@ public class User extends BaseEntity<Long> {
 	 * @param roles
 	 * @return
 	 */
-	public boolean hasRoles(UserRole... roles) {
-		for (UserRole role : roles) {
+	public boolean hasRoles(Role... roles) {
+		for (Role role : roles) {
 			if (!this.getRoles().contains(role)) {
 				return false;
 			}
