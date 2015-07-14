@@ -12,11 +12,17 @@ public class ArtistsForm extends AbstractForm{
 	
 	@Getter
 	@Setter 
-	Artist artist;
+	String  artistName;
+	
+	@Getter
+	@Setter
+	String tag;
 
 	@Override
 	public String getID() {
-		return new Md5PasswordEncoder().encodePassword(artist.getId()+"", "trodlsoldaoaskdoas");
+		// TODO Auto-generated method stub
+		return null;
 	}
+
 
 }
