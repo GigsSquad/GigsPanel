@@ -12,7 +12,8 @@ public class SecurityUtils {
 	 */
 	public static boolean isUserLogged() {
 		try {
-			return !SecurityContextHolder.getContext().getAuthentication().getName().equals("anonymousUser");
+			return !SecurityContextHolder.getContext().getAuthentication()
+					.getName().equals("anonymousUser");
 		} catch (Exception e) {
 			return false;
 		}
@@ -25,8 +26,10 @@ public class SecurityUtils {
 	 * @return
 	 */
 	public static String getLoggedUsername() {
-		String username = SecurityContextHolder.getContext().getAuthentication().getName();
-		return username.equals("anonymousUser") ? "" : username;
+		if (SecurityContextHolder.getContext().getAuthentication() != null) {
+			return SecurityContextHolder.getContext().getAuthentication()
+					.getName();
+		}
+		return "";
 	}
-	
 }
