@@ -207,7 +207,7 @@ public enum Country {
 		this.nameLabel = name;
 		this.symbol = symbol;
 	}
-
+	
 	/**
 	 * kod etykiety (message) przechowujący nazwę państwa we wskazanej wersji
 	 * językowej

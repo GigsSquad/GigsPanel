@@ -61,15 +61,21 @@ public class Spot extends BaseEntity<Long> {
 	private double lon;
 
 	@Getter
-	@Setter
 	private Country country;
 
-	//TODO: Locale jest wstawione na sztywno, poprawić
+	public void setCountry(int order) {
+		country = Country.values()[order];
+		System.out.println(country);
+	}
+
+	// TODO: Locale jest wstawione na sztywno, poprawić
 	public Country[] getCountryList() {
-		System.out.println("LOCALE: " + Locale.ENGLISH + " - "
-				+ Locale.ENGLISH.getLanguage().toLowerCase());
-		return Country.sortedByName(new LocalePropertiesMessageResolver(
-				Locale.ENGLISH));
+		return Country
+				.sortedByName(new LocalePropertiesMessageResolver(Locale.ENGLISH));
+	}
+	
+	public Country[] getRawCountryList(){
+		return Country.values();
 	}
 
 	public Spot() {
@@ -81,4 +87,11 @@ public class Spot extends BaseEntity<Long> {
 		this.club = club;
 		this.country = country;
 	}
+
+	@Override
+	public String toString() {
+		return "Spot [city=" + city + ", address=" + address + ", club=" + club
+				+ ", country=" + country + "]";
+	}
+	
 }

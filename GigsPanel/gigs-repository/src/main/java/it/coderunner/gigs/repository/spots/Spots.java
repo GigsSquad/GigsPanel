@@ -2,6 +2,7 @@ package it.coderunner.gigs.repository.spots;
 
 import it.coderunner.gigs.model.gig.Gig;
 import it.coderunner.gigs.model.spot.Spot;
+import it.coderunner.gigs.model.user.Country;
 import it.coderunner.gigs.repository.OrderType;
 import it.coderunner.gigs.repository.Queryable;
 
@@ -15,7 +16,7 @@ public abstract class Spots extends Queryable<Spot, Long> {
 	protected String city;
 	protected String address;
 	protected String club;
-	protected String country;
+	protected Country country;
 
 	protected Gig gis;
 
@@ -32,13 +33,13 @@ public abstract class Spots extends Queryable<Spot, Long> {
 		this.address = address;
 		return this;
 	}
-	
+
 	public Spots withClub(String club) {
 		this.club = club;
 		return this;
 	}
 
-	public Spots withCountry(String country) {
+	public Spots withCountry(Country country) {
 		this.country = country;
 		return this;
 	}
@@ -71,7 +72,7 @@ public abstract class Spots extends Queryable<Spot, Long> {
 		if (StringUtils.isNotBlank(other.club)) {
 			this.club = other.club;
 		}
-		if (StringUtils.isNotBlank(other.country)) {
+		if (other.country != null) {
 			this.country = other.country;
 		}
 

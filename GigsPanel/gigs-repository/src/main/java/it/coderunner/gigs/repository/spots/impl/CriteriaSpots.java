@@ -29,7 +29,7 @@ public class CriteriaSpots extends Spots {
 		if (StringUtils.isNotBlank(club)) {
 			criteria.add(Restrictions.eq("club", club));
 		}
-		if (StringUtils.isNotBlank(country)) {
+		if (country != null) {
 			criteria.add(Restrictions.eq("country", country));
 		}
 

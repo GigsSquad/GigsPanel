@@ -54,11 +54,23 @@ public class SpotService implements ISpotService {
 	 * zwróci tego spot który już jest w bazie
 	 */
 	@Override
+	public Spot save(String city, String address, String club, Country country) {
+		Spot spot = uniqueObject(Spots.findAll().withCity(city)
+				.withAddress(address).withClub(club).withCountry(country));
+		
+		if (spot == null) {
+			spot = new Spot(city, address, club, country);
+			saveOrUpdate(spot);
+		}
+		return spot;
+	}
+	
+	@Override
 	public Spot save(String city, String address, String club) {
 		Spot spot = uniqueObject(Spots.findAll().withCity(city)
 				.withAddress(address).withClub(club));
 		if (spot == null) {
-			spot = new Spot(city, address, club, Country.POLAND);
+			spot = new Spot(city, address, club, null);
 			saveOrUpdate(spot);
 		}
 		return spot;
@@ -69,7 +81,7 @@ public class SpotService implements ISpotService {
 		Spot spot = uniqueObject(Spots.findAll().withCity(city)
 				.withAddress(address));
 		if (spot == null) {
-			spot = new Spot(city, address, "", Country.POLAND);
+			spot = new Spot(city, address, "", null);
 			saveOrUpdate(spot);
 		}
 		return spot;
@@ -79,7 +91,7 @@ public class SpotService implements ISpotService {
 	public Spot save(String city) {
 		Spot spot = uniqueObject(Spots.findAll().withCity(city));
 		if (spot == null) {
-			spot = new Spot(city, "", "", Country.POLAND);
+			spot = new Spot(city, "", "", null);
 			saveOrUpdate(spot);
 		}
 		return spot;
