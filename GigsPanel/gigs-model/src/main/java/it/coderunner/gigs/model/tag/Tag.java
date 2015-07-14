@@ -41,4 +41,10 @@ public class Tag extends BaseEntity<Long>{
 	@OneToMany(mappedBy = "tag", targetEntity = Artist.class, cascade = CascadeType.ALL)
 	private Set<Artist> artists = new HashSet<>();
 	
+	public Tag(){
+		this.tag = "blank";
+	}
+	public Tag(String tagName){
+		this.tag = tagName;
+	}
 }

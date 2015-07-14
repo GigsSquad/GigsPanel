@@ -3,7 +3,9 @@ package it.coderunner.gigs.webapp.controller.artists;
 import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
 import it.coderunner.gigs.model.artist.Artist;
 import it.coderunner.gigs.model.tag.Tag;
+import it.coderunner.gigs.repository.tags.Tags;
 import it.coderunner.gigs.service.artists.IArtistService;
+import it.coderunner.gigs.service.tags.ITagService;
 import it.coderunner.gigs.webapp.controller.LoggedUserController;
 import it.coderunner.gigs.webapp.controller.artists.form.ArtistsForm;
 import it.coderunner.gigs.webapp.controller.artists.form.ArtistsValidator;
@@ -32,17 +34,18 @@ public class ArtistController extends LoggedUserController{
 	@Autowired
 	private IArtistService artistService;
 	
+	@Autowired
+	private ITagService tagService;
+	
 	@ModelAttribute("artistForm")
 	public ArtistsForm form() {
 		return new ArtistsForm();
 	}
-	
+	@ModelAttribute("tags")
 	public List<Tag> getTagList(){
-		//TODO: REPO I SERVICE DLA 
-		List<String> list = new List<String>;
-	
-		return list;
+		return tagService.list(Tags.findAll());
 	}
+	
 	@RequestMapping(value = { "/artist/new", "/artist/new/" })
 	public String getArtist(Model model) {
 		return "artist_add";
@@ -57,9 +60,9 @@ public class ArtistController extends LoggedUserController{
 		if (!validator.hasErrors()) {
 			try {
 
-				Artist artist = new Artist(artistsForm.getArtistName());
+				Artist artist = new Artist(artistsForm.getArtistName(),new Tag(artistsForm.getTag()));
 				artistService.save(artist);
-
+				
 				flashMessages.addMessage("artist.save.success", Severity.SUCCESS);
 				return "artist_add";
 			} catch (Exception e) {

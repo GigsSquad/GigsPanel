@@ -1,8 +1,5 @@
 package it.coderunner.gigs.webapp.controller.artists.form;
 
-import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
-
-import it.coderunner.gigs.model.artist.Artist;
 import it.coderunner.gigs.webapp.mvc.AbstractForm;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,7 +17,6 @@ public class ArtistsForm extends AbstractForm{
 
 	@Override
 	public String getID() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

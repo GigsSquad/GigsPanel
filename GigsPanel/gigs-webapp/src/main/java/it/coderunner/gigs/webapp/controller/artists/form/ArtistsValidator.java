@@ -18,11 +18,11 @@ public class ArtistsValidator extends CommonValidator {
 		ArtistsForm form = (ArtistsForm) target;
 
 		if (StringUtils.isBlank(form.getArtistName())) {
-			errors.rejectValue("artist.name", "artist.name.cannot.be.null");
+			errors.rejectValue("artistName", "artist.name.cannot.be.null");
 		}
 
 		if (StringUtils.isBlank(form.getTag())) {
-			errors.rejectValue("artist.tag", "artist.tag.cannot.be.null");
+			errors.rejectValue("tag", "artist.tag.cannot.be.null");
 		}
 
 	}

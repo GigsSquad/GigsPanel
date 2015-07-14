@@ -13,21 +13,21 @@
 
             <!-- Nazwa artysty -->
             <div th:class="${#fields.hasErrors('artistName')}? 'form-group has-error' : 'form-group'">
-                <label class="col-md-3 control-label"> <span th:text="#{artistName}"></span>
+                <label class="col-md-3 control-label"> <span th:text="#{artist.name}"></span>
                 </label>
-                <input type="text" th:field="*{artistName}" class="form-control" name="artist" th:placeholder="#{artistName}" />
+                <input type="text" th:field="*{artistName}" class="form-control" name="artist" th:placeholder="#{artist.name}" />
                 <p class="control-label" th:each="err : ${#fields.errors('artistName')}" th:utext="${err}"></p>
             </div>
 
             <!-- Tag -->
             <div th:class="${#fields.hasErrors('tag')}? 'form-group has-error' : 'form-group'">
-                <label class="col-md-3 control-label"> <span th:text="#{tag}"></span>
+                <label class="col-md-3 control-label"> <span th:text="#{artist.tag}"></span>
                 </label>
                 
                
                 <select th:field="*{tag}" class="form-control">
 
-                    <option th:each="tag : ${tags}" th:value="${tag}" th:text="${tag}">Wireframe
+                    <option th:each="tag : ${tags}" th:value="${tag}" th:text="${tag.getTag()}">Wireframe
                     </option>
                 </select>
                 

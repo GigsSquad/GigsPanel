@@ -283,3 +283,8 @@ org.springframework.security.authentication.LockedException: User account is loc
 2015-07-13 14:13:38 INFO  HomeController:21 - Żyję!!!
 2015-07-14 10:31:25 WARN  ArtistController:54 - Warn
 2015-07-14 10:34:10 WARN  ArtistController:54 - Warn
+2015-07-14 19:11:18 WARN  ArtistController:69 - Warn
+2015-07-14 23:18:16 INFO  HomeController:21 - Żyję!!!
+2015-07-14 23:44:35 WARN  ArtistController:69 - Warn
+2015-07-14 23:51:55 WARN  ArtistController:69 - Warn
+2015-07-14 23:55:43 WARN  ArtistController:69 - Warn
