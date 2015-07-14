@@ -21,17 +21,26 @@ public class SpotsValidator extends CommonValidator {
 	public void validateForm(Object target, Errors errors) {
 
 		SpotsForm form = (SpotsForm) target;
-
+		if(errors.hasErrors()){
+			System.out.println("bugi");
+			for(Object o : errors.getAllErrors()){
+				System.out.println(o.toString());
+			}
+		}
+		
 		if (StringUtils.isBlank(form.getSpot().getCity())) {
 			errors.rejectValue("spot.city", "spot.city.cannot.be.null");
+			System.out.println("City null");
 		}
 
 		if (StringUtils.isBlank(form.getSpot().getAddress())) {
 			errors.rejectValue("spot.address", "spot.address.cannot.be.null");
+			System.out.println("Address null");
 		}
 
 		if (StringUtils.isBlank(form.getSpot().getClub())) {
 			errors.rejectValue("spot.club", "spot.club.cannot.be.null");
+			System.out.println("Club null");
 		}
 
 	}

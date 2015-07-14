@@ -39,7 +39,7 @@
                 <label class="col-md-3 control-label"> <span th:text="#{spot.country}"></span>
                 </label>
                 <select th:field="*{spot.country}" class="form-control" name="spot" th:placeholder="#{spot.country}">
-                    <option th:each="country:*{spot.getCountryList()}" th:value="${country.getNameLabel()}" th:text="${country.getResolvedName()}"></option>
+                    <option th:each="country:*{spot.getCountryList()}" th:value="${country.ordinal()}" th:text="${country.getResolvedName()}"></option>
                 </select>
                 <!-- <p class="control-label"
 					th:each="err : ${#fields.errors('spot.club')}"
