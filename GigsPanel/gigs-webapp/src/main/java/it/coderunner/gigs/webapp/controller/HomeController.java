@@ -1,13 +1,17 @@
 package it.coderunner.gigs.webapp.controller;
 
 import it.coderunner.gigs.repository.artists.Artists;
+import it.coderunner.gigs.repository.comments.Comments;
 import it.coderunner.gigs.repository.gigs.Gigs;
 import it.coderunner.gigs.repository.gigs.IGigRepository;
 import it.coderunner.gigs.repository.spots.Spots;
+import it.coderunner.gigs.repository.tags.Tags;
 import it.coderunner.gigs.repository.users.Users;
 import it.coderunner.gigs.service.artists.IArtistService;
+import it.coderunner.gigs.service.comments.ICommentService;
 import it.coderunner.gigs.service.gigs.IGigService;
 import it.coderunner.gigs.service.spots.ISpotService;
+import it.coderunner.gigs.service.tags.ITagService;
 import it.coderunner.gigs.service.users.IUserService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -37,25 +41,40 @@ public class HomeController extends LoggedUserController{
 	@Autowired
 	private IGigService gigService;
 	
+	@Autowired
+	private ITagService tagService;
+	
+	@Autowired
+	private ICommentService commentService;
 	
 	@ModelAttribute("userCounter")
-	public int userCounter() {
-		return userService.list(Users.findAll()).size();
+	public long userCounter() {
+		return userService.count(Users.findAll());
 	}
 	
 	@ModelAttribute("spotCounter")
-	public int spotCounter(){
-		return spotService.list(Spots.findAll()).size();
+	public long spotCounter(){
+		return spotService.count(Spots.findAll());
 	}
 	
 	@ModelAttribute("artistCounter")
-	public int artistCounter(){
-		return artistService.list(Artists.findAll()).size();
+	public long artistCounter(){
+		return artistService.count(Artists.findAll());
 	}
 	
 	@ModelAttribute("gigCounter")
-	public int gigCounter(){
-		return gigService.list(Gigs.findAll()).size();
+	public long gigCounter(){
+		return gigService.count(Gigs.findAll());
+	}
+	
+	@ModelAttribute("tagCounter")
+	public long tagCounter(){
+		return tagService.count(Tags.findAll());
+	}
+	
+	@ModelAttribute("commentCounter")
+	public long commentCounter(){
+		return commentService.count(Comments.findAll());
 	}
 
 	@RequestMapping(value={"", "/", "index", "/index/"}, method = RequestMethod.GET)
