@@ -17,48 +17,48 @@
                     <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
                         <div class="danger-bg center-align-text">
                             <div class="spacer-xs">
-                                <i class="fa fa-github fa-2x"></i> <small class="text-white">Github</small>
-                                <h3 class="no-margin no-padding">9%</h3>
+                                <small class="text-white" th:text="#{dashboard.users}"></small>
+                                <h3 class="no-margin no-padding" th:text="*{userCounter}"></h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
                         <div class="success-bg center-align-text">
                             <div class="spacer-xs">
-                                <i class="fa fa-foursquare fa-2x"></i> <small class="text-white">Foursquare</small>
-                                <h3 class="no-margin no-padding text-white">45%</h3>
+                                <small class="text-white" th:text="#{dashboard.comments}"></small>
+                                <h3 class="no-margin no-padding text-white" th:text="*{commentCounter}"></h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
                         <div class="info-bg center-align-text">
                             <div class="spacer-xs">
-                                <i class="fa fa-facebook fa-2x"></i> <small class="text-white">Facebook</small>
-                                <h3 class="no-margin no-padding">37%</h3>
+                                 <small class="text-white" th:text="#{dashboard.tags}"></small>
+                                <h3 class="no-margin no-padding" th:text="*{tagCounter}"></h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
                         <div class="brown-bg center-align-text">
                             <div class="spacer-xs">
-                                <i class="fa fa-google-plus fa-2x"></i> <small class="text-white">Google Plus</small>
-                                <h3 class="no-margin no-padding">25%</h3>
+                                <small class="text-white" th:text="#{dashboard.gigs}"></small>
+                                <h3 class="no-margin no-padding" th:text="*{gigCounter}"></h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
                         <div class="linkedin-bg center-align-text">
                             <div class="spacer-xs">
-                                <i class="fa fa-linkedin fa-2x"></i> <small class="text-white">LinkedIn</small>
-                                <h3 class="no-margin no-padding">19%</h3>
+                              <small class="text-white" th:text="#{dashboard.spots}"></small>
+                                <h3 class="no-margin no-padding" th:text="*{spotCounter}"></h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
                         <div class="twitter-bg center-align-text">
                             <div class="spacer-xs">
-                                <i class="fa fa-twitter fa-2x"></i> <small class="text-white">Twitter</small>
-                                <h3 class="no-margin no-padding text-white">12%</h3>
+                                <small class="text-white" th:text="#{dashboard.artists}"></small>
+                                <h3 class="no-margin no-padding text-white" th:text="*{artistCounter}"></h3>
                             </div>
                         </div>
                     </div>
@@ -82,8 +82,7 @@
                                         <div id="us-map" class="chart-height-lg"></div>
                                     </div>
                                     <div class="visitors-total">
-                                        <h3>88,305</h3>
-                                        <p>Last week total visits</p>
+                                        <h3>Miejsce na input</h3>
                                     </div>
                                     <div class="visit-stats">
                                         <ul class="clearfix">
