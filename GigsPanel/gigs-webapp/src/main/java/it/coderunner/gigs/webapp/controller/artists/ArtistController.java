@@ -1,6 +1,22 @@
 package it.coderunner.gigs.webapp.controller.artists;
 
+import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
+import it.coderunner.gigs.model.artist.Artist;
+import it.coderunner.gigs.model.tag.Tag;
+import it.coderunner.gigs.repository.tags.Tags;
+import it.coderunner.gigs.service.artists.IArtistService;
+import it.coderunner.gigs.service.tags.ITagService;
+import it.coderunner.gigs.webapp.controller.LoggedUserController;
+import it.coderunner.gigs.webapp.controller.artists.form.ArtistsForm;
+import it.coderunner.gigs.webapp.controller.artists.form.ArtistsValidator;
+import it.coderunner.gigs.webapp.mvc.FlashMessages;
+import it.coderunner.gigs.webapp.mvc.Severity;
+
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
+
+import lombok.extern.log4j.Log4j;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,15 +27,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
-import it.coderunner.gigs.service.artists.IArtistService;
-import it.coderunner.gigs.webapp.controller.LoggedUserController;
-import it.coderunner.gigs.webapp.controller.artists.form.ArtistsForm;
-import it.coderunner.gigs.webapp.controller.artists.form.ArtistsValidator;
-import it.coderunner.gigs.webapp.mvc.FlashMessages;
-import it.coderunner.gigs.webapp.mvc.Severity;
-import lombok.extern.log4j.Log4j;
-
 @Controller
 @Log4j
 @RequestMapping(value = { "/user" })
@@ -28,9 +35,16 @@ public class ArtistController extends LoggedUserController{
 	@Autowired
 	private IArtistService artistService;
 	
+	@Autowired
+	private ITagService tagService;
+	
 	@ModelAttribute("artistForm")
 	public ArtistsForm form() {
 		return new ArtistsForm();
+	}
+	@ModelAttribute("tags")
+	public List<Tag> getTagList(){
+		return tagService.list(Tags.findAll());
 	}
 	
 	@RequestMapping(value = { "/artist/new", "/artist/new/" })
@@ -47,8 +61,9 @@ public class ArtistController extends LoggedUserController{
 		if (!validator.hasErrors()) {
 			try {
 
-				artistService.save(artistsForm.getArtist());
-
+				Artist artist = new Artist(artistsForm.getArtistName(),new Tag(artistsForm.getTag()));
+				artistService.save(artist);
+				
 				flashMessages.addMessage("artist.save.success", Severity.SUCCESS);
 				return "artist_add";
 			} catch (Exception e) {

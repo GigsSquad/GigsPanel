@@ -73,10 +73,10 @@ public class GigController extends LoggedUserController{
 
 		if (!validator.hasErrors()) {
 			try {
-				artistService.list(Artists.findAll().loadWith("gig", "gig.comment"));
-				artistService.save(gigsForm.getGig().getArtist().getName());
+//				artistService.list(Artists.findAll().loadWith("gig", "gig.comment"));
+//				artistService.save(gigsForm.getGig().getArtist().getName());
 
-				spotService.save(gigsForm.getGig().getSpot().getCity(), gigsForm.getGig().getSpot().getClub());
+			//	spotService.save(gigsForm.getGig().getSpot().getCity(), gigsForm.getGig().getSpot().getClub());
 				gigService.save(gigsForm.getGig());
 
 				flashMessages.addMessage("gig.save.success", Severity.SUCCESS);

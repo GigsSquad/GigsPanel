@@ -54,8 +54,12 @@ public class Artist extends BaseEntity<Long> {
 
 	public Artist() {
 	}
-
-	public Artist(String name) {
+	public Artist(String name){
+		
 		this.name = name;
+	}
+	public Artist(String name,Tag tag) {
+		this.name = name;
+		this.tag = tag;
 	}
 }
