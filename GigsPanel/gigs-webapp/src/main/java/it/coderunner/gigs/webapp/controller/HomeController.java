@@ -1,5 +1,6 @@
 package it.coderunner.gigs.webapp.controller;
 
+import it.coderunner.gigs.model.gig.Gig;
 import it.coderunner.gigs.repository.artists.Artists;
 import it.coderunner.gigs.repository.comments.Comments;
 import it.coderunner.gigs.repository.gigs.Gigs;
@@ -24,6 +25,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.util.List;
 
 @Controller
 @Log4j
@@ -75,6 +78,12 @@ public class HomeController extends LoggedUserController{
 	@ModelAttribute("commentCounter")
 	public long commentCounter(){
 		return commentService.count(Comments.findAll());
+	}
+
+	@ModelAttribute("gigs")
+	public List<Gig> getGigs()
+	{
+		return gigService.list(Gigs.findAll());
 	}
 
 	@RequestMapping(value={"", "/", "index", "/index/"}, method = RequestMethod.GET)

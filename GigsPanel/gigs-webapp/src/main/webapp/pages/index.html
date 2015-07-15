@@ -33,7 +33,7 @@
                     <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
                         <div class="info-bg center-align-text">
                             <div class="spacer-xs">
-                                 <small class="text-white" th:text="#{dashboard.tags}"></small>
+                                <small class="text-white" th:text="#{dashboard.tags}"></small>
                                 <h3 class="no-margin no-padding" th:text="*{tagCounter}"></h3>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                     <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
                         <div class="linkedin-bg center-align-text">
                             <div class="spacer-xs">
-                              <small class="text-white" th:text="#{dashboard.spots}"></small>
+                                <small class="text-white" th:text="#{dashboard.spots}"></small>
                                 <h3 class="no-margin no-padding" th:text="*{spotCounter}"></h3>
                             </div>
                         </div>
@@ -207,7 +207,7 @@
                         <!-- Widget starts -->
                         <div class="blog blog-danger">
                             <div class="blog-header">
-                                <h5 class="blog-title">Clients List</h5>
+                                <h5 class="blog-title">Lista najbliżych koncertów</h5>
                             </div>
                             <div class="blog-body">
                                 <ul class="clients-list">
@@ -350,62 +350,17 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="blog blog-success no-margin">
                             <div class="blog-header">
-                                <h5 class="blog-title">Sales Stats</h5>
+                                <h5 class="blog-title">Lista najbliższych koncertów</h5>
                             </div>
                             <div class="blog-body">
                                 <div class="table-responsive">
                                     <table class="table table-condensed table-bordered no-margin">
                                         <tbody>
-                                            <tr>
-                                                <td><span class="chart" id="spark_1"></span>
-                                                </td>
-                                                <td>Wilson</td>
-                                                <td>19275, Walnut Creek, CA</td>
-                                                <td>4531</td>
-                                                <td><span class="badge badge-info"> Processing
-													</span>
-                                                </td>
-                                                <td rowspan="5" class="center-align-text">
-                                                    <div class="chart" id="spark_6"></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="chart" id="spark_2"></span>
-                                                </td>
-                                                <td>Jason</td>
-                                                <td>18932, Wilsan Gardan Broadway, SU</td>
-                                                <td>9852</td>
-                                                <td><span class="badge badge-success"> Sent </span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="chart" id="spark_3"></span>
-                                                </td>
-                                                <td>Robson</td>
-                                                <td>11217, Church Street, SN</td>
-                                                <td>1744</td>
-                                                <td><span class="badge badge-danger"> Cancelled
-													</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="chart" id="spark_4"></span>
-                                                </td>
-                                                <td>Karan</td>
-                                                <td>3229, North Broadway, GN</td>
-                                                <td>4321</td>
-                                                <td><span class="badge badge-info"> Processing
-													</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="chart" id="spark_5"></span>
-                                                </td>
-                                                <td>Lasan</td>
-                                                <td>2318, New Lason Road, BS</td>
-                                                <td>245</td>
-                                                <td><span class="badge badge-success"> Sent </span>
-                                                </td>
+                                            <!-- kurwa -->
+                                            <tr th:each="gig,iterationStatus  : ${gigs}">
+                                                <td th:text="${gig.id}">Artysta</td>
+                                                <td th:text="${gig.arist.name}">Artysta</td>
+                                                <td th:text="${gig.date}">Artysta</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -423,6 +378,6 @@
         <!-- Container fluid ends -->
     </div>
     <!-- Main Container ends -->
-	</body>
+</body>
 
 </html>

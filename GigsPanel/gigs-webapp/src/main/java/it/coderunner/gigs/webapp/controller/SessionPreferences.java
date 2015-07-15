@@ -28,9 +28,8 @@ public class SessionPreferences implements Serializable {
 	private String displayName;
 
 	public String getDisplayName() {
+		
 		if (StringUtils.isBlank(displayName)) {
-//				User user = userService.uniqueObject(Users.findAll()
-//						.withUsername(SecurityUtils.getLoggedUsername()));
 				displayName = SecurityUtils.getLoggedUsername();
 		}
 		return displayName;

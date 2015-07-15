@@ -25,12 +25,12 @@ import lombok.Setter;
 
 /**
  * Lista koncertów, połączona ze spots oraz artists
- * @author Jakub
  *
+ * @author Jakub
  */
 
 @Entity
-@Table(name="gigs")
+@Table(name = "gigs")
 public class Gig extends BaseEntity<Long> {
 
     private static final long serialVersionUID = -933739711197268160L;
@@ -40,14 +40,15 @@ public class Gig extends BaseEntity<Long> {
     @Getter
     private Long id;
 
-    @Getter @Setter
-    @OneToMany(mappedBy = "gig", targetEntity = Comment.class, cascade = CascadeType.ALL)
-    private Set<Comment> comments= new HashSet<>();
-    
     @Getter
     @Setter
-    @JoinColumn(name="id_spot")
-    @ManyToOne(fetch=FetchType.LAZY)
+    @OneToMany(mappedBy = "gig", targetEntity = Comment.class, cascade = CascadeType.ALL)
+    private Set<Comment> comments = new HashSet<>();
+
+    @Getter
+    @Setter
+    @JoinColumn(name = "id_spot")
+    @ManyToOne(fetch = FetchType.LAZY)
     private Spot spot;
 
     @Getter
@@ -62,7 +63,7 @@ public class Gig extends BaseEntity<Long> {
     @Getter
     @Setter
     private String url;
-    
+
     @Getter
     @Setter
     @Column(name = "entrance_fee")
@@ -71,20 +72,24 @@ public class Gig extends BaseEntity<Long> {
     @Getter
     @Setter
     private Date updated;
-    
-    @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name="id_artist")
-    @Getter @Setter
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_artist")
+    @Setter
     private Artist artist;
-    
-    public Gig() {}
-    
-    public Gig(Artist artist, Spot spot, Date date, Agency agency, String url)
-    {
-    	this.artist = artist;
-    	this.spot = spot;
-    	this.date = date;
-    	this.agency = agency;
-    	this.url = url;
+
+    public Artist getArtist() {
+        return artist;
+    }
+
+    public Gig() {
+    }
+
+    public Gig(Artist artist, Spot spot, Date date, Agency agency, String url) {
+        this.artist = artist;
+        this.spot = spot;
+        this.date = date;
+        this.agency = agency;
+        this.url = url;
     }
 }
