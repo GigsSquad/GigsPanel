@@ -20,9 +20,7 @@ public abstract class Spots extends Queryable<Spot, Long> {
 
 	protected Gig gis;
 
-	protected Spots() {
 
-	}
 
 	public Spots withCity(String city) {
 		this.city = city;

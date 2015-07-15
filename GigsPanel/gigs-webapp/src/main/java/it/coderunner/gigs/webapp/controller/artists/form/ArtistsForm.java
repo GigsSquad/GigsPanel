@@ -1,8 +1,5 @@
 package it.coderunner.gigs.webapp.controller.artists.form;
 
-import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
-
-import it.coderunner.gigs.model.artist.Artist;
 import it.coderunner.gigs.webapp.mvc.AbstractForm;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,11 +9,16 @@ public class ArtistsForm extends AbstractForm{
 	
 	@Getter
 	@Setter 
-	Artist artist;
+	String  artistName;
+	
+	@Getter
+	@Setter
+	String tag;
 
 	@Override
 	public String getID() {
-		return new Md5PasswordEncoder().encodePassword(artist.getId()+"", "trodlsoldaoaskdoas");
+		return null;
 	}
+
 
 }
