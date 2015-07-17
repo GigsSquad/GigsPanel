@@ -356,11 +356,26 @@
                                 <div class="table-responsive">
                                     <table class="table table-condensed table-bordered no-margin">
                                         <tbody>
-                                            <!-- kurwa -->
-                                            <tr th:each="gig,iterationStatus  : ${gigs}">
-                                                <td th:text="${gig.id}">Artysta</td>
-                                                <td th:text="${gig.arist.name}">Artysta</td>
-                                                <td th:text="${gig.date}">Artysta</td>
+                                            <td>ID</td>
+                                            <td>Nazwa artysty</td>
+                                            <td>Miasto</td>
+                                            <td>Klub</td>
+                                            <td>Agencja</td>
+                                            <td>Data koncertu</td>
+                                            <td>Link</td>
+                                            <tr th:each="gig : ${upcominGigs}">
+
+                                                <td th:text="${gig.id}"></td>
+                                                <td>no session</td>
+                                                <td>no session</td>
+                                                <td>no session</td>
+                                                <!--                                                <td th:text="${gig.artist.name}"></td>-->
+                                                <!--                                                <td th:text="${gig.spot.city}"></td>-->
+                                                <!--                                                <td th:text="${gig.spot.club}"></td>-->
+                                                <td th:text="${gig.agency}"></td>
+                                                <td th:text="${gig.date}"></td>
+                                                <td><a th:href="${gig.url}">Link</a>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>

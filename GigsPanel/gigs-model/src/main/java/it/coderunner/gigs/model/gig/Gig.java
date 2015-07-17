@@ -1,27 +1,16 @@
 package it.coderunner.gigs.model.gig;
 
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-
 import it.coderunner.gigs.model.BaseEntity;
 import it.coderunner.gigs.model.artist.Artist;
 import it.coderunner.gigs.model.comment.Comment;
 import it.coderunner.gigs.model.spot.Spot;
 import lombok.Getter;
 import lombok.Setter;
+
+import javax.persistence.*;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Lista koncertów, połączona ze spots oraz artists
@@ -76,11 +65,8 @@ public class Gig extends BaseEntity<Long> {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_artist")
     @Setter
+    @Getter
     private Artist artist;
-
-    public Artist getArtist() {
-        return artist;
-    }
 
     public Gig() {
     }
