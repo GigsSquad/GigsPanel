@@ -67,7 +67,7 @@ public class ArtistController extends LoggedUserController{
 				flashMessages.addMessage("artist.save.success", Severity.SUCCESS);
 				return "artist_add";
 			} catch (Exception e) {
-				log.warn("Warn");
+				log.warn("Warn " + e);
 				flashMessages.addMessage("artist.save.error", Severity.ERROR);
 				return "artist_add";
 			}

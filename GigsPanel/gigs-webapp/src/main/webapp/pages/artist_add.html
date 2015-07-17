@@ -8,7 +8,7 @@
 
 <body>
     <div class="main-container" layout:fragment="content">
-        <form id="box-login" th:action="@{/artist/new/save}" th:object="${artistForm}" method="post">
+        <form id="box-login" th:action="@{/user/artist/new/save}" th:object="${artistForm}" method="post">
             <div th:include="message_box :: alert"></div>
 
             <!-- Nazwa artysty -->

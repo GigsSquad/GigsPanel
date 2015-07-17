@@ -17,8 +17,8 @@
 				th:class="${#fields.hasErrors('spot.city')}? 'form-group has-error' : 'form-group'">
 				<label class="col-md-3 control-label"> <span
 					th:text="#{spot.city}"></span>
-				</label> <input type="text" th:field="*{spot.city}" class="form-control"
-					name="spot" th:placeholder="#{spot.city}" />
+				</label> <input id="cityId" type="text" th:field="*{spot.city}"
+					class="form-control" name="spot" th:placeholder="#{spot.city}" />
 				<p class="control-label"
 					th:each="err : ${#fields.errors('spot.city')}" th:utext="${err}"></p>
 			</div>
@@ -28,8 +28,8 @@
 				th:class="${#fields.hasErrors('spot.address')}? 'form-group has-error' : 'form-group'">
 				<label class="col-md-3 control-label"> <span
 					th:text="#{spot.address}"></span>
-				</label> <input type="text" th:field="*{spot.address}" class="form-control"
-					name="spot" th:placeholder="#{spot.address}" />
+				</label> <input id="addressId" type="text" th:field="*{spot.address}"
+					class="form-control" name="spot" th:placeholder="#{spot.address}" />
 				<p class="control-label"
 					th:each="err : ${#fields.errors('spot.address')}" th:utext="${err}"></p>
 			</div>
@@ -51,7 +51,7 @@
 					th:text="#{spot.country}"></span>
 				</label> <select th:field="*{spot.country}" class="form-control" name="spot"
 					th:placeholder="#{spot.country}">
-					<option th:each="country:*{spot.getCountryList()}"
+					<option id="countryId" th:each="country:*{spot.getCountryList()}"
 						th:value="${country.ordinal()}"
 						th:text="${country.getResolvedName()}"></option>
 				</select>
@@ -60,15 +60,37 @@
 					th:utext="${err}"></p> -->
 			</div>
 
+			<!--  SZEROKOSC GEOGRAFICZNA  -->
+			<div
+				th:class="${#fields.hasErrors('spot.lat')}? 'form-group has-error' : 'form-group'">
+				<label class="col-md-3 control-label"> <span
+					th:text="Latitude"></span>
+				</label> <input id="latId" type="number" name="spot" th:field="*{spot.lat}"
+					th:placeholder="Latitude" class="form-control" readonly="true"></input>
+				<p class="control-label"
+					th:each="err : ${#fields.errors('spot.lat')}" th:utext="${err}"></p>
+			</div>
+
+			<!--  DLUGOSC GEOGRAFICZNA  -->
+			<div
+				th:class="${#fields.hasErrors('spot.lon')}? 'form-group has-error' : 'form-group'">
+				<label class="col-md-3 control-label"> <span
+					th:text="Latitude"></span>
+				</label> <input id="lngId" type="number" name="spot" th:field="*{spot.lon}"
+					th:placeholder="Latitude" class="form-control" readonly="true"></input>
+				<p class="control-label"
+					th:each="err : ${#fields.errors('spot.lon')}" th:utext="${err}"></p>
+			</div>
+
 			<!-- PRZYCISK  -->
 			<div class="some-SHITTY-batton" align="right">
 				<input class="btn btn-default" type="submit"></input>
 			</div>
-
 		</form>
-		<input th:text="Latitude" readonly="true"></input>
-		<input th:text="Longtitude" readonly="true"></input>
-		<div id="googleMap"  style="width: 500px; height: 380px; position: center;"></div>
+
+		<div id="googleMap"
+			style="width: 500px; height: 380px; position: center;"></div>
+		<input type="button" value="Encode" onclick="codeAddress()"></input>
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script th:src="@{~/js/maps/spot-map.js}"></script>
 	</div>
