@@ -8,7 +8,7 @@
 
 <body>
 	<div class="main-container" layout:fragment="content">
-		<form id="box-login" th:action="@{/spot/new/save}"
+		<form id="box-login" th:action="@{/user/spot/new/save}"
 			th:object="${spotForm}" method="post">
 			<div th:include="message_box :: alert"></div>
 
@@ -88,9 +88,18 @@
 			</div>
 		</form>
 
-		<div id="googleMap"
-			style="width: 500px; height: 380px; position: center;"></div>
-		<input type="button" value="Encode" onclick="codeAddress()"></input>
+		<!-- MAPA -->
+
+		<div id="map-div" align="center">
+			<div id="googleMap"
+				style="width: auto; height: 400px; position: center;"></div>
+		</div>
+
+		<!-- PRZYCISK DEKODOWANIA -->
+		<div class="encode-button" align="right">
+			<input class="btn btn-default" type="button" value="Encode"
+				onclick="codeAddress()"></input>
+		</div>
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script th:src="@{~/js/maps/spot-map.js}"></script>
 	</div>

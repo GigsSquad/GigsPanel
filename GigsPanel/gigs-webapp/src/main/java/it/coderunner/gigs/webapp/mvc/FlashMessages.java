@@ -8,10 +8,8 @@ import java.util.Set;
 
 import lombok.Getter;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import org.thymeleaf.messageresolver.IMessageResolver;
 
 /**
  * Klasa przechowująca komunikaty wyświetlane na warstwie widoku dla użytkownika

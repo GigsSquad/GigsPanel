@@ -1,7 +1,6 @@
 package it.coderunner.gigs.service.users;
 
 import it.coderunner.gigs.model.user.User;
-import it.coderunner.gigs.model.user.UserStatus;
 import it.coderunner.gigs.repository.users.Users;
 import it.coderunner.gigs.service.IService;
 

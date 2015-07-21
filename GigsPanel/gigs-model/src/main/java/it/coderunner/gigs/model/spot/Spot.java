@@ -70,28 +70,31 @@ public class Spot extends BaseEntity<Long> {
 
 	// TODO: Locale jest wstawione na sztywno, poprawić
 	public Country[] getCountryList() {
-		return Country
-				.sortedByName(new LocalePropertiesMessageResolver(Locale.ENGLISH));
+		return Country.sortedByName(new LocalePropertiesMessageResolver(
+				Locale.ENGLISH));
 	}
-	
-	public Country[] getRawCountryList(){
+
+	public Country[] getRawCountryList() {
 		return Country.values();
 	}
 
 	public Spot() {
 	};
 
-	public Spot(String city, String address, String club, Country country) {
+	public Spot(String city, String address, String club, Country country,
+			double lat, double lon) {
 		this.city = city;
 		this.address = address;
 		this.club = club;
 		this.country = country;
+		this.lat = lat;
+		this.lon = lon;
 	}
 
 	@Override
 	public String toString() {
 		return "Spot [city=" + city + ", address=" + address + ", club=" + club
-				+ ", country=" + country + "]";
+				+ ", lat=" + lat + ", lon=" + lon + ", country=" + country
+				+ "]";
 	}
-	
 }

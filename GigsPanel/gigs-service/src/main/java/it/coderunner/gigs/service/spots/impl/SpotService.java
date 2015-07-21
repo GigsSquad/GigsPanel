@@ -53,24 +53,39 @@ public class SpotService implements ISpotService {
 	 * Jeśli nie ma danego spotu w bazie do go doda i nada mu id, jeśli jest to
 	 * zwróci tego spot który już jest w bazie
 	 */
+
 	@Override
-	public Spot save(String city, String address, String club, Country country) {
+	public Spot save(String city, String address, String club, Country country,
+			double lat, double lon) {
 		Spot spot = uniqueObject(Spots.findAll().withCity(city)
-				.withAddress(address).withClub(club).withCountry(country));
-		
+				.withAddress(address).withClub(club).withCountry(country)
+				.withLat(lat).withLon(lon));
+
 		if (spot == null) {
-			spot = new Spot(city, address, club, country);
+			spot = new Spot(city, address, club, country, lat, lon);
 			saveOrUpdate(spot);
 		}
 		return spot;
 	}
-	
+
+	@Override
+	public Spot save(String city, String address, String club, Country country) {
+		Spot spot = uniqueObject(Spots.findAll().withCity(city)
+				.withAddress(address).withClub(club).withCountry(country));
+
+		if (spot == null) {
+			spot = new Spot(city, address, club, country, 0.0, 0.0);
+			saveOrUpdate(spot);
+		}
+		return spot;
+	}
+
 	@Override
 	public Spot save(String city, String address, String club) {
 		Spot spot = uniqueObject(Spots.findAll().withCity(city)
 				.withAddress(address).withClub(club));
 		if (spot == null) {
-			spot = new Spot(city, address, club, null);
+			spot = new Spot(city, address, club, null, 0.0, 0.0);
 			saveOrUpdate(spot);
 		}
 		return spot;
@@ -81,7 +96,7 @@ public class SpotService implements ISpotService {
 		Spot spot = uniqueObject(Spots.findAll().withCity(city)
 				.withAddress(address));
 		if (spot == null) {
-			spot = new Spot(city, address, "", null);
+			spot = new Spot(city, address, "", null, 0.0, 0.0);
 			saveOrUpdate(spot);
 		}
 		return spot;
@@ -91,7 +106,7 @@ public class SpotService implements ISpotService {
 	public Spot save(String city) {
 		Spot spot = uniqueObject(Spots.findAll().withCity(city));
 		if (spot == null) {
-			spot = new Spot(city, "", "", null);
+			spot = new Spot(city, "", "", null, 0.0, 0.0);
 			saveOrUpdate(spot);
 		}
 		return spot;

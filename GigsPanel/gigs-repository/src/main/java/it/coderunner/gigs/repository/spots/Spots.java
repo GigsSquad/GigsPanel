@@ -17,10 +17,10 @@ public abstract class Spots extends Queryable<Spot, Long> {
 	protected String address;
 	protected String club;
 	protected Country country;
-
+	protected double lat;
+	protected double lon;
+	
 	protected Gig gis;
-
-
 
 	public Spots withCity(String city) {
 		this.city = city;
@@ -39,6 +39,16 @@ public abstract class Spots extends Queryable<Spot, Long> {
 
 	public Spots withCountry(Country country) {
 		this.country = country;
+		return this;
+	}
+	
+	public Spots withLat(double lat) {
+		this.lat = lat;
+		return this;
+	}
+	
+	public Spots withLon(double lon) {
+		this.lon = lon;
 		return this;
 	}
 

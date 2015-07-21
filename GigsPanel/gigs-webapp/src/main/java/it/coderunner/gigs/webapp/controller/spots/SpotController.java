@@ -1,6 +1,7 @@
 package it.coderunner.gigs.webapp.controller.spots;
 
 import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
+import it.coderunner.gigs.model.spot.Spot;
 import it.coderunner.gigs.service.spots.ISpotService;
 import it.coderunner.gigs.webapp.controller.LoggedUserController;
 import it.coderunner.gigs.webapp.controller.spots.form.SpotsForm;
@@ -24,30 +25,37 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @Controller
 @Log4j
 @RequestMapping(value = { "/user" })
-public class SpotController extends LoggedUserController{
-	
+public class SpotController extends LoggedUserController {
+
 	@Autowired
 	private ISpotService spotService;
-	
+
 	@ModelAttribute("spotForm")
 	public SpotsForm form() {
 		return new SpotsForm();
 	}
-	
+
 	@RequestMapping(value = { "/spot/new", "/spot/new/" })
 	public String getConcert(Model model) {
 		return "spot_add";
 	}
 
 	@RequestMapping(value = { "/spot/new/save" }, method = RequestMethod.POST)
-	public String saveSpot(SpotsForm spotsForm, BindingResult result, Model model, RedirectAttributes redirectAttributes, HttpServletRequest request) {
+	public String saveSpot(SpotsForm spotsForm, BindingResult result,
+			Model model, RedirectAttributes redirectAttributes,
+			HttpServletRequest request) {
 		SpotsValidator validator = new SpotsValidator();
-		FlashMessages flashMessages = new FlashMessages(model, new LocalePropertiesMessageResolver(request.getLocale()));
+		FlashMessages flashMessages = new FlashMessages(model,
+				new LocalePropertiesMessageResolver(request.getLocale()));
 		validator.validate(spotsForm, result);
 
 		if (!validator.hasErrors()) {
 			try {
-				spotService.save(spotsForm.getSpot().getCity(), spotsForm.getSpot().getAddress(), spotsForm.getSpot().getClub(), spotsForm.getSpot().getCountry());
+				System.out.println(spotsForm.getSpot().toString());
+				Spot spot = spotsForm.getSpot();
+				spotService.save(spot.getCity(), spot.getAddress(),
+						spot.getClub(), spot.getCountry(), spot.getLat(),
+						spot.getLon());
 				flashMessages.addMessage("spot.save.success", Severity.SUCCESS);
 				return "spot_add";
 			} catch (Exception e) {

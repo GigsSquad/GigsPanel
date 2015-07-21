@@ -21,12 +21,6 @@ public class SpotsValidator extends CommonValidator {
 	public void validateForm(Object target, Errors errors) {
 
 		SpotsForm form = (SpotsForm) target;
-		if(errors.hasErrors()){
-			System.out.println("bugi");
-			for(Object o : errors.getAllErrors()){
-				System.out.println(o.toString());
-			}
-		}
 		
 		if (StringUtils.isBlank(form.getSpot().getCity())) {
 			errors.rejectValue("spot.city", "spot.city.cannot.be.null");

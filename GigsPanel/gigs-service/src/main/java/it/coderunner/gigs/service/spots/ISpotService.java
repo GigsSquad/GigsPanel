@@ -13,6 +13,8 @@ public interface ISpotService {
 	void saveOrUpdate(Spot spot);
 
 	void save(Spot spot);
+	
+	Spot save(String city, String address, String club, Country country, double lat, double lon);
 
 	Spot save(String city, String address, String club, Country country);
 	
