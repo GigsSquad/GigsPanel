@@ -3,6 +3,7 @@ package it.coderunner.gigs.webapp.controller.spots;
 import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
 import it.coderunner.gigs.model.spot.Spot;
 import it.coderunner.gigs.service.spots.ISpotService;
+import it.coderunner.gigs.util.CurrentLocale;
 import it.coderunner.gigs.webapp.controller.LoggedUserController;
 import it.coderunner.gigs.webapp.controller.spots.form.SpotsForm;
 import it.coderunner.gigs.webapp.controller.spots.form.SpotsValidator;
@@ -36,7 +37,8 @@ public class SpotController extends LoggedUserController {
 	}
 
 	@RequestMapping(value = { "/spot/new", "/spot/new/" })
-	public String getConcert(Model model) {
+	public String getConcert(Model model, HttpServletRequest request) {
+		CurrentLocale.setLocale(request.getLocale());
 		return "spot_add";
 	}
 

@@ -4,9 +4,9 @@ import it.coderunner.gigs.i18n.resolver.impl.LocalePropertiesMessageResolver;
 import it.coderunner.gigs.model.BaseEntity;
 import it.coderunner.gigs.model.gig.Gig;
 import it.coderunner.gigs.model.user.Country;
+import it.coderunner.gigs.util.CurrentLocale;
 
 import java.util.HashSet;
-import java.util.Locale;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -62,7 +62,7 @@ public class Spot extends BaseEntity<Long> {
 
 	@Getter
 	private Country country;
-
+	
 	public void setCountry(int order) {
 		country = Country.values()[order];
 		System.out.println(country);
@@ -71,7 +71,7 @@ public class Spot extends BaseEntity<Long> {
 	// TODO: Locale jest wstawione na sztywno, poprawić
 	public Country[] getCountryList() {
 		return Country.sortedByName(new LocalePropertiesMessageResolver(
-				Locale.ENGLISH));
+				CurrentLocale.getLocale()));
 	}
 
 	public Country[] getRawCountryList() {

@@ -64,9 +64,9 @@
 			<div
 				th:class="${#fields.hasErrors('spot.lat')}? 'form-group has-error' : 'form-group'">
 				<label class="col-md-3 control-label"> <span
-					th:text="Latitude"></span>
+					th:text="#{spot.latitude}"></span>
 				</label> <input id="latId" type="number" name="spot" th:field="*{spot.lat}"
-					th:placeholder="Latitude" class="form-control" readonly="true"></input>
+					th:placeholder="#{spot.latitude}" class="form-control" readonly="true"></input>
 				<p class="control-label"
 					th:each="err : ${#fields.errors('spot.lat')}" th:utext="${err}"></p>
 			</div>
@@ -75,9 +75,9 @@
 			<div
 				th:class="${#fields.hasErrors('spot.lon')}? 'form-group has-error' : 'form-group'">
 				<label class="col-md-3 control-label"> <span
-					th:text="Latitude"></span>
+					th:text="#{spot.longtitude}"></span>
 				</label> <input id="lngId" type="number" name="spot" th:field="*{spot.lon}"
-					th:placeholder="Latitude" class="form-control" readonly="true"></input>
+					th:placeholder="spot.longtitude" class="form-control" readonly="true"></input>
 				<p class="control-label"
 					th:each="err : ${#fields.errors('spot.lon')}" th:utext="${err}"></p>
 			</div>
@@ -89,15 +89,16 @@
 		</form>
 
 		<!-- MAPA -->
-
+		<br />
 		<div id="map-div" align="center">
 			<div id="googleMap"
 				style="width: auto; height: 400px; position: center;"></div>
 		</div>
 
+		<br />
 		<!-- PRZYCISK DEKODOWANIA -->
 		<div class="encode-button" align="right">
-			<input class="btn btn-default" type="button" value="Encode"
+			<input class="btn btn-default" type="button" th:value="#{spot.encode}"
 				onclick="codeAddress()"></input>
 		</div>
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
