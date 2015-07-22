@@ -51,4 +51,21 @@ public class Stat extends BaseEntity<Long> {
 	@Setter
 	@Enumerated(EnumType.STRING)
 	private StatType type;
+
+	@Getter
+	@Setter
+	private Double latitude;
+
+	@Getter
+	@Setter
+	private Double longitude;
+
+	public Stat(User user, String searchToken, StatType type, Double latitude,
+			Double longitude) {
+		this.user = user;
+		this.searchToken = searchToken;
+		this.type = type;
+		this.latitude = latitude;
+		this.longitude = longitude;
+	}
 }
