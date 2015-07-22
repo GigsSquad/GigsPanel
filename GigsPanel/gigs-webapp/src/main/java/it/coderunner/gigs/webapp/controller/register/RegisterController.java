@@ -41,7 +41,6 @@ public class RegisterController {
 	public String register(Model model) {
 		return "register";
 	}
-
 	
 	//TODO
 	@RequestMapping(value = { "/register", "/register/" }, method = RequestMethod.POST)
