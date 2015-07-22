@@ -14,7 +14,7 @@
 		<intercept-url access="hasRole('ROLE_ADMIN')" pattern="/admin/**" />
 		<intercept-url access="hasRole('ROLE_USER')" pattern="/user/**" />
 		<intercept-url access="permitAll" pattern="/**" />		
-		<logout logout-success-url="/" logout-url="/logout" />
+		<logout logout-success-url="/login" logout-url="/logout" />
 		<form-login login-page="/login"  />
 		<csrf />
 		<remember-me key="....:::gigsmap123:::....."/>
