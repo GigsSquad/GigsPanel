@@ -51,7 +51,7 @@ public class ParserWorkerTest {
 		artistService.save(artist);
 
 		Spot spot = new Spot("Warszawa", "Liczydlo 7", "Klub",
-				Country.AFGHANISTAN);
+				Country.AFGHANISTAN, 0.0, 0.0);
 		spotService.save(spot);
 
 		gig = new Gig(artist, spot, new Date(), Agency.ALTERART,

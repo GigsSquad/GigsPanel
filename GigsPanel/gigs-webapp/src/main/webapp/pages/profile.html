@@ -7,54 +7,79 @@
 </head>
 
 <body>
-<!-- index.html, line 348 tabelki -->
 	<div class="main-container" layout:fragment="content">
-		<table>
-			<tr>
-				<td align="right"><label th:text="#{user.profile.firstname}"></label></td>
-				<td><label th:text="*{userData.firstname}"></label></td>
-			</tr>
-			<tr>
-				<td align="right"><label th:text="#{user.profile.lastname}"></label></td>
-				<td><label th:text="*{userData.lastname}"></label></td>
-			</tr>
-			<tr>
-				<td align="right"><label th:text="#{user.profile.email}"></label></td>
-				<td><label th:text="*{userData.email}"></label></td>
-			</tr>
-			<tr>
-				<td align="right"><label th:text="#{user.profile.username}"></label></td>
-				<td><label th:text="*{userData.username}"></label></td>
-			</tr>
-			<tr>
-				<td align="right"><label th:text="#{user.profile.birthday}"></label></td>
-				<td><label th:text="*{userData.birthday}"></label></td>
-			</tr>
-			<tr>
-				<td align="right"><label th:text="#{user.profile.country}"></label></td>
-				<td><label th:text="*{userData.country}"></label></td>
-			</tr>
-			<tr>
-				<td align="right"><label th:text="#{user.profile.loginType}"></label></td>
-				<td><label th:text="*{userData.loginType}"></label></td>
-			</tr>
-			<tr>
-				<td align="right"><label th:text="#{user.profile.dateRegistered}"></label></td>
-				<td><label th:text="*{userData.dateRegistered}"></label></td>
-			</tr>
-			<tr>
-				<td align="right"><label th:text="#{user.profile.status}"></label></td>
-				<td><label th:text="*{userData.status}"></label></td>
-			</tr>
-			<tr>
-				<td align="right"><label th:text="#{user.profile.locale}"></label></td>
-				<td><label th:text="*{userData.locale}"></label></td>
-			</tr>
-			<!-- <tr>
-				<td><label th:text="#{user.profile.roles}"></label></td>
-				 <td><label th:text="*{userData.roles}"></label></td>
-			</tr>-->
-		</table>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="blog blog-success no-margin" style="width: 50%">
+					<div class="blog-header">
+						<h5 class="blog-title" th:text="Profil"></h5>
+					</div>
+					<div class="blog-body">
+						<div class="table-responsive">
+							<table class="table table-condensed table-bordered no-margin">
+								<tbody>
+									<tr>
+										<td align="right"><label
+											th:text="#{user.profile.firstname}"></label></td>
+										<td><label th:text="*{userData.firstname}"></label></td>
+									</tr>
+									<tr>
+										<td align="right"><label
+											th:text="#{user.profile.lastname}"></label></td>
+										<td><label th:text="*{userData.lastname}"></label></td>
+									</tr>
+									<tr>
+										<td align="right"><label th:text="#{user.profile.email}"></label></td>
+										<td><label th:text="*{userData.email}"></label></td>
+									</tr>
+									<tr>
+										<td align="right"><label
+											th:text="#{user.profile.username}"></label></td>
+										<td><label th:text="*{userData.username}"></label></td>
+									</tr>
+									<tr>
+										<td align="right"><label
+											th:text="#{user.profile.birthday}"></label></td>
+										<td><label th:text="*{userData.birthday}"></label></td>
+									</tr>
+									<tr>
+										<td align="right"><label
+											th:text="#{user.profile.country}"></label></td>
+										<td><label th:text="*{userData.country}"></label></td>
+									</tr>
+									<tr>
+										<td align="right"><label
+											th:text="#{user.profile.loginType}"></label></td>
+										<td><label th:text="*{userData.loginType}"></label></td>
+									</tr>
+									<tr>
+										<td align="right"><label
+											th:text="#{user.profile.dateRegistered}"></label></td>
+										<td><label th:text="*{userData.dateRegistered}"></label></td>
+									</tr>
+									<tr>
+										<td align="right"><label th:text="#{user.profile.status}"></label></td>
+										<td><label th:text="*{userData.status}"></label></td>
+									</tr>
+									<tr>
+										<td align="right"><label th:text="#{user.profile.locale}"></label></td>
+										<td><label th:text="*{userData.locale}"></label></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<form id="file-upload" th:object="${avatarForm}"
+				th:action="@{/user/profile/upload}" method="post"
+				enctype="multipart/form-data">
+				<input type="file" name="avatarForm"></input><br /> <br /> <br />
+				<input class="btn btn-default" type="submit" value="Upload"></input>
+			</form>
+		</div>
 	</div>
 </body>
 </html>

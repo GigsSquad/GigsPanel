@@ -77,6 +77,11 @@ http://www.springframework.org/schema/lang http://www.springframework.org/schema
 		class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
 		<property name="defaultLocale" value="en" />
 	</bean>
+	
+	<!-- Upload plikow: -->
+	<bean id="multipartResolver" 
+	 	class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
+	</bean>
 
 	<!-- <bean id="conversationalSessionAttributeStore" class="it.coderunner.webapp.mvc.ConversationSessionAttributeStore"> 
 		<property name="keepAliveConversations" value="10"/> </bean> -->

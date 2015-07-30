@@ -16,10 +16,10 @@
 		<intercept-url access="permitAll" pattern="/**" />		
 		<logout logout-success-url="/login" logout-url="/logout" />
 		<form-login login-page="/login"  />
-		<csrf />
+		
 		<remember-me key="....:::gigsmap123:::....."/>
 	</http>
-	
+	<!-- <csrf /> -->
 	<authentication-manager alias="authenticationManager">
 		<authentication-provider user-service-ref="userService">
 			<password-encoder ref="bCryptPasswordEncoder" />

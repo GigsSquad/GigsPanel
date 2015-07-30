@@ -68,7 +68,6 @@ public class Spot extends BaseEntity<Long> {
 		System.out.println(country);
 	}
 
-	// TODO: Locale jest wstawione na sztywno, poprawić
 	public Country[] getCountryList() {
 		return Country.sortedByName(new LocalePropertiesMessageResolver(
 				CurrentLocale.getLocale()));

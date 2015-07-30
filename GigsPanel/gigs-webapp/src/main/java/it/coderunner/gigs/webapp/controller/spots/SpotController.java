@@ -53,7 +53,6 @@ public class SpotController extends LoggedUserController {
 
 		if (!validator.hasErrors()) {
 			try {
-				System.out.println(spotsForm.getSpot().toString());
 				Spot spot = spotsForm.getSpot();
 				spotService.save(spot.getCity(), spot.getAddress(),
 						spot.getClub(), spot.getCountry(), spot.getLat(),
@@ -66,10 +65,8 @@ public class SpotController extends LoggedUserController {
 				System.out.println("Exception");
 				return "spot_add";
 			}
-
 		}
 		flashMessages.addMessage("spot.save.error", Severity.ERROR);
-		System.out.println("po ifie");
 		return "spot_add";
 	}
 }

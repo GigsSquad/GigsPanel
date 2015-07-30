@@ -56,7 +56,7 @@ public class GoAheadTest {
 		artistService.save(artist);
 
 		Spot spot = new Spot("Szczecin", "Rozwalki 7", "Pierwsze miejsce",
-				Country.POLAND);
+				Country.POLAND, 0.0, 0.0);
 		spotService.save(spot);
 
 		Gig gig = new Gig(artist, spot, new Date(), Agency.GOAHEAD,
