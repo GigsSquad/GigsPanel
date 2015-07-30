@@ -76,7 +76,7 @@
 			<form id="file-upload" th:object="${avatarForm}"
 				th:action="@{/user/profile/upload}" method="post"
 				enctype="multipart/form-data">
-				<input type="file" name="avatarForm"></input><br /> <br /> <br />
+				<input type="file" name="avatarForm" th:field="*{file}"></input><br /> <br /> <br />
 				<input class="btn btn-default" type="submit" value="Upload"></input>
 			</form>
 		</div>

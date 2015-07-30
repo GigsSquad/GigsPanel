@@ -18,6 +18,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -40,9 +42,9 @@ public class ProfileController extends LoggedUserController {
 
 		return user;
 	}
-	
+
 	@ModelAttribute
-	public AvatarForm avatar(){
+	public AvatarForm avatar() {
 		return new AvatarForm();
 	}
 
@@ -51,12 +53,17 @@ public class ProfileController extends LoggedUserController {
 		return "profile";
 	}
 
-	@RequestMapping(value = { "/profile/upload", "/profile/upload/" }, method = RequestMethod.POST)//, consumes = "text/plain", produces ="text/html")
-	public String saveAvatar(@ModelAttribute("avatarForm") AvatarForm avatarForm, BindingResult result,
+	@RequestMapping(value = { "/profile/upload", "/profile/upload/" }, method = RequestMethod.POST, consumes = "multipart/form-data")
+	// , produces = "text/html")
+	public String saveAvatar(AvatarForm avatarForm, BindingResult result,
 			Model model, RedirectAttributes redirectAttributes,
 			HttpServletRequest request) {
-		System.out.println(avatarForm.getFile().toString());
+
+		System.out.println(avatarForm);
+		//if (avatarForm != null)
+		//	System.out.println(avatarForm.getFile());
+
 		System.out.println("w saveAvatar()");
-		return "profile"; 
+		return "profile";
 	}
 }

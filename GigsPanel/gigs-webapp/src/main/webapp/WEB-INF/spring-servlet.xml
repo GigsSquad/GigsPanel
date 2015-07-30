@@ -80,7 +80,7 @@ http://www.springframework.org/schema/lang http://www.springframework.org/schema
 	
 	<!-- Upload plikow: -->
 	<bean id="multipartResolver" 
-	 	class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
+	 	class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 	</bean>
 
 	<!-- <bean id="conversationalSessionAttributeStore" class="it.coderunner.webapp.mvc.ConversationSessionAttributeStore"> 
